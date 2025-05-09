@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaClock,
-  FaBars,
-  FaTimes,
-  FaChevronRight,
-  FaPlus
-} from 'react-icons/fa';
+import {FaFacebookF,FaLinkedinIn,FaInstagram,FaPhoneAlt, FaEnvelope,FaClock,FaBars,FaTimes,FaChevronRight,FaPlus}
+
+from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const Header = () => {
@@ -19,7 +10,7 @@ const Header = () => {
   return (
     <header>
       {/* Topbar */}
-      <div className="bg-[#04363d] text-white text-base">
+      <div className="bg-[#04363d] text-white font-thi text-base">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center flex-wrap">
           {/* Hide on small screens */}
           <div className="hidden md:flex items-center space-x-6 text-sm">
@@ -33,12 +24,12 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Show only on small screens */}
-          <div className="w-full md:hidden flex justify-center mb-2">
-            <span className="text-sm">Follow Us On :</span>
-          </div>
+          {/* Show only on small screens
+          <div className="w-full md:hidden   flex justify-center mb-2">
+            <span className="text-sm font-bold ">Follow Us On :</span>
+          </div> */}
 
-          <div className="flex items-center space-x-2 mt-2 md:mt-0">
+          <div className="flex items-center justify-center space-x-2 mt-2 md:mt-0">
             <span>Follow Us On :</span>
             <a href="#" className="bg-green-500 p-1.5 rounded-full"><FaFacebookF /></a>
             <a href="#" className="bg-green-500 p-1.5 rounded-full"><FaLinkedinIn /></a>
@@ -68,9 +59,8 @@ const Header = () => {
 
           {/* Call info */}
           <div className="hidden lg:flex items-center space-x-3">
-            <div className="bg-green-600 p-4 rounded-full text-white text-lg">
-              <FaPhoneAlt />
-            </div>
+            <div className="bg-green-600 p-4 rounded-full text-white text-lg"><FaPhoneAlt /></div>
+            
             <div>
               <p className="text-green-600 font-bold">Call Helpline</p>
               <p className="text-[#04363d] font-semibold text-base">+88(0) 1237 6421</p>
@@ -79,7 +69,7 @@ const Header = () => {
 
           {/* Hamburger Icon */}
           <div className="lg:hidden">
-            <button onClick={() => setMenuOpen(true)} className="text-3xl text-[#04363d]">
+            <button onClick={() => setMenuOpen(true)} className="text-5xl text-[#04363d]">
               <FaBars />
             </button>
           </div>
