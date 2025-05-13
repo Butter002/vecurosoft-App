@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { TbPhoneCall } from "react-icons/tb";
 import FooterLogo from '../assets/images/broom.png'
+import { FaAnglesRight } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-[#042a2f] text-white">
@@ -19,7 +20,7 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-3 mt-6">
-            <TbPhoneCall   className="text-green-500 text-6xl" />
+            <TbPhoneCall   className="text-green-500 text-5xl" />
             <div>
               <p className="font-bold text-lg">+1 999 888 666</p>
               <p className="text-green-500 text-sm">Call 24/7</p>
@@ -38,16 +39,16 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Useful Links</h3>
           <div className="h-[2px] w-[90%] bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
-          <div className="grid grid-cols-2 gap-y-3 text-sm text-gray-300">
-            <p className="hover:text-white cursor-pointer">➤ Help Center</p>
-            <p className="hover:text-white cursor-pointer">➤ Apartment Cleaning</p>
-            <p className="hover:text-white cursor-pointer">➤ About Us</p>
-            <p className="hover:text-white cursor-pointer">➤ One-Time Clean</p>
-            <p className="hover:text-white cursor-pointer">➤ Contact Us</p>
-            <p className="hover:text-white cursor-pointer">➤ Shield Glass</p>
-            <p className="hover:text-white cursor-pointer">➤ Become A Cleaner</p>
-            <p className="hover:text-white cursor-pointer">➤ Vacation Rental Cleaning</p>
-            <p className="hover:text-white cursor-pointer">➤ Blog</p>
+          <div className="grid grid-cols-2 gap-y-4 text-sm text-gray-300">
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Help Center</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Apartment Cleaning</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> About Us</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> One-Time Clean</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Contact Us</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Shield Glass</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Become A Cleaner</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Vacation Rental Cleaning</p>
+            <p className="flex items-center  gap-2 font-bold hover:text-white cursor-pointer"><FaAnglesRight className="text-green-600" /> Blog</p>
           </div>
         </div>
 
@@ -61,7 +62,7 @@ const Footer = () => {
                 key={index}
                 src={`src/assets/instagram/${img}`}
                 alt={`Insta ${index}`}
-                className="rounded-md border-2 border-green-400 hover:scale-105 transition-transform"
+                className="rounded-md border-2 border-green-400 transition-transform duration-300 hover:scale-75"
               />
             ))}
           </div>
@@ -76,7 +77,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center gap-3">
           {["visa.png", "paypal.png", "mastercard.png", "amex.png", "discover.png"].map((img, i) => (
-            <img key={i} src={`/assets/cards/${img}`} alt="card" className="h-5" />
+            <img key={i} src={`src/assets/cards/${img}`} alt="card" className="h-5" />
           ))}
         </div>
       </div>
