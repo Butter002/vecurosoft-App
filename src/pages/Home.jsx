@@ -4,6 +4,7 @@ import Slideshowcomponent from '../components/SlideShow'
 import { FaPlay, FaSmile, FaTrophy, FaUsers,FaTasks} from 'react-icons/fa';
 import { ImUsers } from "react-icons/im";
 import { MdMapsHomeWork } from "react-icons/md";
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -85,9 +86,9 @@ function Home() {
         </div>
       </div>
     </div>
-
-
+      <div className='bg-white h-100 w-100'></div>
     </main>
+    <Footer />
     </div>
     </>
   );
