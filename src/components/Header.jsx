@@ -15,11 +15,11 @@ const Header = () => {
           {/* Hide on small screens */}
           <div className="hidden lg:flex items-center space-x-6 text-md">
             <div className="flex  items-center font-bold  space-x-2">
-              <FaEnvelope className='text-green-600' />
+              <FaEnvelope className='text-green-600' /> 
               <span>info@example.com</span>
             </div>
             {/* line design */}
-            <div className="hidden sm:flex  gap-[1.5px]">
+            <div className="hidden sm:flex items-center gap-[1.5px]">
             <span ></span>
             <span className="w-[2.5px] h-5 bg-white/30"></span>
             <span className="w-[1.5px] h-3 pr-[-1px] bg-white/30"></span>
