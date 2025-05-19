@@ -113,7 +113,7 @@ const Header = () => {
                 </div>
                 {item !== 'Contact' && <FaPlus className="text-gray-400" />}
               </div>
-            ))}
+            ))} 
 
             {/* Call Info (optional in mobile menu) */}
             <div className="mt-6 flex items-center space-x-2 text-sm">

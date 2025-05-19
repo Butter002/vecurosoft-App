@@ -1,38 +1,48 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import Slideshowcomponent from '../components/SlideShow'
+import Section1 from '../components/SlideShow'
 import cleaningsofa from '../assets/images/cleaningsofa.png';
-import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
+import section2image from '../assets/images/section2image.png';
 import profile from '../assets/images/Co-founder.png'
 
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 import { FaPlay, FaSmile, FaTrophy, FaUsers,FaTasks} from 'react-icons/fa';
 import { ImUsers } from "react-icons/im";
 import { MdMapsHomeWork } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { GiBroom,GiVacuumCleaner } from "react-icons/gi";
+import { GoArrowRight } from "react-icons/go";
 
 import Footer from '../components/Footer';
+import Section4 from '../components/Section4';
 
 function Home() {
+
+  const [ref, inView] = useInView({
+  triggerOnce: true,
+  threshold: 1,
+    });
+
   return (
     <>
     <div className="font-sans">
     <Header />
     <main className=''>
       {/* section 1 */}
-    <Slideshowcomponent />
+        <Section1 />
 
-
-    {/* Section 2 */}
-    <div className="flex flex-col bg-[#109c3d] lg:flex-row">
+      {/* Section 2 */}
+   
+      <div className="flex flex-col bg-[#109c3d] lg:flex-row">
       {/* Left Green Panel */}
-      <div className=" flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
-        <div className="flex items-center  gap-5">
-          <div className='border-2 border-white border-dashed hover:border-black rounded-full'>
-          <div className="bg-[#042a2f] p-7 rounded-full text-white hover:text-green-600 text-3xl">
-            <FaPlay />
-          </div>
+      <div className="flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
+        <div className="flex items-center gap-5">
+          <div className="border-2 border-white border-dashed hover:border-black rounded-full">
+            <div className="bg-[#042a2f] p-7 rounded-full text-white hover:text-green-600 text-3xl">
+              <FaPlay />
+            </div>
           </div>
           <div>
             <div className="flex items-center gap-3 text-white font-bold text-sm tracking-wider">
@@ -47,72 +57,54 @@ function Home() {
       </div>
 
       {/* Right Dark Panel */}
-      <div className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2 gap-6 sm:gap-8 lg:flex lg:items-center lg:justify-between">
-
-        {/* Block 1 */}
-        <div className="flex items-center">
-          <div className="text-white text-4xl mr-3">
-          <ImUsers />
+      <div
+        ref={ref}
+        className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2 gap-6 sm:gap-8 lg:flex lg:items-center lg:justify-between">
+        {[
+          { icon: <ImUsers />, count: 950, label: "Happy Client" },
+          { icon: <FaTrophy />, count: 45, label: "Award Winner" },
+          { icon: <MdMapsHomeWork />, count: 400, label: "Completed Project" },
+          { icon: <FaUsers />, count: 100, label: "Team Member" },
+        ].map((item, i) => (
+          <div key={i} className="flex items-center">
+            <div className="text-white text-4xl mr-3">{item.icon}</div>
+            <div>
+              <div className="text-4xl font-bold text-white">
+                {inView && <CountUp end={item.count} duration={2} />}+
+              </div>
+              <div className="text-1x text-white/80 font-semibold">{item.label}</div>
+            </div>
           </div>
-          <div>
-            <div className="text-4xl font-bold text-white">950+</div>
-            <div className="text-1x; text-white/80 font-semibold">Happy Client</div>
-          </div>
-        </div>
-
-        {/* Block 2 */}
-        <div className="flex items-center">
-          <div className="text-white text-4xl mr-3">
-            <FaTrophy />
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-white">45+</div>
-            <div className="text-1x; text-white/80 font-semibold">Award Winner</div>
-          </div>
-        </div>
-
-        {/* Block 3 */}
-        <div className="flex items-center">
-          <div className="text-white text-4xl mr-3">
-            <MdMapsHomeWork />
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-white">400+</div>
-            <div className="text-1x; text-white/80 font-semibold">Completed Project</div>
-          </div>
-        </div>
-
-        {/* Block 4 */}
-        <div className="flex items-center">
-          <div className="text-white text-4xl mr-3">
-            <FaUsers />
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-white">100+</div>
-            <div className="text-1x; text-white/80 font-semibold">Team Member</div>
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+      </div>  
+
+    
 
     {/* section 3 */}
-    <div className="bg-white py-12 px-4 md:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center">
+    <div className="bg-white py-12 
+                       lg:m-1 px-4 md:px-16 xl:px-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 items-center">
+
         {/* Left Side Images */}
-        <div className="relative w-full">
-          <img src={cleaningsofa} alt="Cleaning" className="rounded-lg border-4 h-[650px] object-cover lg:w-[510px] border-green-600" />
-          <div className="absolute bottom-[-40px] right-[0px] bg-white border-4 hidden border-green-600 rounded-lg shadow-lg p-2 w-[420px] h-[560px] lg:flex items-center justify-center">
-            <img src={swimingpool_cleaning} alt="Worker" className="rounded-lg h-full w-[full] object-cover" />
+        <div className="relative h-full flex flex-row gap-5 items-start w-full">
+          <img src={cleaningsofa} alt="Cleaning" className="h-[530px] object-cover w-[100%] max-w-[450px] border-transparent" />
+
+          <div className='bg-[#109c3d] w-30 mt-8 h-2' />
+
+          <div className="absolute bottom-[-8px] right-[0px] hidden lg:flex items-center justify-center shadow-lg w-[322px] h-[530px] border-15 border-green-600">
+            <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
           </div>
-          <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
+
+          <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 border-4 border-dashed bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
             <GiBroom />
           </div>
         </div>
 
         {/* Right Side Content */}
-        <div className='gap-10'>
-          <p className="text-green-600 font-semibold mb-2">— ABOUT CLEANING</p>
-          <h2 className="text-6xl text-[#063a41] font-bold mb-4">
+        <div className='gap-3 flex flex-col'>
+          <p className="text-green-600 font-semibold text-lg ">——— ABOUT CLEANING</p>
+          <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6">
             Our Cleaning <span className="text-green-600">Agency</span><br /> For Your City
           </h2>
           <p className="text-gray-500 font-bold mb-6">
@@ -120,7 +112,7 @@ function Home() {
           </p>
 
           {/* Services */}
-          <div className="grid grid-cols-2 gap-8 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
             <div>
               <GiVacuumCleaner className="text-green-600 text-6xl mb-2" />
               <h4 className="font-bold text-lg">House Cleaning</h4>
@@ -134,16 +126,21 @@ function Home() {
           </div>
 
           {/* CTA and Author */}
-          <div className="flex items-center  flex-wrap gap-4">
-            <button className="bg-green-600 hover:bg-[#062F33] text-white py-3 px-5 rounded-full font-semibold object-cover justify-between flex items-center gap-10">
-              Read More <div className="bg-black hover:bg-green-600 text-2xl p-2 px-3 flex  rounded-full">&rarr;</div>
+          <div className="flex items-center flex-wrap gap-4">
+            <button className="bg-green-600 hover:bg-[#062F33] text-white py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
+              Read More
+              <div className="bg-black hover:bg-green-600 text-4xl h-12 w-12 flex justify-center items-center rounded-full">
+                <GoArrowRight />
+              </div>
             </button>
+
             <div className="flex items-center gap-3">
-              <img src={profile} alt="D. markwin"
-                className="w-16 h-16 rounded-full border-2 border-dashed border-green-500 object-cover"/>
+              <div className='border-2 border-dashed p-1 border-green-500 object-cover rounded-full '>
+                <img src={profile} alt="D. markwin" className="w-20 h-20 rounded-full"/></div>
+
               <div>
-                <h5 className="font-bold">D.justy </h5>
-                <p className="text-green-600 text-sm">Co-founder</p>
+                <h5 className="font-bold text-2xl">D.justy</h5>
+                <p className="text-green-600 text-xl">Co-founder</p>
               </div>
             </div>
           </div>
@@ -151,12 +148,19 @@ function Home() {
           {/* Footer Tag */}
           <div className="flex items-center gap-2 mt-6 text-green-600 font-semibold">
             <FaMapLocationDot className="text-xl" />
-            <span>Give Your Home A Deep Clean for aesthetic.</span>
+            <span className='font-bold text-2xl'>Give Your Home A Deep Clean for aesthetic.</span>
           </div>
         </div>
       </div>
     </div>
-      <div className='bg-white h-100 w-100'></div>
+
+    {/* section 4 */}
+    <Section4/>
+
+    {/* section 5 */}
+    <div className='bg-white h-100 text-black text-6xl font-bold w-full flex items-center justify-center '>
+    Other Section
+    </div>
     </main>
     <Footer />
     </div>

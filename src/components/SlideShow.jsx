@@ -10,12 +10,12 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 4000); // Change slide every 3 seconds
+    }, 4000); 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[1000px] overflow-hidden">
       {images.map((img, i) => (
         <img
           key={i}
