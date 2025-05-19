@@ -4,6 +4,10 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { IoBedSharp } from "react-icons/io5";
 import { BiSolidBuildingHouse } from "react-icons/bi";
+import { FaBath,FaKitchenSet } from "react-icons/fa6";
+import { ImOffice } from "react-icons/im";
+import { MdOutlineWindow } from "react-icons/md";
+import { GiFloorPolisher,GiVacuumCleaner   } from "react-icons/gi";
 
 import "./Section4.scss";
 
@@ -20,12 +24,12 @@ import img8 from "../assets/instagram/3.jpg";
 const cardData = [
   { title: "BED & MATTRES", image: img1, icon: <IoBedSharp /> },
   { title: "HOUSE CLEAN", image: img2, icon: <BiSolidBuildingHouse /> },
-  { title: "HOME SERVICE", image: img3, icon: <GiBroom /> },
-  { title: "KITCHEN CLEAN", image: img4, icon: <GiBroom /> },
-  { title: "BATHROOM CLEAN", image: img5, icon: <GiBroom /> },
-  { title: "FLOOR CLEAN", image: img6, icon: <GiBroom /> },
-  { title: "WINDOW CLEAN", image: img7, icon: <GiBroom /> },
-  { title: "OFFICE CLEAN", image: img8, icon: <GiBroom /> },
+  { title: "HOME SERVICE", image: img3, icon: <GiVacuumCleaner /> },
+  { title: "KITCHEN CLEAN", image: img4, icon: <FaKitchenSet /> },
+  { title: "BATHROOM CLEAN", image: img5, icon: <FaBath /> },
+  { title: "FLOOR CLEAN", image: img6, icon: <GiFloorPolisher /> },
+  { title: "WINDOW CLEAN", image: img7, icon: <MdOutlineWindow /> },
+  { title: "OFFICE CLEAN", image: img8, icon: <ImOffice /> },
 ];
 
 const Section4 = () => {
@@ -78,7 +82,7 @@ const Section4 = () => {
                   alt={card.title}
                   className="w-full h-65 object-cover transition-transform duration-500 ease-in-out hover:scale-110"/>
               </div>
-              <div className="px-11 py-6 flex flex-col  items-start">
+              <div className="px-15 py-6 flex flex-col  items-start">
                 <div className="flex flex-row items-end w-full justify-between">
                   <div>
                     <div className="text-[#109c3d] font-bold text-xl">
