@@ -93,7 +93,7 @@ import img8 from "../assets/instagram/3.jpg";
               <div className="text-[#109c3d] font-bold text-xl">
                 CLEANING 0{index + 1}
               </div>
-              <h3 className="font-bold text-3xl text-[#063A41] line-clamp-1 mt-1">
+              <h3 className="font-bold text-3xl text-[#063A41] hover:text-green-600 line-clamp-1 mt-1">
                 {card.title}
               </h3>
             </div>

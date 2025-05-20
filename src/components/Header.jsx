@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <header>
-      {/* Topbar */}
+      {/* Topbar */}  
       <div className="bg-[#05444d] text-white  font-thi text-base">
-        <div className="mx-auto px-15 py-1 flex lg:justify-between justify-center  items-center flex-wrap">
+        <div className="mx-auto xl:px-30 px-15 py-3 flex lg:justify-between justify-center  items-center flex-wrap">
           {/* Hide on small screens */}
           <div className="hidden lg:flex items-center space-x-6 text-md">
             <div className="flex  items-center font-bold  space-x-2">
@@ -49,17 +49,26 @@ const Header = () => {
       </div>  
 
       {/* Main Navbar */}
-      <div className="bg-white shadow-md relative z-20">
-        <div className=" mx-auto flex justify-between items-center px-5 py-5.5">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="Logo" className="h-14 w-auto" />
-            <h1 className="text-green-700 text-3xl font-bold">Poolito</h1>
-          </div>
+      <div className="bg-white shadow-md flex flex-row  justify-between gap-[6rem] relative z-20">
+      {/* logo */}
+      <div className="relative w-[24%] bg-[#109c3d] ">
+        {/* Background Layer */}
+        <div className="absolute top-0 left-2 h-full w-full bg-[#54ce7b] transform  skew-x-35 rounded-tr-lg z-0" />
 
+        {/* Foreground Layer */}
+        <div className="relative  bg-[#109c3d] h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 rounded-tr-lg">
+          {/* Unskewed content inside */}
+          <div className="flex items-center gap-2 skew-x-[-25deg]">
+            <img src="/your-icon.svg" alt="icon" className="w-6 h-6" />
+            <span className="text-xl font-bold">Poolito</span>
+          </div>
+        </div>
+      </div>
+      {/* header */}
+      <div className="flex justify-between items-center md:gpa-2  px-5 py-8 xl:pr-30 ">
          <div className='hidden lg:flex flex-row gap-4 justify-center items-center'>
            {/* Desktop Nav */}
-           <nav className="flex gap-3 items-center space-x-8 text-[17px] font-bold text-[#04363d]">
+           <nav className="flex gap-3 items-center space-x-8 md:space-x-1 text-[17px] font-bold text-[#04363d]">
             <a href="/" className="text-green-600 font-bold">HOME</a>
             <a href="*">ABOUT US</a>
             <a href="*">SERVICE</a>
@@ -90,7 +99,7 @@ const Header = () => {
               <FaBars className='' />
             </button>
           </div>
-        </div>
+      </div>
 
         {/* Mobile Slide-in Menu */}
         <div className={`fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white shadow-xl z-50 transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
