@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import cleaningsofa from '../assets/images/cleaningsofa.png';
@@ -10,9 +10,6 @@ const Slideshow = () => {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     renderMode: 'performance',
-    slideChanged(s) {
-      // Auto slides handled in useEffect
-    },
   });
 
   const timeout = useRef();
@@ -25,21 +22,25 @@ const Slideshow = () => {
   }, [slider]);
 
   return (
-    <div className="relative w-full h-[960px] overflow-hidden">
+    <div className="w-full h-[820px] bg-[#042d33] flex overflow-hidden">
       {/* Left Skewed Overlay */}
-      <div className="absolute top-0 left-0 w-1/2 h-full bg-[#042d33] -skew-x-[25deg] z-10"></div>
+      <div className="w-1/2 h-full relative">
+        <div className="absolute top-0 left-50 w-full h-full bg-[#042d33] -skew-x-[14deg] origin-left z-10" />
+      </div>
 
-      {/* Slideshow */}
-      <div ref={sliderRef} className="keen-slider h-full">
-        {images.map((img, i) => (
-          <div key={i} className="keen-slider__slide relative">
-            <img
-              src={img}
-              alt={`Slide ${i}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      {/* Right Slideshow */}
+      <div className="w-1/2 h-full relative">
+        <div ref={sliderRef} className="keen-slider h-full w-full">
+          {images.map((img, i) => (
+            <div key={i} className="keen-slider__slide relative">
+              <img
+                src={img}
+                alt={`Slide ${i}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
