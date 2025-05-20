@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import {FaFacebookF,FaLinkedinIn,FaInstagram,FaPhoneAlt, FaEnvelope,FaClock,FaBars,FaTimes,FaChevronRight,FaPlus, FaSearch}
 
 from 'react-icons/fa';
-import logo from '../assets/images/logo.png';
+import { RxHamburgerMenu } from "react-icons/rx";
+import logo from '../assets/images/broom.png';
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,23 +16,23 @@ const Header = () => {
         <div className="mx-auto xl:px-30 px-15 py-3 flex lg:justify-between justify-center  items-center flex-wrap">
           {/* Hide on small screens */}
           <div className="hidden lg:flex items-center space-x-6 text-md">
-            <div className="flex  items-center font-bold  space-x-2">
+            <div className="flex  items-center font-bold text-xl space-x-2">
               <FaEnvelope className='text-green-600' /> 
               <span>info@example.com</span>
             </div>
             {/* line design */}
             <div className="hidden sm:flex items-center gap-[1.5px]">
             <span ></span>
-            <span className="w-[2.5px] h-5 bg-white/30"></span>
-            <span className="w-[1.5px] h-3 pr-[-1px] bg-white/30"></span>
+            <span className="w-[3.5px] h-5 bg-white/30"></span>
+            <span className="w-[2.5px] h-3 pr-[-1px] bg-white/30"></span>
             </div>
-            <div className="flex font-bold text-2x items-center space-x-4">
+            <div className="flex font-bold text-xl items-center space-x-4">
               <FaClock className='text-green-600' />
               <span>Tuesday – Saturday 8:00 Am – 5:00 Pm</span>
             </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3 py-2 text-white text-md font-semibold">
+            <div className="flex items-center justify-center gap-3 py-2 text-white text-xl font-semibold">
             
             <span className='font-bold'>Follow Us On :</span>
 
@@ -51,15 +53,15 @@ const Header = () => {
       {/* Main Navbar */}
       <div className="bg-white shadow-md flex flex-row  justify-between gap-[6rem] relative z-20">
       {/* logo */}
-      <div className="relative w-[24%] bg-[#109c3d] ">
+      <div className="relative w-[35%] xl:w-[26%] rounded-tr-[1000px] bg-[#109c3d] ">
         {/* Background Layer */}
-        <div className="absolute top-0 left-2 h-full w-full bg-[#54ce7b] transform  skew-x-35 rounded-tr-lg z-0" />
+        <div className="absolute top-0 left-3 h-full w-full bg-[#54ce7b] transform  skew-x-32  z-0" />
 
         {/* Foreground Layer */}
-        <div className="relative  bg-[#109c3d] h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 rounded-tr-lg">
+        <div className="relative  bg-[#109c3d]  h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 ">
           {/* Unskewed content inside */}
           <div className="flex items-center gap-2 skew-x-[-25deg]">
-            <img src="/your-icon.svg" alt="icon" className="w-6 h-6" />
+            <img src={logo} alt="icon" className="w-20 h-20 " />
             <span className="text-xl font-bold">Poolito</span>
           </div>
         </div>
@@ -96,7 +98,7 @@ const Header = () => {
           {/* Hamburger Icon */}
           <div className="lg:hidden text-cyan-50">
             <button onClick={() => setMenuOpen(true)} className="text-5xl bg-[#109c3d] text-[#fff]">
-              <FaBars className='' />
+              <RxHamburgerMenu className='' />
             </button>
           </div>
       </div>

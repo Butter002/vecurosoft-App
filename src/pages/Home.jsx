@@ -82,8 +82,7 @@ function Home() {
     
 
     {/* section 3 */}
-    <div className="bg-white py-12 
-                       lg:m-1 px-4 md:px-16 xl:px-40">
+    <div className="bg-white py-12 lg:m-1 px-4 md:px-16 xl:px-40">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 items-center">
 
         {/* Left Side Images */}
