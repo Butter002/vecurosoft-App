@@ -13,9 +13,9 @@ const Header = () => {
     <header>
       {/* Topbar */}  
       <div className="bg-[#05444d] text-white  font-thi text-base">
-        <div className="mx-auto xl:px-30 px-15 py-3 flex lg:justify-between justify-center  items-center flex-wrap">
+        <div className="mx-auto xl:px-30 px-15 py-2 flex lg:justify-between justify-center  items-center flex-wrap">
           {/* Hide on small screens */}
-          <div className="hidden lg:flex items-center space-x-6 text-md">
+          <div className="hidden lg:flex items-center  space-x-6 text-md">
             <div className="flex  items-center font-bold text-xl space-x-2">
               <FaEnvelope className='text-green-600' /> 
               <span>info@example.com</span>

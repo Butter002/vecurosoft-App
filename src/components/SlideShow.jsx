@@ -3,6 +3,7 @@ import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
+import map from '../assets/images/mapimage.png'
 
 const images = [cleaningsofa, swimingpool_cleaning];
 
@@ -25,7 +26,9 @@ const Slideshow = () => {
     <div className="w-full h-[820px] bg-[#042d33] flex overflow-hidden">
       {/* Left Skewed Overlay */}
       <div className="w-1/2 h-full relative">
-        <div className="absolute top-0 left-50 w-full h-full bg-[#042d33] -skew-x-[14deg] origin-left z-10" />
+        <div className='flex '></div>
+        <div className='absolute top-0 left-0 z-20'><img src={map} alt="" /></div>
+        <div className="absolute top-0 left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10" />
       </div>
 
       {/* Right Slideshow */}
