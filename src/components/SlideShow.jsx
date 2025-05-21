@@ -24,7 +24,7 @@ const Slideshow = () => {
   }, [slider]);
 
   return (
-    <div className="w-full h-[820px] bg-[#042d33] flex overflow-hidden">
+    <div className="w-full h-[820px] bg-[#042d33] flex flex-col lg:flex-row  overflow-hidden">
       {/* Left Skewed Overlay */}
       <div className="w-1/2 h-full relative flex justify-center items-center">
         {/* design layout */}
@@ -47,7 +47,7 @@ const Slideshow = () => {
       </div>
 
       {/* Right Slideshow */}
-      <div className="w-1/2 h-full relative">
+      <div className="w-full object-fill lg:w-1/2  h-full relative">
         <div ref={sliderRef} className="keen-slider h-full w-full">
           {images.map((img, i) => (
             <div key={i} className="keen-slider__slide relative">

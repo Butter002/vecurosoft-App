@@ -51,7 +51,7 @@ const Header = () => {
       </div>  
 
       {/* Main Navbar */}
-      <div className="bg-white shadow-md flex flex-row  justify-between gap-[6rem] relative z-20">
+      <div className="bg-white z-100 shadow-md flex flex-row  justify-between gap-[6rem] relative ">
       {/* logo */}
       <div className="relative w-[35%] xl:w-[26%] rounded-tr-[1000px] bg-[#109c3d] ">
         {/* Background Layer */}
