@@ -33,29 +33,39 @@ import img8 from "../assets/instagram/3.jpg";
   ];
 
     const Section4 = () => {
-      const timerRef = useRef(null);
+      
+    const timerRef = useRef(null);
 
-      const [sliderRef, instanceRef] = useKeenSlider({
-        loop: true,
-        mode: "free",
-        slides: {
-          perView: 4,
-          spacing: 15,
-        },
-      });
+  const [sliderRef, instanceRef] = useKeenSlider({
+  loop: true,
+  mode: "free",
+  slides: {
+    perView: 4,
+    spacing: 15,
+  },
+  breakpoints: {
+    "(max-width: 768px)": {
+      slides: {
+        perView: 1,
+        spacing: 10,
+      },
+    },
+  },
+});
 
-      useEffect(() => {
-        const slider = instanceRef.current;
-        if (!slider) return;
+useEffect(() => {
+  const slider = instanceRef.current;
+  if (!slider) return;
 
-        // Autoplay every 3 seconds
-        timerRef.current = setInterval(() => {
-          slider.next();
-        }, 3000);
+  // Autoplay every 3 seconds
+  timerRef.current = setInterval(() => {
+    slider.next();
+  }, 3000);
 
-        // Clear timer on unmount
-        return () => clearInterval(timerRef.current);
-      }, [instanceRef]);
+  // Clear timer on unmount
+  return () => clearInterval(timerRef.current);
+  }, [instanceRef]);
+
 
         return (
           <div className=" py-12 px-4 md:px-16 section4">
@@ -94,7 +104,7 @@ import img8 from "../assets/instagram/3.jpg";
                 CLEANING 0{index + 1}
               </div>
               <h3 className="font-bold text-3xl text-[#063A41] hover:text-green-600 line-clamp-1 mt-1">
-                {card.title}
+                {card.title}            
               </h3>
             </div>
             <div className="text-4xl bg-grey">{card.icon}</div>
