@@ -17,6 +17,7 @@ import { GoArrowRight } from "react-icons/go";
 
 import Footer from '../components/Footer';
 import Section4 from '../components/Section4';
+import ClientSection from '../components/ClientSection';
 
 function Home() {
 
@@ -156,7 +157,9 @@ function Home() {
     {/* section 4 */}
     <Section4/>
 
-    {/* section 5 */}
+    {/* sectiom 5 */}
+    <ClientSection/>
+    {/* section 6*/}
     <div className='bg-white h-100 text-black text-6xl font-bold w-full flex items-center justify-center '>
     Other Section
     </div>
