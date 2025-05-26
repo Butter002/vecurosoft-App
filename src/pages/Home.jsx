@@ -1,7 +1,10 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import Section1 from '../components/SlideShow'
+import Footer from '../components/Footer';
+
+
+import Section1 from '../HomeSetion/SlideShow'
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import section2image from '../assets/images/section2image.png';
 import profile from '../assets/images/Co-founder.png'
@@ -15,10 +18,9 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { GiBroom,GiVacuumCleaner } from "react-icons/gi";
 import { GoArrowRight } from "react-icons/go";
 
-import Footer from '../components/Footer';
-import Section4 from '../components/Section4';
-import ClientSection from '../components/ClientSection';
-import TeamArea from '../components/TeamArea';
+import Section4 from '../HomeSetion/Section4';
+import ClientSection from '../HomeSetion/ClientSection';
+import TeamArea from '../HomeSetion/TeamArea';
 
 function Home() {
 

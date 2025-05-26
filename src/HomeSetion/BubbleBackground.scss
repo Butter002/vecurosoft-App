@@ -1,0 +1,115 @@
+body {
+  background: #042D33;
+  color: #333;
+  font: 100% Lato, Arial, Sans Serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#background-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* ========== Mixins ========== */
+@mixin bubbleAnimation($duration, $sidewaysDuration) {
+  animation: animateBubble #{$duration} linear infinite, sideWays #{$sidewaysDuration} ease-in-out infinite alternate;
+}
+
+@mixin bubbleScale($scale) {
+  transform: scale($scale);
+}
+
+/* ========== Animations ========== */
+@keyframes animateBubble {
+  0% { margin-top: 1000px; }
+  100% { margin-top: -100%; }
+}
+
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
+
+/* ========== Bubble Classes ========== */
+@for $i from 1 through 10 {
+  .x#{$i} {
+    @if $i == 1 {
+      @include bubbleAnimation(25s, 2s);
+      left: -5%;
+      top: 5%;
+      @include bubbleScale(0.6);
+    } @else if $i == 2 {
+      @include bubbleAnimation(20s, 4s);
+      left: 5%;
+      top: 80%;
+      @include bubbleScale(0.4);
+    } @else if $i == 3 {
+      @include bubbleAnimation(28s, 2s);
+      left: 10%;
+      top: 40%;
+      @include bubbleScale(0.7);
+    } @else if $i == 4 {
+      @include bubbleAnimation(22s, 3s);
+      left: 20%;
+      top: 0;
+      @include bubbleScale(0.3);
+    } @else if $i == 5 {
+      @include bubbleAnimation(29s, 4s);
+      left: 30%;
+      top: 50%;
+      @include bubbleScale(0.5);
+    } @else if $i == 6 {
+      @include bubbleAnimation(21s, 2s);
+      left: 50%;
+      top: 0;
+      @include bubbleScale(0.8);
+    } @else if $i == 7 {
+      @include bubbleAnimation(20s, 2s);
+      left: 65%;
+      top: 70%;
+      @include bubbleScale(0.4);
+    } @else if $i == 8 {
+      @include bubbleAnimation(22s, 3s);
+      left: 80%;
+      top: 10%;
+      @include bubbleScale(0.3);
+    } @else if $i == 9 {
+      @include bubbleAnimation(29s, 4s);
+      left: 90%;
+      top: 50%;
+      @include bubbleScale(0.6);
+    } @else if $i == 10 {
+      @include bubbleAnimation(26s, 2s);
+      left: 80%;
+      top: 80%;
+      @include bubbleScale(0.3);
+    }
+  }
+}
+
+/* ========== Bubble Styles ========== */
+.bubble {
+  border-radius: 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0 10px 30px 5px rgba(255, 255, 255, 1);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+}
