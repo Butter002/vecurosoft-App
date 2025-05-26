@@ -97,8 +97,8 @@ useEffect(() => {
         </div>
 
         {/* Card Content */}
-        <div className="px-10 py-6 flex flex-col gap-3 items-start">
-          <div className="flex flex-row items-end w-full justify-between">
+        <div className="px-10 py-9  flex flex-col gap-5 items-start">
+          <div className="flex flex-row   border-b border-dashed pb-5  items-end w-full justify-between">
             <div>
               <div className="text-[#109c3d] font-bold text-xl">
                 CLEANING 0{index + 1}
@@ -109,9 +109,7 @@ useEffect(() => {
             </div>
             <div className="text-4xl bg-grey">{card.icon}</div>
           </div>
-          <div className="text-gray-600 text-xl my-2">
-            ------------------------------
-          </div>
+        
           <p className="text-gray-500 text-xl">
             Aweeps & mopsd vacuum floor House Cleaners.
           </p>

@@ -34,9 +34,9 @@ const Slideshow = () => {
         {/* text section */}
         <div className='flex flex-col md:items-start z-30 '>
         <div className='text-green-600 font-bold text-xl inline-100'>100% Satisfaction</div>
-        <div className='lg:text-8xl font-bold text-5xl text-white'>CLEANING 
-        <br />SERVICES <a className='text-green-700'> FOR</a> 
-        <br />YOUR CITY</div> dfigj
+        <div className='lg:text-8xl font-bold text-5xl text-white'>CLEANING
+        <br />SERVICES <a className='text-green-700'> FOR</a>
+        <br />YOUR CITY</div>
         <div className='w-full h-11'/>
         <div><button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white hover:text-[#042D33] py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
         GET PRICING
