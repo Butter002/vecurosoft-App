@@ -10,6 +10,7 @@ import { FaPlay } from "react-icons/fa";
 const Section4 = () => {
   return (
     <div className="relative gap-100 bg-[#052429] text-white mt-40 mb-10 py-18 px-9 md:h-234 md:px-68">
+      
       <div className='absolute top-15  left-0 z-20'><img src={map} alt="" /></div>
       {/* Video Area */}
       <div className="relative z-50 -mt-[160px] bg-center bg-cover  pd-100  overflow-hidden h-[300px] md:h-[400px] lg:h-[440px]"
@@ -39,35 +40,35 @@ const Section4 = () => {
         {/* Left Side Text */}
         <div>
           <div className='flex flex-row items-center gap-2'> <div className='h-0.5 w-10 bg-green-800' /><p className="text-green-800 text-lg font-bold">ABOUT CLEANING</p> </div>
-          <h3 className="text-4xl font-extrabold mt-2 leading-tight">
+          <h3 className="text-6xl font-extrabold mt-2 leading-tight">
             Excellent <span className="text-green-600">Service</span> <br/>cleaning 
           </h3>
           <div className="mt-4 flex items-center gap-2">
             <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="user1" className="w-10 h-10 rounded-full border-2 border-white" />
             <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="user2" className="w-10 h-10 rounded-full border-2 border-white -ml-3" />
-            <div className="text-white text-xl font-bold"><p className=' text-green-400 text-lg font-bold'>57+</p>  Members</div>
+            <div className="text-white text-xl font-bold"><p className='text-green-400 text-lg font-bold'>57+</p>  Members</div>
           </div>
         </div>
 
         {/* Brand Logos */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            Walmart <GiAbstract029 />
+            Walmart <div><GiAbstract029 /></div>
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            inVision <CiLinkedin /> 
+            inVision <div> <CiLinkedin /></div> 
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            <SiNorwegian />Logitech
+            <div><SiNorwegian /></div>Logitech
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            Yahoo❗
+            Yahoo
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            Monday <FiSlack />
+            Monday <div><FiSlack /></div>
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-17 px-3.5 gap-3  flex items-center justify-center h-20 text-white font-bold text-4xl text-center">
-            Walmart <GiAbstract029 />
+            Walmart <div><GiAbstract029 /></div>
           </div>
         </div>
 
