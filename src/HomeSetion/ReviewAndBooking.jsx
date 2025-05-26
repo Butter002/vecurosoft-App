@@ -35,21 +35,21 @@ const ReviewAndBooking = () => {
    <section className="relative bg-[#052429] lg:py-30 bg-no-repeat bg-left bg-[length:25%_100%] py-16" style={{ backgroundImage: `url(${officeCleaningImg})` }}>
 
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col md:flex-row gap-0 items-start">
           {/* Booking Form */}
          {/* Left Booking Form */}
-        <div className="w-full lg:w-5/12 bg-green-600 bg-opacity-90 backdrop-blur-md p-12 rounded-2xl shadow-xl">
+        <div className="w-full lg:w-5/12 bg-green-600 bg-opacity-90  p-16 ">
           <span className="text-sm text-white font-semibold uppercase">Cleaning Service</span>
           <h2 className="text-3xl font-bold text-white mt-2 mb-6">Book Your Cleaning?</h2>
           <form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input type="text" name="fname" placeholder="Your Name *" required className="w-full border border-gray-300  bg-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+              <input type="text" name="fname" placeholder="Your Name *" required className="w-full border border-gray-300  bg-white px-4 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
 
-              <input type="email" name="email" placeholder="Email *" required className="w-full border border-gray-300 bg-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+              <input type="email" name="email" placeholder="Email *" required className="w-full border border-gray-300 bg-white px-4 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
 
-              <input type="number" name="number" placeholder="Phone *" required className="w-full border border-gray-300 bg-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+              <input type="number" name="number" placeholder="Phone *" required className="w-full border border-gray-300 bg-white px-4 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
 
-              <select name="subject" defaultValue="" required className="w-full border border-gray-300 px-4 py-2 rounded-md bg-white text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500">
+              <select name="subject" defaultValue="" required className="w-full border border-gray-300 px-4 py-4 rounded-md bg-white text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500">
 
                 <option value="" disabled hidden>Type of service</option>
                 <option>Deep Cleaning</option>
@@ -81,13 +81,13 @@ const ReviewAndBooking = () => {
             </div>
 
             {/* Testimonial Card */}
-            <div className="relative bg-[#0b3c43] p-6 rounded-lg backdrop-blur-md border border-white/20 animate-fadeInUp">
+            <div className="relative bg-[#0b3c43] p-6 rounded-lg backdrop-blur-md px-12 border border-white/20 animate-fadeInUp">
               <span className="text-3xl text-green-400 mb-4 block">“</span>
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={testimonial.image}
                   alt="Profile"
-                  className="w-14 h-14 object-cover rounded-full border-2 border-green-500"
+                  className="w-14 h-14 object-cover rounded-full border-dashed border-2 border-green-500"
                 />
                 <div>
                   <div className="flex items-center text-yellow-400">
