@@ -1,14 +1,4 @@
 import React from 'react';
-
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
-
-import Section1 from '../HomeSetion/SlideShow'
-import cleaningsofa from '../assets/images/cleaningsofa.png';
-import section2image from '../assets/images/section2image.png';
-import profile from '../assets/images/Co-founder.png'
-
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { FaPlay, FaSmile, FaTrophy, FaUsers,FaTasks} from 'react-icons/fa';
@@ -18,9 +8,18 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { GiBroom,GiVacuumCleaner } from "react-icons/gi";
 import { GoArrowRight } from "react-icons/go";
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Section4 from '../HomeSetion/Section4';
+import Section1 from '../HomeSetion/SlideShow'
 import ClientSection from '../HomeSetion/ClientSection';
 import TeamArea from '../HomeSetion/TeamArea';
+import ReviewAndBooking from '../HomeSetion/ReviewAndBooking';
+
+import cleaningsofa from '../assets/images/cleaningsofa.png';
+import section2image from '../assets/images/section2image.png';
+import profile from '../assets/images/Co-founder.png'
+
 
 function Home() {
 
@@ -166,8 +165,8 @@ function Home() {
     {/* section 6*/}
     <TeamArea />
 
-    {/* secr=tion 7 */}
-    
+    {/* section 7 */}
+    <ReviewAndBooking/>
     </main>
     <Footer />
     </div>
