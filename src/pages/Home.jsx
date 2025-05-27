@@ -19,6 +19,7 @@ import ReviewAndBooking from '../HomeSetion/ReviewAndBooking';
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import section2image from '../assets/images/section2image.png';
 import profile from '../assets/images/Co-founder.png'
+import Blog from '../HomeSetion/BlogSection';
 
 
 function Home() {
@@ -167,6 +168,9 @@ function Home() {
 
     {/* section 7 */}
     <ReviewAndBooking/>
+
+    {/* section 8 */}
+    <Blog />
     </main>
     <Footer />
     </div>

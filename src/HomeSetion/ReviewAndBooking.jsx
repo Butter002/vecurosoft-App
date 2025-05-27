@@ -30,13 +30,16 @@
     const handleNext = () => { setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));};
 
     return (
-    <section className="relative bg-[#052429] lg:p-30 !pt-25 bg-no-repeat object-cover  overflow-clip bg-left bg-[length:25%_100%] py-16" style={{ backgroundImage: `url(${officeCleaningImg})`,objectFit:'fill' }}>
-                <div className='absolute top-15  -right-60 '><img src={map} alt="" /></div>
+    <section className="relative bg-[#052429] lg:p-30 !pt-25 bg-no-repeat object-cover  overflow-clip bg-left  py-16" >
+
+            <div className='absolute top-15  -right-60 '><img src={map} alt="" /></div>
+            <div className='absolute top-0 object-cover w-[25%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
+
             <div className="container mx-auto px-12">
             <div className="flex flex-col md:flex-row gap-0 items-start">
 
             {/* Booking Form */}
-            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 py-20 px-20 ">
+            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 px-20 ">
 
             <div className='flex flex-row gap-2 items-center'> <div className='h-1 w-10 bg-white rounded-2xl'></div><span className="text-lg text-white font-bold uppercase">Cleaning Service</span></div>
             
