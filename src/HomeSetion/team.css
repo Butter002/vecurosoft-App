@@ -1,6 +1,10 @@
 .vs-team__social--media {
     clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
 }
+
+.blog {
+    clip-path: polygon(0 0, 80%  0%, 100% 100%, 0 100%);
+}
  .Co-founder {
     background-position: left;
     background-repeat: no-repeat;

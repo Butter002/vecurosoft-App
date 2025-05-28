@@ -171,6 +171,7 @@ function Home() {
 
     {/* section 8 */}
     <Blog />
+    
     </main>
     <Footer />
     </div>
