@@ -19,6 +19,12 @@
         rating: 5,
         message: ' When you work with Los Angeles House Cleaners Refal Agen cleaning room breathe easy because your home will soon When yowork with Angeles House Cleaners Referal Agency cleaning breathe ',
     },
+    {
+        name: 'ridhi soni',
+        image: client2,
+        rating: 4.5,
+        message: ' When you work with Los Angeles House Cleaners Refal Agen cleaning room breathe easy because your home will soon When yowork with Angeles House Cleaners Referal Agency cleaning breathe ',
+    }
     ];
 
     const ReviewAndBooking = () => {
@@ -30,10 +36,10 @@
     const handleNext = () => { setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));};
 
     return (
-    <section className="relative bg-[#052429] lg:p-30 !pt-25 bg-no-repeat object-cover  overflow-clip bg-left  py-16" >
+    <section className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover  overflow-clip bg-left  py-16" >
 
-            <div className='absolute top-15  -right-60 '><img src={map} alt="" /></div>
-            <div className='absolute top-0 object-cover w-[25%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
+            <div className='absolute top-15  hidden lg:block  -right-60 '><img src={map} alt="" /></div>
+            <div className='absolute hidden lg:block top-0 object-cover w-[25%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
 
             <div className="container mx-auto px-12">
             <div className="flex flex-col md:flex-row gap-0 items-start">
@@ -71,10 +77,10 @@
 
             {/* Testimonial Section */}
             <div className="w-full lg:w-6/11  flex flex-col overflow-hidden z-10 justify-center items-center gap-5  text-white">
-                <div className="mb-6 flex flex-col gap-2.5  animate-fadeInUp">
+                <div className="mb-6 flex flex-col gap-1  animate-fadeInUp">
 
                 <div className='flex-row flex  items-center gap-3'> <div className='w-10 h-0.5 bg-white rounded-2xl '></div><span className="text-lg font-semibold uppercase text-green-600">Testimonial</span></div>
-                <h2 className="text-3xl font-bold mt-2 inline-[200]">Our Clients Are Saying</h2>
+                <h2 className="text-3xl font-extrabold mt-2 inline-[200]">Our Clients Are Saying</h2>
                 <p className="text-gray-300 mt-2 max-w-xl">When you work with Los Angeles House Cleaners Referral Agency, breathe easy because your home will soon be clean and fresh.</p>
                 </div>
 

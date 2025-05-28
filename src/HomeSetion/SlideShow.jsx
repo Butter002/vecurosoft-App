@@ -5,6 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
 import map from '../assets/images/mapimage.png'
+import BubbleBackground from './BubbleBackground'
 
 const images = [cleaningsofa, swimingpool_cleaning];
 
@@ -29,6 +30,8 @@ const Slideshow = () => {
       <div className="w-1/2 lg:3/  md:h-full h-400 relative flex pl-30  justify-center items-center">
         {/* design layout */}
         <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10" />
+        <div className='absolute top-0 left-0 z-20'><img src={map} alt="" /></div>
+        <div className=' z-100'><BubbleBackground /> </div>
 
         {/* text section */}
         <div className='flex flex-col md:items-start z-30 '>

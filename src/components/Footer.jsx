@@ -3,6 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/
 import { TbPhoneCall } from "react-icons/tb";
 import FooterLogo from '../assets/images/broom.png'
 import { FaAnglesRight } from "react-icons/fa6";
+import '../HomeSetion/team.css'
 const Footer = () => {
   return (
     <footer className="bg-[#062f33] text-white">
@@ -87,28 +88,26 @@ const Footer = () => {
 
         {/* Instagram Images */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Instagram</h3>
-          <div className="h-[2px] w-[100%] bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
-          <div className="grid grid-cols-3 gap-3">
-            {["1.jpg", "2.jpg", "7.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
-              <img
-                key={index}
-                src={`src/assets/instagram/${img}`}
-                alt={`Insta ${index}`}
-                className="rounded-md border-2 border-green-400 transition-transform duration-300 hover:scale-75"
-              />
+        <h3 className="text-xl font-bold mb-4">Instagram</h3>
+        <div className="h-[2px] w-full bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
+        <div className="grid grid-cols-3 gap-3">
+        {["1.jpg", "2.jpg", "7.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
+        <div key={index} className="overflow-hidden rounded-md border-2 border-green-400">
+              <img src={`src/assets/instagram/${img}`} alt={`Insta ${index}`} className="transition-transform duration-500 hover:scale-110"/>
+              </div>
             ))}
           </div>
         </div>
+
       </div>
 
       {/* Sub Footer Section */}
-      <div className="bg-[#063a41] flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-8 text-lg text-white">
-        <p className="mb-2 lg:mb-0">
+      <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center justify-between text-lg text-white">
+         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 md:blog md:text-md text-sm font-extrabold  uppercase">
           © Copyright 2025 - <span className="text-green-500 font-bold">Poolito</span> All rights reserved.
-          <span className="text-[#042a2f] font-bold"> Vecuro</span>
-        </p>
-        <div className="flex items-center gap-3">
+          <span className="md:text-[#042a2f] text-green-600 font-bold"> Vecuro</span>
+        </div>
+        <div className="flex items-center gap-4 md:pr-20">
           {["visa.png", "paypal.png", "mastercard.png", "amex.png", "discover.png"].map((img, i) => (
             <img key={i} src={`src/assets/cards/${img}`} alt="card" className="h-5" />
           ))}

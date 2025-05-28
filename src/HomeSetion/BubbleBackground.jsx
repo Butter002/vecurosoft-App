@@ -1,12 +1,14 @@
 import React from 'react';
-import './BubbleBackground.css';
+import './BubbleBackground.scss';
 
 const BubbleBackground = () => {
   return (
-    <div id="background-wrap">
-      {[...Array(10)].map((_, index) => (
-        <div className={`bubble x${index + 1}`} key={index}></div>
-      ))}
+    <div className="bubble-section">
+      <div id="background-wrap">
+        {[...Array(10)].map((_, index) => (
+          <div className={`bubble x${index + 1}`} key={index}></div>
+        ))}
+      </div>
     </div>
   );
 };
