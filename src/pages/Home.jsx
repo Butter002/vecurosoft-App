@@ -34,11 +34,11 @@ function Home() {
     <div className="font-sans bg-white">
     <Header />
     <main className=''>
-      {/* section 1 */}
-      <Section1 />
+    {/* section 1 */}
+    <Section1 />
 
-      {/* Section 2 */}
-      <div className="flex flex-col bg-[#109c3d] lg:flex-row">
+    {/* Section 2 */}
+    <div className="flex flex-col bg-[#109c3d] lg:flex-row">
       {/* Left Green Panel */}
       <div className="flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
         <div className="flex items-center gap-5">
@@ -80,7 +80,7 @@ function Home() {
           </div>
         ))}
       </div>
-      </div>  
+    </div>  
 
     
 
@@ -98,9 +98,9 @@ function Home() {
             <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
           </div>
 
-          <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 border-4 border-dashed bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
+          {/* <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 border-4 border-dashed bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
             <GiBroom />
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side Content */}
