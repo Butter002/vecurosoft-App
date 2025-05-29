@@ -36,16 +36,16 @@
     const handleNext = () => { setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));};
 
     return (
-    <section className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover  overflow-clip bg-left  py-16" >
+    <section className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover overflow-clip bg-left  py-16" >
 
             <div className='absolute top-15  hidden lg:block  -right-60 '><img src={map} alt="" /></div>
             <div className='absolute hidden lg:block top-0 object-cover w-[25%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
 
-            <div className="container mx-auto px-12">
-            <div className="flex flex-col md:flex-row gap-0 items-start">
+            <div className="container mx-auto px-4 md:px-12">
+            <div className="flex flex-col md:flex-row  gap-10 md:gap-0 items-start">
 
             {/* Booking Form */}
-            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 px-20 ">
+            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 md:px-20 px-5 ">
 
             <div className='flex flex-row gap-2 items-center'> <div className='h-1 w-10 bg-white rounded-2xl'></div><span className="text-lg text-white font-bold uppercase">Cleaning Service</span></div>
             
@@ -86,7 +86,7 @@
 
                 {/* Testimonial Card */}
                 <div className="relative bg-[#0b3c43] py-12 pt-15  px-15 animate-fadeInUp">
-                <span className="absolute top-15 right-15 text-5xl font-extrabold text-green-600 mb-4 block"><FaQuoteLeft /></span>
+                <span className="absolute top-15 right-15 text-4xl font-extrabold text-green-600 mb-4 block"><FaQuoteLeft /></span>
                 <div className="flex items-center gap-4 mb-4">
             <div className='border-2 border-dashed rounded-full border-green-600'> <img src={testimonial.image} alt="Profile" className="w-22 h-22 object-cover rounded-full bor"/></div>                    
                     <div>
@@ -102,7 +102,7 @@
                 </div>
                 <p className="text-gray-400 font-bold text-xl">"{testimonial.message}"</p>
                 </div>
-                 <div className='flex mt-10 mb-10 ml-52 w-full h-0.5 bg-green-600 flex-row  items-center justify-start  gap-5'> 
+                 <div className=' md:flex hidden mt-10 mb-10 ml-52 w-full h-0.5 bg-green-600 flex-row  items-center justify-start  gap-5'> 
                     {/* Navigation Buttons */}
                     <div className='ml-20 flex gap-5 pr-0 bg-[#052429] flex-row' >
                     <div className='border-2 border-dashed border-[#146673] rounded-full'> 

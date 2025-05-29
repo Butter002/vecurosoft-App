@@ -103,7 +103,7 @@ const Footer = () => {
 
       {/* Sub Footer Section */}
       <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center justify-between text-lg text-white">
-         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 md:blog md:text-md text-sm font-extrabold  uppercase">
+         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog md:text-md text-sm font-extrabold  uppercase">
           © Copyright 2025 - <span className="text-green-500 font-bold">Poolito</span> All rights reserved.
           <span className="md:text-[#042a2f] text-green-600 font-bold"> Vecuro</span>
         </div>

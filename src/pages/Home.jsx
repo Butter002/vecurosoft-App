@@ -31,14 +31,13 @@ function Home() {
 
   return (
     <>
-    <div className="font-sans">
+    <div className="font-sans bg-white">
     <Header />
     <main className=''>
       {/* section 1 */}
-        <Section1 />
+      <Section1 />
 
       {/* Section 2 */}
-   
       <div className="flex flex-col bg-[#109c3d] lg:flex-row">
       {/* Left Green Panel */}
       <div className="flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
