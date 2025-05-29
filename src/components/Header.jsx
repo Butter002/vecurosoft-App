@@ -3,7 +3,7 @@ import {FaFacebookF,FaLinkedinIn,FaInstagram,FaPhoneAlt, FaEnvelope,FaClock,FaBa
 
 from 'react-icons/fa';
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from '../assets/images/broom.png';
+import logo from '../assets/vector/logo-white.svg';
 
 
 const Header = () => {
@@ -60,9 +60,8 @@ const Header = () => {
         {/* Foreground Layer */}
         <div className="relative  bg-[#109c3d]  h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 ">
           {/* Unskewed content inside */}
-          <div className="flex items-center gap-2 skew-x-[-25deg]">
-            <img src={logo} alt="icon" className="w-20 h-20 " />
-            <span className="text-xl font-bold">Poolito</span>
+          <div className="flex items-end gap-2 skew-x-[-25deg]">
+            <img src={logo} alt="icon" className="w-90 h-30 pl-30" />
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@
             {/* Large Blog Card */}
             <div className="bg-white rounded-3xl p-5 flex gap-10  shadow-lg overflow-hidden flex-col group">
                 <div className="relative w-7/7 h-90% rounded-2xl overflow-hidden">
-                <img src={blogData[0].image} alt="Blog" className="w-full h-84 object-cover transition-transform duration-400 group-hover:scale-105"/>
+                <img src={blogData[0].image} alt="Blog" className="w-full h-100 object-cover transition-transform duration-400 group-hover:scale-105"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(16,156,61,0.3)] to-[rgba(255,255,255,0)] pointer-events-none z-1"></div>
 
                 <div className="absolute bottom-0 left-0 bg-green-600 hover:bg-[#063A41] z-10  !text-white px-8 py-2.5 blog text-lg font-bold uppercase">

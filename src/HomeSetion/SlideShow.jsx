@@ -5,6 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
 import map from '../assets/images/mapimage.png'
+import vector from '../assets/vector/Vector 2160.png'
 import BubbleBackground from './BubbleBackground'
 
 const images = [cleaningsofa, swimingpool_cleaning];
@@ -34,11 +35,12 @@ const Slideshow = () => {
         <div className=' z-100'><BubbleBackground /> </div>
 
         {/* text section */}
-        <div className='flex flex-col md:items-start z-30 '>
+        <div className='relative flex flex-col pl-5 lg:pt-10 lg:pl-10 md:items-start z-30 '>
+        <div className='absolute top-0 left-0'><img src={vector} alt="" /></div>  
         <div className='text-green-600 font-bold text-xl inline-100'>100% Satisfaction</div>
-        <div className='lg:text-8xl font-bold text-5xl text-white'>CLEANING
-        <br />SERVICES <a className='text-green-700'> FOR</a>
-        <br />YOUR CITY</div>
+        <div className='lg:text-8xl font-bold text-3xl text-white'>CLEANING
+        SERVICES <a className='text-green-700'> FOR</a><br />
+        YOUR CITY</div>
         <div className='w-full h-11'/>
         <div><button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white hover:text-[#042D33] py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
         GET PRICING

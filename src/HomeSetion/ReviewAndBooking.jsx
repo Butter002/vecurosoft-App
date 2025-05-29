@@ -39,7 +39,7 @@
     <section className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover overflow-clip bg-left  py-16" >
 
             <div className='absolute top-15  hidden lg:block  -right-60 '><img src={map} alt="" /></div>
-            <div className='absolute hidden lg:block top-0 object-cover w-[25%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
+            <div className='absolute hidden lg:block top-0 object-cover w-[30%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
 
             <div className="container mx-auto px-4 md:px-12">
             <div className="flex flex-col md:flex-row  gap-10 md:gap-0 items-start">

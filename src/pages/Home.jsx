@@ -20,6 +20,7 @@ import cleaningsofa from '../assets/images/cleaningsofa.png';
 import section2image from '../assets/images/section2image.png';
 import profile from '../assets/images/Co-founder.png'
 import Blog from '../HomeSetion/BlogSection';
+import vector1 from '../assets/vector/Vector 1.png'
 
 
 function Home() {
@@ -86,18 +87,20 @@ function Home() {
 
     {/* section 3 */}
     <div className="bg-white py-12 lg:m-1 px-4 md:px-16 xl:px-40">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20 items-center">
 
         {/* Left Side Images */}
-        <div className="relative h-full flex flex-row gap-5 items-start w-full">
-          <img src={cleaningsofa} alt="Cleaning" className="h-[530px] object-cover w-[100%] max-w-[450px] border-transparent" />
+        <div className="relative h-full flex flex-row pl-6 pt-6 gap-5 items-start w-full">
+          <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-[100%] max-w-[450px] border-transparent" />
 
-          <div className='bg-[#109c3d] w-30 mt-8 h-2' />
+          <div className='bg-[#109c3d] w-full mt-8 h-2' />
 
-          <div className="absolute bottom-[-8px] right-[0px] hidden lg:flex items-center justify-center shadow-lg w-[322px] h-[530px] border-15 border-green-600">
+          <div className='absolute -left-0 top-6'><img src={vector1} alt="" /></div>
+          <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
             <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
           </div>
-
+           
+          {/* brush  */}
           {/* <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 border-4 border-dashed bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
             <GiBroom />
           </div> */}
@@ -129,9 +132,9 @@ function Home() {
 
           {/* CTA and Author */}
           <div className="flex items-center flex-wrap gap-4">
-            <button className="bg-green-600 hover:bg-[#062F33] text-white py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
+            <button className="bg-green-600 hover:bg-[#062F33] text-white py-1 px-2 rounded-full text-lg font-semibold flex items-center gap-6">
               Read More
-              <div className="bg-black hover:bg-green-600 text-4xl h-12 w-12 flex justify-center items-center rounded-full">
+              <div className="bg-black hover:bg-green-600 text-3xl h-10 w-10 flex justify-center items-center rounded-full">
                 <GoArrowRight />
               </div>
             </button>

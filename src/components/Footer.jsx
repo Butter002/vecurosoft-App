@@ -1,20 +1,20 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { TbPhoneCall } from "react-icons/tb";
-import FooterLogo from '../assets/images/broom.png'
 import { FaAnglesRight } from "react-icons/fa6";
+import FooterLogo from '../assets/vector/logo.svg'
 import '../HomeSetion/team.css'
 const Footer = () => {
   return (
     <footer className="bg-[#062f33] text-white">
       {/* Main Footer Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 lg:px-20 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-6 lg:px-40 py-16">
         
         {/* Logo & Info */}
         <div>
-          <div className="flex items-center mb-14 gap-1">
-            <img src={FooterLogo} alt="Logo" className="h-20 w-20" />
-            <h2 className="text-5xl font-bold text-white">Poolito</h2>
+          <div className="flex items-center mb-1 gap-1">
+            <img src={FooterLogo} alt="Logo" className="h-30 w-fit" />
+            {/* <h2 className="text-5xl font-bold text-white">Poolito</h2> */}
           </div>
           <p className="text-gray-300 mt-4 leading-relaxed">
             Provide Detailed House Cleaning Sanitizing<br/> Services For Valued Clients.
@@ -90,11 +90,17 @@ const Footer = () => {
         <div>
         <h3 className="text-xl font-bold mb-4">Instagram</h3>
         <div className="h-[2px] w-full bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 h-70 w-fit  gap-3">
         {["1.jpg", "2.jpg", "7.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
-        <div key={index} className="overflow-hidden rounded-md border-2 border-green-400">
-              <img src={`src/assets/instagram/${img}`} alt={`Insta ${index}`} className="transition-transform duration-500 hover:scale-110"/>
-              </div>
+        <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
+        <div className="absolute hidden group-hover:block bg-[rgba(27,235,93,0.5)] h-full w-full z-10"></div>
+          <img
+            src={`src/assets/instagram/${img}`}
+            alt={`Insta ${index}`}
+            className="transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+
             ))}
           </div>
         </div>
