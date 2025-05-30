@@ -26,20 +26,20 @@ const Slideshow = () => {
   }, [slider]);
 
   return (
-    <div className="w-full md:h-[820px] h-[1040px] bg-[#042d33] flex flex-col md  md:flex-row  overflow-hidden">
+    <div className="w-full md:h-[820px] h-[990px] bg-[#042d33] flex flex-col md  md:flex-row  overflow-hidden">
       {/* Left Skewed Overlay */}
-      <div className="w-1/2 lg:3/  md:h-full h-400 relative flex pl-30  justify-center items-center">
+      <div className="md:w-1/2 w-full md:h-full h-400 relative flex lg:pl-30  justify-center items-center">
         {/* design layout */}
-        <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10" />
+        <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10"/>
         <div className='absolute top-0 left-0 z-20'><img src={map} alt="" /></div>
-        <div className=' z-100'><BubbleBackground /> </div>
+        
 
         {/* text section */}
-        <div className='relative flex flex-col pl-5 lg:pt-10 lg:pl-10 md:items-start z-30 '>
-        <div className='absolute top-0 left-0'><img src={vector} alt="" /></div>  
-        <div className='text-green-600 font-bold text-xl inline-100'>100% Satisfaction</div>
-        <div className='lg:text-8xl font-bold text-3xl text-white'>CLEANING
-        SERVICES <a className='text-green-700'> FOR</a><br />
+        <div className='relative flex flex-col pl-9 lg:pt-10 lg:pl-10 md:items-start z-30 '>
+        <div className='absolute -top-10 left-0'><img src={vector} alt="" /></div>  
+        <div className='text-green-600 md:hidden  font-bold text-xl inline-100'>100% Satisfaction</div>
+        <div className='lg:text-8xl font-bold text-5xl text-white'>CLEANING <br />
+        SERVICES <a className='text-green-700'> FOR</a><br/>
         YOUR CITY</div>
         <div className='w-full h-11'/>
         <div><button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white hover:text-[#042D33] py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
@@ -47,7 +47,8 @@ const Slideshow = () => {
         <div className="bg-[#042D33] text-white  hover:bg-white text-2xl hover:text-[#042D33] h-12 w-12 flex justify-center items-center rounded-full">
         <GoArrowRight />
         </div>
-        </button></div>
+        </button>
+        </div>
         </div>
 
       </div>
