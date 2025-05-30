@@ -1,5 +1,5 @@
 import React from 'react';
-import cleaningsofa from '../assets/images/cleaningsofa.png';
+import cleaningsofa from '../assets/images/video-preview-image.png';
 import map from '../assets/images/mapimage.png'
 import { CiCirclePlus } from "react-icons/ci";
 import { GiAbstract029 } from "react-icons/gi";
@@ -14,12 +14,10 @@ const Section4 = () => {
       <div className='absolute top-15  left-0 z-20'><img src={map} alt="" /></div>
       {/* Video Area */}
       <div className="relative z-50 -mt-[160px] bg-center bg-cover  pd-100  overflow-hidden h-[490px] md:h-[400px] lg:h-[440px]"
-        style={{  backgroundImage: `url(${cleaningsofa})`,
-        border: '8px solid transparent',
-        borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',
-        borderImageSlice: 1,}} >
+        style={{  backgroundImage: `url(${cleaningsofa})`, border: '8px solid transparent',
+        borderImage: 'linear-gradient(to bottom, #04272900, rgba(16, 155, 61, 1))',borderImageSlice: 1,}} >
 
-        <div className="absolute inset-0 bg-[#042729]/50 flex w-full flex-col justify-center items-center text-center ">
+        <div className="absolute inset-0  flex w-full flex-col justify-center items-center text-center ">
         <div className="relative flex items-center justify-center w-16 h-16 mb-4 group">
       {/* Wave effect - changes color on hover using group-hover */}
       <span className="absolute w-16 h-16 rounded-full bg-green-500 opacity-50 animate-ping group-hover:bg-white"></span>

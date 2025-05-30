@@ -61,7 +61,7 @@ const Header = () => {
         <div className="relative  bg-[#109c3d]  h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 ">
           {/* Unskewed content inside */}
           <div className="flex items-end gap-2 skew-x-[-25deg]">
-            <img src={logo} alt="icon" className="w-90 h-30 pl-30" />
+            <img src={logo} alt="icon" className="w-90 lg:h-30 h-15 lg:pl-30" />
           </div>
         </div>
       </div>

@@ -8,15 +8,14 @@ const Footer = () => {
   return (
     <footer className="bg-[#062f33] text-white">
       {/* Main Footer Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-6 lg:px-40 py-16">
+      <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 lg:px-40 py-16">
         
         {/* Logo & Info */}
         <div>
           <div className="flex items-center mb-1 gap-1">
             <img src={FooterLogo} alt="Logo" className="h-30 w-fit" />
-            {/* <h2 className="text-5xl font-bold text-white">Poolito</h2> */}
           </div>
-          <p className="text-gray-300 mt-4 leading-relaxed">
+          <p className="text-gray-300 font-bold mt-4 leading-relaxed">
             Provide Detailed House Cleaning Sanitizing<br/> Services For Valued Clients.
           </p>
 
@@ -53,9 +52,9 @@ const Footer = () => {
 
         {/* Useful Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Useful Links</h3>
+          <h3 className="text-2xl font-bold mb-4">Useful Links</h3>
           <div className="h-[2px] w-[90%] bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
-          <div className="grid grid-cols-2 gap-y-4 text-sm text-gray-300">
+          <div className="grid md:grid-cols-2 gap-y-5 text-sm text-gray-300">
           <p className="flex items-center gap-2 font-bold hover:text-green-600 hover:translate-x-2 transition-transform duration-300 cursor-pointer">
             <FaAnglesRight className="text-green-600" /> Help Center
           </p>
@@ -90,15 +89,14 @@ const Footer = () => {
         <div>
         <h3 className="text-xl font-bold mb-4">Instagram</h3>
         <div className="h-[2px] w-full bg-gradient-to-r from-green-500 to-transparent mb-6"></div>
-        <div className="grid grid-cols-3 h-70 w-fit  gap-3">
-        {["1.jpg", "2.jpg", "7.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
+        <div className="grid grid-cols-3 md:w-[90%]  w-full  gap-3">
+        {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
         <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
         <div className="absolute hidden group-hover:block bg-[rgba(27,235,93,0.5)] h-full w-full z-10"></div>
           <img
-            src={`src/assets/instagram/${img}`}
+            src={`src/assets/team/${img}`}
             alt={`Insta ${index}`}
-            className="transition-transform duration-500 group-hover:scale-110"
-          />
+            className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
         </div>
 
             ))}
@@ -109,9 +107,9 @@ const Footer = () => {
 
       {/* Sub Footer Section */}
       <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center justify-between text-lg text-white">
-         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog md:text-md text-sm font-extrabold  uppercase">
-          © Copyright 2025 - <span className="text-green-500 font-bold">Poolito</span> All rights reserved.
-          <span className="md:text-[#042a2f] text-green-600 font-bold"> Vecuro</span>
+         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog md:text-md text-md font-semibold  uppercase">
+          © Copyright 2025 - <span className="text-[#042a2f]">Poolito</span> All rights reserved.
+          <span className="text-[#042a2f] "> Vecuro</span>
         </div>
         <div className="flex items-center gap-4 md:pr-20">
           {["visa.png", "paypal.png", "mastercard.png", "amex.png", "discover.png"].map((img, i) => (

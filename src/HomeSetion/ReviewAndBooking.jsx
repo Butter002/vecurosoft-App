@@ -39,13 +39,16 @@
     <section className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover overflow-clip bg-left  py-16" >
 
             <div className='absolute top-15  hidden lg:block  -right-60 '><img src={map} alt="" /></div>
-            <div className='absolute hidden lg:block top-0 object-cover w-[30%] h-[100%] left-0'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
+            <div className='absolute hidden lg:block top-0 object-cover w-[40%] h-[100%] -left-40'><img src={officeCleaningImg} alt="" className='bject-cover  h-[100%] ' /></div>
 
             <div className="container mx-auto px-4 md:px-12">
             <div className="flex flex-col md:flex-row  gap-10 md:gap-0 items-start">
 
             {/* Booking Form */}
-            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 md:px-20 px-5 ">
+            <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 md:px-20 px-5"
+             style={{border: '8px solid transparent',
+        borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',
+        borderImageSlice: 1,}}>
 
             <div className='flex flex-row gap-2 items-center'> <div className='h-1 w-10 bg-white rounded-2xl'></div><span className="text-lg text-white font-bold uppercase">Cleaning Service</span></div>
             
@@ -60,12 +63,12 @@
 
                 <select name="subject" defaultValue="" required className="w-full border border-gray-300 px-5 py-5 rounded-md bg-white focus:outline-none font-bold text-gray-400 focus:ring-2 focus:ring-green-500">
 
-                <option value="" disabled hidden>Type of service</option>
-                <option>Deep Cleaning</option>
-                <option>Carpet Cleaning</option>
-                <option>Window Cleaning</option>
-                <option>Exterior Cleaning:</option>
-                <option>Mopping</option>
+                <option value="" disabled hidden>Type of servcice</option>
+                <option className='text-black'>Deep Cleaning</option>
+                <option className='text-black'>Carpet Cleaning</option>
+                <option className='text-black'>Window Cleaning</option>
+                <option className='text-black'>Exterior Cleaning:</option>
+                <option className='text-black'>Mopping</option>
                 </select>
                 </div>
                 <textarea name="message" rows="4" placeholder="Your message" className="w-full border border-gray-300 px-5 py-7 rounded-md focus:outline-none font-bold text-gray-500 focus:ring-2 bg-white focus:ring-green-500"></textarea>
@@ -104,7 +107,7 @@
                 </div>
                  <div className=' md:flex hidden mt-10 mb-10 ml-52 w-full h-0.5 bg-green-600 flex-row  items-center justify-start  gap-5'> 
                     {/* Navigation Buttons */}
-                    <div className='ml-20 flex gap-5 pr-0 bg-[#052429] flex-row' >
+                    <div className='ml-20 flex gap-5 p-5 bg-[#052429] flex-row' >
                     <div className='border-2 border-dashed border-[#146673] rounded-full'> 
                     <button onClick={handlePrev} className="bg-[#0b3c43]  hover:bg-green-700 text-white text-3xl flex justify-center items-center h-15 w-15  rounded-full">
                     <GoArrowLeft />
@@ -115,7 +118,6 @@
                     <button
                     onClick={handleNext}
                     className="bg-[#0b3c43]  hover:bg-green-700 text-white text-3xl flex justify-center items-center h-15 w-15   rounded-full">
-                    
                      <GoArrowRight />
                     </button>
                 </div>
