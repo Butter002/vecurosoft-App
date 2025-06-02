@@ -36,22 +36,19 @@ import img8 from "../assets/instagram/3.jpg";
       
     const timerRef = useRef(null);
 
-  const [sliderRef, instanceRef] = useKeenSlider({
-  loop: true,
-  mode: "free",
-  slides: {
-    perView: 4,
-    spacing: 15,
-  },
-  breakpoints: {
-    "(max-width: 768px)": {
-      slides: {
-        perView: 1,
-        spacing: 10,
+    const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    mode: "free",
+    slides: { perView: 4, spacing: 15, },
+    breakpoints: {
+        "(max-width: 768px)": {
+          slides: {
+            perView: 1,
+            spacing: 10,
+          },
+        },
       },
-    },
-  },
-});
+    });
 
 useEffect(() => {
   const slider = instanceRef.current;
@@ -69,6 +66,7 @@ useEffect(() => {
 
         return (
           <div className=" py-12 px-4 md:px-16 section4">
+            {/* upper section */}
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-4 mb-2">
                 <div className="bg-green-600 h-1 w-[90px]" />
@@ -89,11 +87,7 @@ useEffect(() => {
 
         {/* Image Zoom on Card Hover */}
         <div className="overflow-hidden flex flex-col justify-center items-center text-center rounded-t-xl">
-          <img
-            src={card.image}
-            alt={card.title}
-            className="w-full h-65 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-          />
+          <img src={card.image} alt={card.title} className="w-full h-55 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
         </div>
 
         {/* Card Content */}
