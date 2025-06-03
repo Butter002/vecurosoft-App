@@ -92,7 +92,7 @@ const Footer = () => {
         <div className="grid grid-cols-3 md:w-[90%]  w-full  gap-3">
         {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
         <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
-        <div className="absolute hidden group-hover:block bg-[rgba(27,235,93,0.5)] h-full w-full z-10"></div>
+        <div className="absolute hidden group-hover:block bg-[rgba(27,235,93,0.5)] h-full w-full z-10">   </div>
           <img
             src={`src/assets/team/${img}`}
             alt={`Insta ${index}`}
