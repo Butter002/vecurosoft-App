@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from "react-intersection-observer";
 import cleaningsofa from '../assets/images/video-preview-image.png';
 import map from '../assets/images/mapimage.png'
 import { CiCirclePlus } from "react-icons/ci";
@@ -7,19 +8,23 @@ import { CiLinkedin } from "react-icons/ci";
 import { FiSlack } from "react-icons/fi";
 import { SiNorwegian } from "react-icons/si";
 import { FaPlay } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 const Section4 = () => {
+  const { ref: brandRef, inView: brandInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+const { ref: videoTextRef, inView: videoTextInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
   return (
     <div className="relative gap-100 bg-[#052429] text-white mt-40 mb-10 py-18 px-3  md:h-234 md:px-68">
       
       <div className='absolute top-15  left-0 z-20'><img src={map} alt="" /></div>
       {/* Video Area */}
-      <div className="relative z-50 -mt-[160px] bg-center bg-cover  pd-100  overflow-hidden h-[490px] md:h-[400px] lg:h-[440px]"
+      <div className="relative z-50 -mt-[190px] bg-center bg-cover  pd-100  overflow-hidden h-[490px] md:h-[400px] lg:h-[550px]"
         style={{  backgroundImage: `url(${cleaningsofa})`, border: '8px solid transparent',
         borderImage: 'linear-gradient(to bottom, #04272900, rgba(16, 155, 61, 1))',borderImageSlice: 1,}} >
 
-        <div className="absolute inset-0  flex w-full flex-col justify-center items-center text-center ">
+        <div className="absolute inset-0  flex w-full flex-col justify-center items-center text-center">
         <div className="relative flex items-center justify-center w-16 h-16 mb-4 group">
-      {/* Wave effect - changes color on hover using group-hover */}
+    
       <span className="absolute w-16 h-16 rounded-full bg-green-500 opacity-50 animate-ping group-hover:bg-white"></span>
 
       {/* Main Button */}
@@ -29,11 +34,18 @@ const Section4 = () => {
         </span>
       </button>
     </div>
-          <h2 className="text-2xl md:text-3xl font-bold">Most Trusted service</h2>
-          <button className="mt-4 bg-green-600 text-white py-2 px-6 font-bold rounded-full flex items-center gap-2 hover:bg-green-600">
-            Discover More <span className="text-xl">→</span>
-          </button>
-        </div>
+
+    {/* video section text */}
+    <div ref={videoTextRef} className={`flex justify-center items-center flex-col transition-all duration-700 ease-in-out ${ videoTextInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+       <h2 className="text-2xl md:text-4xl font-bold">Most Trusted service</h2>
+          <button className="mt-4 bg-green-600 text-white py-2 px-3 font-bold rounded-full flex items-center gap-5 hover:bg-green-600">
+            Discover More   
+              <div className="bg-black hover:bg-green-600 text-3xl h-10 w-10 flex justify-center items-center rounded-full">
+                  <GoArrowRight />
+              </div>
+            </button>
+          </div>
+        </div>  
       </div>
 
       {/* Info + Logos */}
@@ -48,17 +60,18 @@ const Section4 = () => {
             <img src="https://randomuser.me/api/portraits/women/49.jpg" alt="user1" className="w-15 h-15 rounded-full border-2 border-white" />
             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user2" className="w-15 h-15 rounded-full border-2 border-white -ml-6" />
             <CiCirclePlus className='w-15 h-15  rounded-full -ml-6' />
-            <div className="text-white text-xl font-bold"><p className='text-green-400 text-lg font-bold'> 57+</p>  Members</div>
+            <div className="text-white text-xl font-bold"><p className='text-green-400 text-lg font-bold'> 57+</p> Members</div>
           </div>
         </div>
 
         {/* Brand Logos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div ref={brandRef} className={`grid grid-cols-2 md:grid-cols-3 gap-3 transition-all duration-700 ease-in-out ${brandInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`} >
+
           <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 gap-2  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             Walmart <div><GiAbstract029 /></div>
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 gap-2  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
-            inVision <div> <CiLinkedin /></div> 
+            inVision <div> <CiLinkedin /></div>  
           </div>
           <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 gap-2  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             <div><SiNorwegian /></div>Logitech

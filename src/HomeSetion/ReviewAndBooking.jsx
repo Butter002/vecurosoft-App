@@ -80,8 +80,8 @@
 
             {/* Testimonial Section */}
             <div className="w-full lg:w-6/11  flex flex-col overflow-hidden z-10 justify-center items-center gap-5  text-white">
+                {/* heading text */}
                 <div className="mb-6 flex flex-col gap-1  animate-fadeInUp">
-
                 <div className='flex-row flex  items-center gap-3'> <div className='w-10 h-0.5 bg-white rounded-2xl '></div><span className="text-lg font-semibold uppercase text-green-600">Testimonial</span></div>
                 <h2 className="text-3xl font-extrabold mt-2 inline-[200]">Our Clients Are Saying</h2>
                 <p className="text-gray-300 mt-2 max-w-xl">When you work with Los Angeles House Cleaners Referral Agency, breathe easy because your home will soon be clean and fresh.</p>
@@ -105,6 +105,7 @@
                 </div>
                 <p className="text-gray-400 font-bold text-xl">"{testimonial.message}"</p>
                 </div>
+                        {/* button div */}
                  <div className=' md:flex hidden mt-10 mb-10 ml-52 w-full h-0.5 bg-green-600 flex-row  items-center justify-start  gap-5'> 
                     {/* Navigation Buttons */}
                     <div className='ml-20 flex gap-5 p-5 bg-[#052429] flex-row' >
