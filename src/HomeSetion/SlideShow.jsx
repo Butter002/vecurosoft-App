@@ -7,12 +7,13 @@ import { useKeenSlider } from 'keen-slider/react';
 import { GoArrowRight } from "react-icons/go";
 import cleaningsofa from '../assets/images/cleaningsofa.png';
 import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
+import roomcleaning from  '../assets/images/roomcleaning.png'
 import map from '../assets/images/mapimage.png'
 import vector from '../assets/vector/Vector 2160.png'
 import { FaSoap } from "react-icons/fa";
 
 
-const images = [cleaningsofa, swimingpool_cleaning];
+const images = [cleaningsofa, swimingpool_cleaning , roomcleaning];
 
 const Slideshow = () => {
   const [sliderRef, slider] = useKeenSlider({
