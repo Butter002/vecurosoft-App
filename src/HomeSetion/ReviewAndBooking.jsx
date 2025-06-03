@@ -47,8 +47,8 @@
             {/* Booking Form */}
             <div className="w-full lg:w-4/11 bg-green-600 bg-opacity-90 gap-5 z-10 py-20 md:px-20 px-5"
              style={{border: '8px solid transparent',
-        borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',
-        borderImageSlice: 1,}}>
+                    borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',
+                    borderImageSlice: 1,}}>
 
             <div className='flex flex-row gap-2 items-center'> <div className='h-1 w-10 bg-white rounded-2xl'></div><span className="text-lg text-white font-bold uppercase">Cleaning Service</span></div>
             

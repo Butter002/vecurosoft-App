@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { FaPlay, FaSmile, FaTrophy, FaUsers, FaTasks } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 import { MdMapsHomeWork } from "react-icons/md";
-import { FaMapLocationDot } from "react-icons/fa6";
 import { GiBroom, GiVacuumCleaner } from "react-icons/gi";
 import { GoArrowRight } from "react-icons/go";
 
@@ -21,11 +20,12 @@ import section2image from "../assets/images/section2image.png";
 import profile from "../assets/images/Co-founder.png";
 import Blog from "../HomeSetion/BlogSection";
 import vector1 from "../assets/vector/Vector 1.png";
+import mapicon from '../assets/vector/about-icon4.svg'
 
 function Home() {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.4 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  const [ref2, inView2] = useInView({ triggerOnce: true,threshold: 0.6,});
+  const [ref2, inView2] = useInView({ triggerOnce: true,threshold: 0.2,});
 
   return (
     <>
@@ -48,9 +48,8 @@ function Home() {
                 <div
                   ref={ref}
                   className={`transition-opacity duration-700 ${
-                    inView ? "slide-up-fade" : "opacity-0 translate-y-8"
-                  }`}
-                >
+                    inView ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >               
+
                   <div className="flex items-center gap-3 text-white font-bold text-sm tracking-wider">
                     ABOUT CLEANING
                     <div className="h-[2px] w-10 bg-white" />
@@ -185,7 +184,7 @@ function Home() {
 
                 {/* Footer Tag */}
                 <div className="flex items-center gap-2 mt-6 text-green-600 font-semibold">
-                  <FaMapLocationDot className="text-xl" />
+                 <img src={mapicon} alt="" />
                   <span className="font-bold text-2xl">
                     Give Your Home A Deep Clean for aesthetic.
                   </span>

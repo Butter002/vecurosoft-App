@@ -15,3 +15,36 @@
     }
   }
 }
+
+@layer utilities {
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  @keyframes card-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card-animate {
+    opacity: 0;
+    animation: card-slide-up 0.8s ease-out forwards;
+  }
+}

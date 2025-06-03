@@ -1,26 +1,26 @@
-.vs-team__social--media {
-    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
-}
+  .vs-team__social--media {
+      clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  }
 
-.blog {
-    clip-path: polygon(0 0, 85%  0%, 100% 100%, 0 100%);
-}
- .Co-founder {
-    background-position: left;
-    background-repeat: no-repeat;
-    background: 25% 100%;
- }
+  .blog {
+      clip-path: polygon(0 0, 85%  0%, 100% 100%, 0 100%);
+  }
+  .Co-founder {
+      background-position: left;
+      background-repeat: no-repeat;
+      background: 25% 100%;
+  }
 
- .read-container:hover .read-link {
-  color: #16a34a; /* green-600 */
-}
+  .read-container:hover .read-link {
+    color: #16a34a; /* green-600 */
+  }
 
-.read-container:hover .read-icon {
-  border-color: #063A41;
-}
+  .read-container:hover .read-icon {
+    border-color: #063A41;
+  }
 
-.read-container:hover .icon-button {
-  background-color: #063A41;
-}
+  .read-container:hover .icon-button {
+    background-color: #063A41;
+  }
 
 
