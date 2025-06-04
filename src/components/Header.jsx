@@ -72,7 +72,7 @@ const Header = () => {
            <nav className="flex gap-3 items-center space-x-8 md:space-x-1 text-[17px] font-bold text-[#04363d]">
             <a href="/" className="text-green-600 font-bold">HOME</a>
             <a href="*">ABOUT US</a>
-            <a href="*">SERVICE</a>
+            <a href="Service">SERVICE</a>
             <a href="*">BLOG</a>
             <a href="*">PAGES</a>
             <a href="*">CONTACT</a>

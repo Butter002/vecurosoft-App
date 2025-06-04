@@ -1,14 +1,21 @@
 import React from "react";
+import lineshep from '../assets/images/line-shep.png';
+import map from '../assets/images/mapimage2.png';
+
+
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { TbPhoneCall } from "react-icons/tb";
 import { FaAnglesRight } from "react-icons/fa6";
 import FooterLogo from '../assets/vector/logo.svg'
 import { FaSearchPlus } from "react-icons/fa";
+
+
 import '../HomeSetion/team.css'
 const Footer = () => {
   return (
-    <footer className="bg-[#062f33] text-white">
-      <img src="" alt="" />
+    <footer className="bg-[#062f33] text-white overflow-clip relative">
+      <img src={lineshep} alt=""  />
+      <img src={map} className="absolute -right-115 -top-15" alt="" />
       {/* Main Footer Section */}
       <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 lg:px-40 py-16">
         
@@ -109,7 +116,7 @@ const Footer = () => {
       </div>
 
       {/* Sub Footer Section */}
-      <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center justify-between text-lg text-white">
+      <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center z-10 justify-between text-lg text-white">
          <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog  md:text-md text-md font-bold  ">
           © Copyright 2025 - <span className="md:text-[#042a2f] text-green-500">Poolito</span> All rights reserved.
           <span className="md:text-[#042a2f] text-green-500 "> Vecuro</span>

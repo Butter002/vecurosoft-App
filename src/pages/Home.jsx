@@ -29,11 +29,11 @@ function Home() {
 
   return (
     <>
-      <div className="font-sans bg-white">
-        <Header />
+      
+        <Header/>
         <main className="">
           {/* section 1 */}
-          <Section1 />
+          <Section1/>
 
           {/* Section 2 */}
           <div className="flex flex-col bg-[#109c3d] lg:flex-row">
@@ -128,7 +128,7 @@ function Home() {
                 <p className="text-gray-500 font-bold mb-6">
                   When You Work Angeles House Cleaners Referral Agency Cleaning
                   Breathe Easy Because Your Home Will Soon</p>
-                
+
                 {/* Services */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
                   <div>
@@ -180,23 +180,23 @@ function Home() {
           </div>
 
           {/* section 4 */}
-          <Section4 />
+          <Section4/>
 
           {/* sectiom 5 */}
-          <ClientSection />
+          <ClientSection/>
 
           {/* section 6*/}
-          <TeamArea />
+          <TeamArea/>
 
           {/* section 7 */}
-          <ReviewAndBooking />
+          <ReviewAndBooking/>
 
           {/* section 8 */}
-          <Blog />
+          <Blog/>
 
         </main>
         <Footer />
-      </div>
+      
     </>
   );
 }
