@@ -14,16 +14,16 @@
   .custom-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;              /* gap-2 = 0.5rem */
-  font-weight: 700;         /* font-bold */
+  gap: 0.5rem;              
+  font-weight: 700;        
   cursor: pointer;
-  transition: transform 300ms, color 300ms; /* matches transition-transform + duration-300 */
+  transition: transform 300ms, color 300ms; 
 }
 
 .custom-link:hover {
-  color: #16a34a;           /* Tailwind green-600 */
-  transform: translateX(0.5rem); /* translate-x-2 = 0.5rem */
-}
+  color: #16a34a;           
+  transform: translateX(0.5rem); 
+  }
 
   .Co-founder {
       background-position: left;
@@ -32,7 +32,7 @@
   }
 
   .read-container:hover .read-link {
-    color: #16a34a; /* green-600 */
+    color: #16a34a; 
   }
 
   .read-container:hover .read-icon {

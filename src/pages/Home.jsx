@@ -95,12 +95,10 @@ function Home() {
           <div className="bg-white py-12 lg:m-1 px-4 md:px-16 xl:px-40">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20 items-center">
               {/* Left Side Images */}
-              {/* <div  className="relative h-full flex flex-row pl-6 pt-6 gap-5 items-start slide-up-fade-second w-full"> */}
-              <div
-                ref={ref2}
-                className={`relative h-full flex flex-row pl-6 pt-6 gap-5 items-start w-full transition-opacity duration-700 ${
-                  inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"
-                }`} > 
+              
+              <div ref={ref2} 
+                className={`relative h-full flex flex-row pl-6 pt-6 gap-5 items-start w-full
+                transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} > 
 
                 <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-[100%] max-w-[450px] border-transparent" />
 
@@ -120,25 +118,17 @@ function Home() {
                 </div>
 
               {/* Right Side Content */}
-              {/* <div className='gap-3 flex flex-col slide-up-fade'> */}
-              <div
-                ref={ref2}
-                className={`gap-3 flex flex-col transition-opacity duration-700 ${
-                  inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"
-                }`}
-              >
-                <p className="text-green-600 font-semibold text-lg ">
-                  ——— ABOUT CLEANING
-                </p>
-                <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6">
-                  Our Cleaning <span className="text-green-600">Agency</span>
-                  <br /> For Your City
-                </h2>
+              <div ref={ref2}
+                className={`gap-3 flex flex-col transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>                  
+    
+                <p className="text-green-600 font-semibold flex flex-row items-center text-lg "><div className="h-1 w-10 bg-green-600" /> ABOUT CLEANING</p>
+
+                <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6">Our Cleaning <span className="text-green-600">Agency</span>
+                <br/> For Your City</h2>
                 <p className="text-gray-500 font-bold mb-6">
                   When You Work Angeles House Cleaners Referral Agency Cleaning
-                  Breathe Easy Because Your Home Will Soon
-                </p>
-
+                  Breathe Easy Because Your Home Will Soon</p>
+                
                 {/* Services */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
                   <div>
@@ -168,11 +158,7 @@ function Home() {
 
                   <div className="flex items-center gap-3">
                     <div className="border-2 border-dashed p-1 border-green-500 object-cover rounded-full ">
-                      <img
-                        src={profile}
-                        alt="D. markwin"
-                        className="w-20 h-20 rounded-full"
-                      />
+                      <img src={profile} alt="D. markwin" className="w-20 h-20 rounded-full" />
                     </div>
 
                     <div>
@@ -207,7 +193,7 @@ function Home() {
 
           {/* section 8 */}
           <Blog />
-          
+
         </main>
         <Footer />
       </div>
