@@ -106,9 +106,7 @@ function Service() {
             {/* Left Side Images */}
             <div
               ref={ref2}
-              className={`relative h-auto flex flex-row pl-6 gap-5 items-start w-full transition-opacity duration-700 ${
-                inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"
-              }`}>
+              className={`relative h-auto flex flex-row pl-6 gap-5 items-start w-full transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>
                 
               <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-full max-w-[450px] border-transparent"/>
 
@@ -128,8 +126,8 @@ function Service() {
       ref={ref2}
       className={`gap-3 flex flex-col transition-opacity duration-700 ${
         inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"
-      }`}
-    >
+      }`} >
+        
       {/* title area  */}
       <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
         <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS
@@ -164,25 +162,30 @@ function Service() {
           },
         ].map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-xl mb-4 shadow-sm">
-            <button
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full text-left px-10 py-3 bg-white text-xl font-bold text-gray-800 rounded-xl flex justify-between items-center">
-              {item.title}
-              <span className="text-green-600">{openIndex === index ? "-" : "+"}</span>
-            </button>
-            <div
-              className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 ${
-                openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0"
-              }`}
-            >
-              <p className="text-sm">{item.content}</p>
+
+           <button
+  onClick={() => toggle(index)}
+  className={`w-full text-left px-10 py-3 text-xl font-bold  focus:outline-none flex justify-between items-center transition-all duration-300
+    ${openIndex === index 
+      ? "bg-green-600 text-white rounded-t-xl border-b-0" 
+      : "bg-white text-gray-800 rounded-xl border-b border-gray-200"}`}
+>
+  {item.title}
+  <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
+</button>
+
+
+            <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
+            ${openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0" }`} >
+
+              <p className="text-lg px-5">{item.content}</p>
             </div>
           </div>
         ))}
       </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
       {/* Brand slider */}

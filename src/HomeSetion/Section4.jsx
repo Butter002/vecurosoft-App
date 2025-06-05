@@ -32,91 +32,78 @@ const cardData = [
   { title: "OFFICE CLEAN", image: img8, icon: <ImOffice /> },
 ];
 
-const Section4 = () => {
-  const timerRef = useRef(null);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    loop: true,
-    mode: "free",
-    slides: { perView: 4, spacing: 15 },
-    breakpoints: {
-      "(max-width: 768px)": {
-        slides: {
-          perView: 1,
-          spacing: 10,
-        },
-      },
-    },
-  });
+      const Section4 = () => {
+        const timerRef = useRef(null);
+        const [sliderRef, instanceRef] = useKeenSlider({
+          loop: true,
+          mode: "free",
+          slides: { perView: 4, spacing: 15 },
+          breakpoints: {
+            "(max-width: 768px)": {
+              slides: {
+                perView: 1,
+                spacing: 10,
+              },
+            },
+          },
+        });
 
-  const { ref: inViewRef, inView } = useInView({ triggerOnce: true,threshold: 0.2,});
+        const { ref: inViewRef, inView } = useInView({ triggerOnce: true,threshold: 0.2,});
 
-  const [titleRef, titleInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+        const [titleRef, titleInView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  useEffect(() => {
-    const slider = instanceRef.current;
-    if (!slider) return;
+        useEffect(() => {
+          const slider = instanceRef.current;
+          if (!slider) return;
 
-    timerRef.current = setInterval(() => {
-      slider.next();
-    }, 3000);
+          timerRef.current = setInterval(() => {slider.next();}, 3000);
 
-    return () => clearInterval(timerRef.current);
-  }, [instanceRef]);
+        return () => clearInterval(timerRef.current); }, [instanceRef]);
 
-  return (
-    <div ref={inViewRef} className="py-12 px-4 md:px-16 section4">
-      {/* upper section */}
-      <div
-  ref={titleRef}
-  className={`text-center mb-10 transform transition-all duration-700 ease-out
-    ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-  `}
->
-  <div className="flex items-center justify-center gap-4 mb-2">
-    <div className="bg-green-600 h-1 w-[90px]" />
-    <div className="font-semibold text-gray-700 text-lg tracking-wider">
-      CLEANING SERVICE
-    </div>
-    <div className="bg-green-600 h-1 w-[90px]" />
-  </div>
-  <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#062F33]">
-    Our Excellent Service
-  </h2>
-</div>
+        return (
+          <div ref={inViewRef} className="py-18 mb-10 mt-10 md:px-30 section4">
+            {/* upper section */}
+            <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+            <div className="flex items-center justify-center gap-4 mb-2">
+              <div className="bg-green-600 h-1 w-[90px]" />
+              <div className="font-semibold text-gray-700 text-lg tracking-wider">
+                CLEANING SERVICE
+              </div>
+              <div className="bg-green-600 h-1 w-[90px]" />
+            </div>
+            <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#062F33]">
+              Our Excellent Service
+            </h2>
+          </div>
 
 
       <div ref={sliderRef} className="keen-slider">
         {cardData.map((card, index) => (
           <div className="keen-slider__slide" key={index}>
             <div
-  className={`relative group rounded-xl mb-4 pb-7 shadow-md bg-white mx-2 xl:mx-4 transition-all duration-700 ease-out
-    ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-  `}
-  style={inView ? { animationDelay: `${index * 0.2}s` } : {}}
->
+              className={`relative group rounded-xl mb-4 pb-7 shadow-md bg-white  xl:mx-8 transition-all duration-700 ease-out
+              ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+  
+              style={inView ? { animationDelay: `${index * 0.2}s` } : {}}>
 
               <div className="overflow-hidden flex flex-col justify-center items-center text-center rounded-t-xl">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-55 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                />
+                <img src={card.image} alt={card.title} className="w-full h-50 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
               </div>
 
-              <div className="px-10 py-9 flex flex-col gap-5 items-start">
-                <div className="flex flex-row border-b border-dashed pb-5 items-end w-full justify-between">
+              <div className="px-6 py-5 flex flex-col  gap-5 items-start">
+                <div className="flex flex-row  border-b-4 group-hover:border-b-4 group-hover:border-green-600 border-dashed pb-5 items-end w-full justify-between">
                   <div>
                     <div className="text-[#109c3d] font-bold text-xl">
                       CLEANING 0{index + 1}
                     </div>
-                    <h3 className="font-bold text-3xl text-[#063A41] hover:text-green-600 line-clamp-1 mt-1">
+                    <h3 className="font-bold text-2xl text-[#063A41] hover:text-green-600 line-clamp-1 mt-1">
                       {card.title}
                     </h3>
                   </div>
-                  <div className="text-4xl bg-grey">{card.icon}</div>
+                  <div className="text-3xl bg-grey">{card.icon}</div>
                 </div>
 
-                <p className="text-gray-500 text-xl">
+                <p className="text-gray-500 text-lg">
                   Aweeps & mopsd vacuum floor House Cleaners.
                 </p>
               </div>
