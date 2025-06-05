@@ -142,11 +142,9 @@ const Header = () => {
         </div>
 
         {/* Mobile Slide-in Menu */}
-        <div
-          className={`fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white shadow-xl z-50 transform transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
+        <div className={`fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white shadow-xl z-50 transform transition-transform duration-300 ${
+            menuOpen ? "translate-x-0" : "-translate-x-full"}`} >
+
           <div className="flex items-center justify-between p-4 border-b">
             <div className="flex items-center space-x-2">
               <img src={logo} alt="Logo" className="h-10" />

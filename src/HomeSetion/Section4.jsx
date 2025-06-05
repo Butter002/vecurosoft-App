@@ -21,6 +21,8 @@ import img6 from "../assets/instagram/6.jpg";
 import img7 from "../assets/instagram/window_cleainng.png";
 import img8 from "../assets/instagram/3.jpg";
 
+import aboutshape from '../assets/images/about-shape-1-2.png'
+
 const cardData = [
   { title: "BED & MATTRES", image: img1, icon: <IoBedSharp /> },
   { title: "HOUSE CLEAN", image: img2, icon: <BiSolidBuildingHouse /> },
@@ -61,7 +63,8 @@ const cardData = [
         return () => clearInterval(timerRef.current); }, [instanceRef]);
 
         return (
-          <div ref={inViewRef} className="py-18 mb-10 mt-10 md:px-30 section4">
+          <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
+            <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
             {/* upper section */}
             <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="flex items-center justify-center gap-4 mb-2">
@@ -81,7 +84,7 @@ const cardData = [
         {cardData.map((card, index) => (
           <div className="keen-slider__slide" key={index}>
             <div
-              className={`relative group rounded-xl mb-4 pb-7 shadow-md bg-white  xl:mx-8 transition-all duration-700 ease-out
+              className={`relative group rounded-xl mb-4 pb-7 shadow-md bg-white m-10 lg:m-0  xl:mx-8 transition-all duration-700 ease-out
               ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
   
               style={inView ? { animationDelay: `${index * 0.2}s` } : {}}>

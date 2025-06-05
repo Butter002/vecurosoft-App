@@ -10,6 +10,11 @@ import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
 import Section2 from "../HomeSetion/Section4";
 import ServiceBannner from '../assets/images/cleaning_banner.png';
 import map from '../assets/images/mapimage.png';
+import cleaningsofa from "../assets/images/cleaningsofa.png";
+import section2image from "../assets/images/section2image.png";
+import mapshape from '../assets/images/map-shape-1.png'
+import aboutshape from '../assets/images/about-shape-1-2.png'
+import vector1 from "../assets/vector/Vector 1.png";
 
 import brand1 from "../assets/cards/brand-2-1.png";
 import brand2 from "../assets/cards/brand-2-2.png";
@@ -20,9 +25,7 @@ import brand6 from "../assets/cards/brand-2-6.png";
 import brand7 from "../assets/cards/brand-2-7.png";
 import brand8 from "../assets/cards/brand-2-8.png";
 import brand9 from "../assets/cards/brand-2-9.png";
-import cleaningsofa from "../assets/images/cleaningsofa.png";
-import section2image from "../assets/images/section2image.png";
-import vector1 from "../assets/vector/Vector 1.png";
+
 
 const brandImages = [brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9];
 
@@ -83,10 +86,10 @@ function Service() {
     <>
       <Header />
       {/* Banner */}
-      <div className="relative w-full h-[450px] bg-cover flex justify-cente lg:pl-50 bg-center" style={{ backgroundImage: `url(${ServiceBannner})` }}>
-        <img src={map} alt="" className="absolute top-20 left-5"/>
+      <div className="relative w-full h-[450px] bg-cover flex  justify-cente lg:pl-50 bg-center" style={{ backgroundImage: `url(${ServiceBannner})` }}>
+        <img src={map} alt="" className="absolute  hidden md:block top-20 left-5"/>
         <div className="flex flex-col lg:pl-10 justify-center gap-2 z-10 items-start h-full">
-          <p className="text-white font-bold text-7xl">our <span className="text-green-500">service</span></p>
+          <p className="text-white font-bold text-6xl  lg:text-7xl">our <span className="text-green-500">service</span></p>
           <div className="flex flex-row justify-start">
             <a href="Home" className="text-white text-xl font-extrabold">Home</a>
             <div className="pl-5 pr-1 text-2xl font-extrabold text-green-600">//</div>
@@ -101,39 +104,39 @@ function Service() {
 
 
       {/* forth section  */}
-        <div className="bg-green-300/10 py-18 lg:m-1 px-4 md:px-16 xl:px-40">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20">
-            {/* Left Side Images */}
-            <div
-              ref={ref2}
-              className={`relative h-auto flex flex-row pl-6 gap-5 items-start w-full transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>
-                
-              <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-full max-w-[450px] border-transparent"/>
+        <div className="bg-gradient-to-b relative from-white to-green-600/10 overflow-hidden py-50 pt-10 lg:py-30 lg:m-1 px-4 md:px-16 xl:px-40">
+        <img src={mapshape} className="bottom-0 absolute right-0" alt="" />
+        <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20">
+        {/* Left Side Images */}
+        <div ref={ref2}
+        className={`relative h-auto flex flex-row pl-6 gap-5 items-start w-full transition-opacity duration-700 
+        ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>
+              
+        <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-full max-w-[450px] border-transparent"/>
 
-      <div className="bg-[#109c3d] w-full mt-8 h-2" />
+        <div className="bg-[#109c3d] w-full mt-8 h-2" />
 
-      <div className="absolute -left-0">
-        <img src={vector1} />
-      </div>
+        <div className="absolute -left-0">
+          <img src={vector1} />
+        </div>
 
-      <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-[15px] border-green-600">
-        <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
-      </div>
-    </div>
+        <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-[15px] border-green-600">
+          <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
+        </div>
+        </div>
 
-    {/* Right Side Content */}
-    <div
-      ref={ref2}
-      className={`gap-3 flex flex-col transition-opacity duration-700 ${
-        inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"
-      }`} >
+        {/* Right Side Content */}
+        <div ref={ref2} 
+        className={`gap-3 relative flex mt-5 flex-col transition-opacity duration-700 
+            ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+
+          
         
       {/* title area  */}
       <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
-        <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS
-      </p>
-      <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6">
-        General Frequently <span className="text-green-600">Asked</span>
+        <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS </p>
+      <h2 className="lg:text-5xl text-3xl text-[#063a41] font-bold leading-15 mb-6">General Frequently<span className="text-green-600">Asked</span>
         <br /> Questions
       </h2>
 
@@ -163,16 +166,15 @@ function Service() {
         ].map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-xl mb-4 shadow-sm">
 
-           <button
-  onClick={() => toggle(index)}
-  className={`w-full text-left px-10 py-3 text-xl font-bold  focus:outline-none flex justify-between items-center transition-all duration-300
-    ${openIndex === index 
-      ? "bg-green-600 text-white rounded-t-xl border-b-0" 
-      : "bg-white text-gray-800 rounded-xl border-b border-gray-200"}`}
->
-  {item.title}
-  <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
-</button>
+          <button
+          onClick={() => toggle(index)}
+          className={`w-full text-left px-10 py-3 text-xl font-bold  focus:outline-none flex justify-between items-center transition-all duration-300
+            ${openIndex === index 
+              ? "bg-green-600 text-white rounded-t-xl border-b-0" 
+              : "bg-white text-gray-800 rounded-xl border-b border-gray-200"}`} >
+          {item.title}
+          <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
+          </button>
 
 
             <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
