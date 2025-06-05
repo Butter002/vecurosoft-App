@@ -124,48 +124,47 @@ function Service() {
                 <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg "><div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS</p>
                 <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6"> General Frequently  <span className="text-green-600">Asked</span><br/> Questions</h2>
                     {/* card area */}
-                    {[
-  {
-    title: "1. Deep House Cleaning Service",
-    content:
-      "Give your home a fresh new look and feel, especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-  },
-  {
-    title: "2. NYC home cleaning company",
-    content:
-      "Give your home a fresh new look and feel, especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-  },
-  {
-    title: "3. 100% secure online payments",
-    content:
-      "Give your home a fresh new look and feel, especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-  },
-  {
-    title: "4. Fast, same day booking confirmation",
-    content:
-      "Yes, despite the removal of Government Feed-in Tariff, installs have been forecast to continue at the current rate and even increase in 2025.",
-  },
-].map((item, index) => {
-  const [openIndex, setOpenIndex] = useState(null);
-  const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
+                {[
+                {
+                    title: "1. Deep House Cleaning Service",
+                    content:
+                    "give your home a fresh new look and feel that you especially after a long day of work. our deep clean will help bring your property back up to scratch",
+                },
+                {
+                    title: "2. NYC home cleaning company",
+                    content:
+                    "give your home a fresh new look and feel that you especially after a long day of work. our deep clean will help bring your property back up to scratch",
+                },
+                {
+                    title: "3. 100% secure online payments",
+                    content:
+                    "give your home a fresh new look and feel that you especially after a long day of work. our deep clean will help bring your property back up to scratch",
+                },
+                {
+                    title: "4. Fast, same day booking confirmation",
+                    content:
+                    "Yes, despite the removal of Government Feed-in Tariff, installs have been forecast to continue at the current rate and even increase in 2025.",
+                },
+                ].map((item, index) => {
+                const [openIndex, setOpenIndex] = useState(null);
+                const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
-  return (
-    <div key={index} className="border border-gray-200 rounded mb-4 shadow-sm">
-      <button
-        onClick={() => toggle(index)}
-        className="w-full text-left px-4 py-3 bg-white font-medium text-gray-800 focus:outline-none flex justify-between items-center"
-      >
-        {item.title}
-        <span className="text-green-600">{openIndex === index ? "-" : "+"}</span>
-      </button>
-      {openIndex === index && (
-        <div className="px-4 py-3 bg-gray-50 text-gray-700">
-          <p>{item.content}</p>
-        </div>
-      )}
-    </div>
-  );
-})}
+                return (
+                    <div key={index} className="border border-gray-200 rounded-xl mb-4 shadow-sm">
+                    <button
+                        onClick={() => toggle(index)}
+                        className="w-full text-left px-10 py-3 bg-white text-xl  font-bold text-gray-800 rounded-xl  focus:outline-none flex justify-between items-center">
+                        {item.title}
+                        <span className="text-green-600">{openIndex === index ? "-" : "+"}</span>
+                    </button>
+                    {openIndex === index && (
+                        <div className="px-5 py-4 bg-gray-50 text-gray-700">
+                        <p>{item.content}</p>
+                        </div>
+                    )}
+                    </div>
+                );
+                })}
 
               </div>
               
