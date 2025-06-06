@@ -86,7 +86,7 @@ const cardData = [
         {cardData.map((card, index) => (
           <div className="keen-slider__slide pb-5 " key={index}>
             <div 
-              className={`relative group rounded-xl m-4 mt-0 pb-5  shadow-md bg-white  lg:m-0  xl:mx-8 transition-all duration-700 ease-out
+              className={`relative h-full group rounded-xl m-4 mt-0 pb-5  shadow-md bg-white  lg:m-0  xl:mx-8 transition-all duration-700 ease-out
               ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
   
               style={inView ? { animationDelay: `${index * 0.2}s` } : {}}>
