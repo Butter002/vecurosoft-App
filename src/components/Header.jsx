@@ -1,24 +1,38 @@
 import React, { useState } from "react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaClock,
-  FaBars,
-  FaTimes,
-  FaChevronRight,
-  FaPlus,
-  FaSearch,
-} from "react-icons/fa";
+import {FaFacebookF,FaLinkedinIn,FaInstagram,FaPhoneAlt,FaEnvelope,FaClock,FaBars,FaTimes,FaChevronRight,FaPlus,FaSearch,} from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/vector/logo-white.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const menuList=[
+    {
+      name:"HOME",
+      link:"/Home"
+    },
+    {
+      name:"About US",
+      link:"/AboutUs"
+      
+    },
+    {
+      name:"SERVICE",
+      link:"/Service"
+    },
+    {
+      name:"BOLG",
+      link:"/blog"
+    },
+    {
+      name:"PAGES",
+      link:"/pages"
+    },
+    {
+      name:"CONTACT",
+      link:"/contact"
+    },
+  ]
   return (
     <header>
       {/* Topbar */}
@@ -52,22 +66,13 @@ const Header = () => {
             </div>
 
             {/* Icons */}
-            <a
-              href="#"
-              className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full"
-            >
+            <a href="#" className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full">
               <FaFacebookF />
             </a>
-            <a
-              href="#"
-              className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full"
-            >
+            <a href="#" className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full">
               <FaLinkedinIn />
             </a>
-            <a
-              href="#"
-              className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full"
-            >
+            <a href="#" className="bg-[#109c3d] p-2  hover:bg-white hover:text-green-600 rounded-full">
               <FaInstagram />
             </a>
           </div>
@@ -82,14 +87,10 @@ const Header = () => {
           <div className="absolute top-0 left-3 h-full w-full bg-[#54ce7b] transform  skew-x-32  z-0" />
 
           {/* Foreground Layer */}
-          <div className="relative  bg-[#109c3d]  h-full px-6 py-3 text-white flex items-center gap-3 skew-x-[25deg] z-10 ">
+          <div className="relative  bg-[#109c3d]  h-full px-6  text-white flex items-center gap-3 skew-x-[25deg] z-10 ">
             {/* Unskewed content inside */}
             <div className="flex items-end gap-2 skew-x-[-25deg]">
-              <img
-                src={logo}
-                alt="icon"
-                className="w-90 lg:h-30 h-15 lg:pl-30"
-              />
+              <img src={logo} alt="icon" className="w-90 lg:h-30 h-15 lg:pl-30" />
             </div>
           </div>
         </div>
@@ -98,14 +99,12 @@ const Header = () => {
           <div className="hidden lg:flex flex-row gap-4 justify-center items-center">
             {/* Desktop Nav */}
             <nav className="flex gap-3 items-center space-x-8 md:space-x-1 text-[17px] font-bold text-[#04363d]">
-              <a href="Home" className="text-green-600 font-bold">
-                HOME
-              </a>
-              <a href="*">ABOUT US</a>
+              <a href="Home" className="text-green-600 font-bold">HOME</a>
+              <a href="AboutUs">ABOUT US</a>
               <a href="Service">SERVICE</a>
-              <a href="*">BLOG</a>
-              <a href="*">PAGES</a>
-              <a href="*">CONTACT</a>
+              <a href="blog">BLOG</a>
+              <a href="pages">PAGES</a>
+              <a href="contact">CONTACT</a>
             </nav>
             <FaSearch className="hidden lg:flex" />
             <div className="hidden md:flex items-center gap-[1.5px]">
@@ -134,8 +133,7 @@ const Header = () => {
           <div className="lg:hidden text-cyan-50">
             <button
               onClick={() => setMenuOpen(true)}
-              className="text-5xl bg-[#109c3d] text-[#fff]"
-            >
+              className="text-5xl bg-[#109c3d] text-[#fff]">
               <RxHamburgerMenu className="" />
             </button>
           </div>
@@ -150,25 +148,22 @@ const Header = () => {
               <img src={logo} alt="Logo" className="h-10" />
               <h2 className="text-green-700 text-xl font-bold">Poolito</h2>
             </div>
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="text-green-600 text-2xl"
-            >
+            <button onClick={() => setMenuOpen(false)}
+              className="text-green-600 text-2xl" >
               <FaTimes />
             </button>
           </div>
 
           <div className="p-4 space-y-4 text-lg font-semibold text-[#04363d]">
-            {["Home", "About Us", "Service", "Blog", "Pages", "Contact"].map(
+            {menuList.map(
               (item, i) => (
                 <div
                   key={i}
-                  className="flex justify-between items-center border-b pb-2"
-                >
-                  <a href={item}>
+                  className="flex justify-between items-center border-b pb-2">
+                  <a href={item.link}>
                     <div className="flex items-center space-x-2">
                       <FaChevronRight />
-                      <span>{item}</span>
+                      <span>{item.name}</span>
                     </div>
                   </a>
                   {item !== "Contact" && <FaPlus className="text-gray-400" />}
@@ -186,10 +181,8 @@ const Header = () => {
 
         {/* Backdrop */}
         {menuOpen && (
-          <div
-            className="fixed inset-0 bg-black/70 bg-opacity-40 z-40"
-            onClick={() => setMenuOpen(false)}
-          ></div>
+          <div className="fixed inset-0 bg-black/70 bg-opacity-40 z-40"
+            onClick={() => setMenuOpen(false)}></div>
         )}
       </div>
     </header>

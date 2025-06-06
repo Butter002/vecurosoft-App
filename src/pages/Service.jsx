@@ -15,6 +15,7 @@ import section2image from "../assets/images/section2image.png";
 import mapshape from '../assets/images/map-shape-1.png'
 import aboutshape from '../assets/images/about-shape-1-2.png'
 import vector1 from "../assets/vector/Vector 1.png";
+import mapshap from '../assets/vector/map-shape-3.png'
 
 import brand1 from "../assets/cards/brand-2-1.png";
 import brand2 from "../assets/cards/brand-2-2.png";
@@ -27,59 +28,59 @@ import brand8 from "../assets/cards/brand-2-8.png";
 import brand9 from "../assets/cards/brand-2-9.png";
 
 
-const brandImages = [brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9];
+    const brandImages = [brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9];
 
-function Service() {
-    const [sliderRef, instanceRef] = useKeenSlider({
-        loop: true,
-        rtl: true,
-        renderMode: "performance",
-        slides: {
-        perView: 5,
-        spacing: 10,
-        },
-        breakpoints: {
-        "(max-width: 1024px)": {
-            slides: { perView: 3, spacing: 15 },
-        },
-        "(max-width: 768px)": {
-            slides: { perView: 2, spacing: 10 },
-        },
-        },
-    });
+    function Service() {
+        const [sliderRef, instanceRef] = useKeenSlider({
+            loop: true,
+            rtl: true,
+            renderMode: "performance",
+            slides: {
+            perView: 5,
+            spacing: 10,
+            },
+            breakpoints: {
+            "(max-width: 1024px)": {
+                slides: { perView: 3, spacing: 15 },
+            },
+            "(max-width: 768px)": {
+                slides: { perView: 2, spacing: 10 },
+            },
+            },
+        });
 
-    // Autoplay effect
-    useEffect(() => {
-        let timeout;
-        let mouseOver = false;
+        // Autoplay effect
+        useEffect(() => {
+            let timeout;
+            let mouseOver = false;
 
-        const nextTimeout = () => {
-        clearTimeout(timeout);
-        if (mouseOver || !instanceRef.current) return;
-        timeout = setTimeout(() => {
-            instanceRef.current?.prev();
+            const nextTimeout = () => {
+            clearTimeout(timeout);
+            if (mouseOver || !instanceRef.current) return;
+            timeout = setTimeout(() => {
+                instanceRef.current?.prev();
+                nextTimeout();
+            }, 3000);
+            };
+
+            sliderRef.current?.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearTimeout(timeout);
+            });
+            sliderRef.current?.addEventListener("mouseout", () => {
+            mouseOver = false;
             nextTimeout();
-        }, 3000);
-        };
+            });
 
-        sliderRef.current?.addEventListener("mouseover", () => {
-        mouseOver = true;
-        clearTimeout(timeout);
-        });
-        sliderRef.current?.addEventListener("mouseout", () => {
-        mouseOver = false;
-        nextTimeout();
-        });
+            nextTimeout();
 
-        nextTimeout();
+            return () => clearTimeout(timeout);
+        }, [instanceRef]);
 
-        return () => clearTimeout(timeout);
-    }, [instanceRef]);
-
-    const [ref2, inView2] = useInView({ triggerOnce: true,threshold: 0.2,});
-    // Place at the top inside the Service component function
-    const [openIndex, setOpenIndex] = useState(null);
-    const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
+        const [ref2, inView2] = useInView({ triggerOnce: true,threshold: 0.2,});
+        // Place at the top inside the Service component function
+        const [openIndex, setOpenIndex] = useState(null);
+        const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
 
     return (
@@ -107,6 +108,8 @@ function Service() {
         <div className="bg-gradient-to-b relative from-white to-green-600/10 overflow-hidden py-50 pt-10 lg:py-30 lg:m-1 px-4 md:px-16 xl:px-40">
         <img src={mapshape} className="bottom-0 absolute right-0" alt="" />
         <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
+         <img src={mapshap} className="top-10 md:flex hidden left-0 absolute" alt="" />
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20">
         {/* Left Side Images */}
         <div ref={ref2}
@@ -133,15 +136,15 @@ function Service() {
 
           
         
-      {/* title area  */}
-      <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
-        <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS </p>
-      <h2 className="lg:text-5xl text-3xl text-[#063a41] font-bold leading-15 mb-6">General Frequently<span className="text-green-600">Asked</span>
-        <br /> Questions
-      </h2>
+        {/* title area  */}
+        <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
+          <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS </p>
+        <h2 className="lg:text-5xl text-3xl text-[#063a41] font-bold leading-15 mb-6">General Frequently<span className="text-green-600">Asked</span>
+          <br /> Questions
+        </h2>
 
-      {/* card area */}
-      <div className="max-h-[300px] overflow-y-visible pr-1">
+        {/* card area */}
+        <div className="max-h-[300px] overflow-y-visible pr-1">
         {[
           {
             title: "1. Deep House Cleaning Service",
@@ -175,20 +178,16 @@ function Service() {
           {item.title}
           <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
           </button>
-
-
-            <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
-            ${openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0" }`} >
-
+              <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
+              ${openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0" }`} >
               <p className="text-lg px-5">{item.content}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
         </div>
-      </div>
-    </div>
-
+          </div>
+        </div>
+        </div>
 
       {/* Brand slider */}
       <div className="w-full bg-white py-20">

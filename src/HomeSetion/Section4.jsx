@@ -22,6 +22,7 @@ import img7 from "../assets/instagram/window_cleainng.png";
 import img8 from "../assets/instagram/3.jpg";
 
 import aboutshape from '../assets/images/about-shape-1-2.png'
+import mapshap from '../assets/vector/map-shape-3.png'
 
 const cardData = [
   { title: "BED & MATTRES", image: img1, icon: <IoBedSharp /> },
@@ -63,28 +64,29 @@ const cardData = [
         return () => clearInterval(timerRef.current); }, [instanceRef]);
 
         return (
-          <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
-            <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
-            {/* upper section */}
-            <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-            <div className="flex items-center justify-center gap-4 mb-2">
-              <div className="bg-green-600 h-1 w-[90px]" />
-              <div className="font-semibold text-gray-700 text-lg tracking-wider">
-                CLEANING SERVICE
-              </div>
-              <div className="bg-green-600 h-1 w-[90px]" />
+        <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
+          <img src={mapshap} className="top-10 md:flex hidden left-0 absolute" alt="" />
+          <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
+          {/* upper section */}
+          <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out 
+          ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <div className="bg-green-600 h-1 w-[90px]" />
+            <div className="font-semibold text-gray-700 text-lg tracking-wider">
+              CLEANING SERVICE
             </div>
-            <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#062F33]">
-              Our Excellent Service
-            </h2>
+            <div className="bg-green-600 h-1 w-[90px]" />
+          </div>
+          <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#062F33]">
+            Our Excellent Service
+          </h2>
           </div>
 
-
-      <div ref={sliderRef} className="keen-slider">
+        <div ref={sliderRef} className="keen-slider">
         {cardData.map((card, index) => (
-          <div className="keen-slider__slide" key={index}>
-            <div
-              className={`relative group rounded-xl mb-4 pb-7 shadow-md bg-white m-10 lg:m-0  xl:mx-8 transition-all duration-700 ease-out
+          <div className="keen-slider__slide pb-5 " key={index}>
+            <div 
+              className={`relative group rounded-xl m-4 mt-0 pb-5  shadow-md bg-white  lg:m-0  xl:mx-8 transition-all duration-700 ease-out
               ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
   
               style={inView ? { animationDelay: `${index * 0.2}s` } : {}}>
@@ -94,7 +96,7 @@ const cardData = [
               </div>
 
               <div className="px-6 py-5 flex flex-col  gap-5 items-start">
-                <div className="flex flex-row  border-b-4 group-hover:border-b-4 group-hover:border-green-600 border-dashed pb-5 items-end w-full justify-between">
+                <div className="flex flex-row border-gray-400  border-b-2 group-hover:border-b-2 group-hover:border-green-600 border-dashed pb-5 items-end w-full justify-between">
                   <div>
                     <div className="text-[#109c3d] font-bold text-xl">
                       CLEANING 0{index + 1}
