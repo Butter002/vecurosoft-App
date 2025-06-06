@@ -41,7 +41,7 @@ const Header = () => {
           {/* Hide on small screens */}
           <div className="hidden lg:flex items-center  space-x-6 text-md">
             <div className="flex  items-center font-bold text-xl space-x-2">
-              <FaEnvelope className="text-green-600" />
+              <FaEnvelope className="text-green-600"/>
               <span>info@example.com</span>
             </div>
             {/* line design */}

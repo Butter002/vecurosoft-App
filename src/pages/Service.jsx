@@ -89,7 +89,7 @@ import brand9 from "../assets/cards/brand-2-9.png";
       {/* Banner */}
       <div className="relative w-full h-[450px] bg-cover flex  justify-cente lg:pl-50 bg-center" style={{ backgroundImage: `url(${ServiceBannner})` }}>
         <img src={map} alt="" className="absolute  hidden md:block top-20 left-5"/>
-        <div className="flex flex-col lg:pl-10 justify-center gap-2 z-10 items-start h-full">
+        <div className="flex flex-col pl-5 lg:pl-10 justify-center gap-2 z-10 items-start h-full">
           <p className="text-white font-bold text-6xl  lg:text-7xl">our <span className="text-green-500">service</span></p>
           <div className="flex flex-row justify-start">
             <a href="Home" className="text-white text-xl font-extrabold">Home</a>
@@ -106,9 +106,9 @@ import brand9 from "../assets/cards/brand-2-9.png";
 
       {/* forth section  */}
         <div className="bg-gradient-to-b relative from-white to-green-600/10 overflow-hidden py-50 pt-10 lg:py-30 lg:m-1 px-4 md:px-16 xl:px-40">
-        <img src={mapshape} className="bottom-0 absolute right-0" alt="" />
-        <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
-         <img src={mapshap} className="top-10 md:flex hidden left-0 absolute" alt="" />
+        <img src={mapshape} className="bottom-0 absolute right-0"/>
+        <img src={aboutshape} className="top-0 right-0 absolute"/>
+        <img src={mapshap} className="top-10 md:flex hidden left-0 absolute"/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20">
         {/* Left Side Images */}
