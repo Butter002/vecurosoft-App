@@ -48,20 +48,19 @@ const ReviewAndBooking = () => {
   const [ref3, inView3] = useInView({ triggerOnce: true, threshold: 0.2 }); // Button div
 
   return (
-    <div className="relative bg-[#052429] lg:p-30 !md:pt-25 bg-no-repeat object-cover overflow-clip bg-left  py-16">
+    <div className="relative bg-[#052429] lg:p-30 !md:pt-25 object-cover overflow-hidden py-16">
 
       <div className='absolute left-0 top-0 z-100 w-full'><img src={lineshep}className=''/></div>
       <div className='absolute top-15 hidden lg:block -right-60'><img src={map}/></div>
       <div className='absolute hidden lg:block top-0 object-cover w-[32%] h-[100%] -left-32'><img src={officeCleaningImg}className='object-cover h-[100%]' /></div>
 
       <div className="container mx-auto px-4 md:px-12">
-        <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-start">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-0 items-start">
 
           {/* Booking Form */}
           <div ref={ref2}
             className={`w-full lg:w-4/11 bg-green-600 bg-opaci  ty-90 gap-5 z-10 py-20 md:px-20 px-5 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-            style={{ border: '8px solid transparent',borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',borderImageSlice: 1,
-            }}>
+            style={{ border: '8px solid transparent',borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',borderImageSlice: 1,}}>
           
             <div className='flex flex-row gap-2 items-center'>
               <div className='h-1 w-10 bg-white rounded-2xl'></div>

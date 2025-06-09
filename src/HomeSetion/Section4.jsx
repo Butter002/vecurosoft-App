@@ -4,10 +4,11 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { IoBedSharp } from "react-icons/io5";
 import { BiSolidBuildingHouse } from "react-icons/bi";
-import { FaBath, FaKitchenSet } from "react-icons/fa6";
+import { FaArrowRight, FaBath, FaKitchenSet } from "react-icons/fa6";
 import { ImOffice } from "react-icons/im";
 import { MdOutlineWindow } from "react-icons/md";
 import { GiFloorPolisher, GiVacuumCleaner } from "react-icons/gi";
+import { FaArrowLeft } from 'react-icons/fa';
 import { useInView } from "react-intersection-observer";
 
 import "./Section4.scss";
@@ -47,7 +48,7 @@ const cardData = [
                 perView: 1,
                 spacing: 10,
               },
-            },
+            },  
           },
         });
 
@@ -65,7 +66,7 @@ const cardData = [
 
         return (
         <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
-          <img src={mapshap} className="top-10 md:flex hidden left-0 absolute" alt="" />
+          <img src={mapshap} className="top-10 lg:flex hidden left-0 absolute" alt="" />
           <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
           {/* upper section */}
           <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out 
@@ -82,6 +83,13 @@ const cardData = [
           </h2>
           </div>
 
+        {/* card div */}
+        <div className="flex items-center gap-2 flex-row">
+
+        <button className="group w-16 h-16 rounded-full border-4 border-dashed border-gray-300 flex items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-green-600">
+          <FaArrowLeft className="text-gray-500 group-hover:text-white text-xl transition-colors duration-300" />
+        </button>
+            
         <div ref={sliderRef} className="keen-slider">
         {cardData.map((card, index) => (
           <div className="keen-slider__slide pb-5 " key={index}>
@@ -95,7 +103,7 @@ const cardData = [
                 <img src={card.image} alt={card.title} className="w-full h-50 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
               </div>
 
-              <div className="px-6 py-5 flex flex-col  gap-5 items-start">
+              <div className="px-6 py-5 flex flex-col  gap-5 items-start">                
                 <div className="flex flex-row border-gray-400  border-b-2 group-hover:border-b-2 group-hover:border-green-600 border-dashed pb-5 items-end w-full justify-between">
                   <div>
                     <div className="text-[#109c3d] font-bold text-xl">
@@ -116,7 +124,16 @@ const cardData = [
             </div>
           </div>
         ))}
-      </div>
+        </div>
+
+          <button className="group w-16 h-16 rounded-full border-4 border-dashed border-gray-300 flex items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-green-600">
+            <FaArrowRight className="text-gray-500 group-hover:text-white text-xl transition-colors duration-300" />
+          </button>
+
+        </div>
+
+        
+
     </div>
   );
 };

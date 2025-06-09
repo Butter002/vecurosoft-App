@@ -93,7 +93,7 @@ function Home() {
 
           {/* section 3 */}
           <div className="bg-white py-12 lg:m-1 px-4 md:px-16 xl:px-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-5 lg:px-20 items-center">
               {/* Left Side Images */}
               
               <div ref={ref2} 
@@ -110,11 +110,6 @@ function Home() {
                 <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
                   <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
                 </div>
-
-                {/* brush  */}
-                {/* <div className="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 border-4 border-dashed bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl">
-                <GiBroom />
-                </div> */}
                 </div>
 
               {/* Right Side Content */}

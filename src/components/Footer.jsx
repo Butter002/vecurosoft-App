@@ -97,26 +97,24 @@ const Footer = () => {
         {/* Instagram Images */}
         <div>
         <h3 className="text-xl font-bold mb-4">Instagram</h3>
-        <div className="h-[2px] w-full  bg-[#144f56] flex justify-start  mb-6"><div className=" h-full w-15 bg-green-600"></div></div>
+        <div className="h-[2px] w-full  bg-[#144f56] flex justify-start  mb-6"><div className=" h-full w-10 bg-green-600"></div></div>
         <div className="grid grid-cols-3 md:w-[90%]  w-full  gap-3">
         {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
         <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
         <div className="absolute hidden group-hover:flex justify-center items-center  bg-[rgba(27,235,93,0.5)] h-full w-full roup z-10">  <div className="text-3xl hover:text-green-600 
         rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><FaSearchPlus /></div> </div>
-          <img
-            src={`src/assets/team/${img}`}
-            alt={`Insta ${index}`}
-            className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
-        </div>
+          <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
+          className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
+          </div>
 
             ))}
           </div>
-        </div>
+        </div>  
 
       </div>
 
       {/* Sub Footer Section */}
-      <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center z-10 justify-between text-lg text-white">
+      <div className="bg-[#063a41] flex gap-5 flex-col md:flex-row py-8  md:py-0  items-center z-10 justify-between text-lg text-white">
          <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog  md:text-md text-md font-bold  ">
           © Copyright 2025 - <span className="md:text-[#042a2f] text-green-500">Poolito</span> All rights reserved.
           <span className="md:text-[#042a2f] text-green-500 "> Vecuro</span>
