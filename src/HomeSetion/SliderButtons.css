@@ -1,0 +1,21 @@
+@media (min-width: 1024px) {
+  .slider-wrapper {
+    position: relative;
+  }
+
+  .slider-wrapper .slider-arrow {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .slider-wrapper:hover .slider-arrow {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* ✅ Icon turns white when button is hovered */
+  .slider-arrow:hover .arrow-icon {
+    color: white;
+  }
+}
