@@ -20,7 +20,7 @@ const Section4 = () => {
 
   const videoOptions = {
     height: '390',
-    width: '640',
+    width: '850',
     playerVars: {
       autoplay: 1,
       controls: 1,
@@ -33,9 +33,9 @@ const Section4 = () => {
 
       {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999] px-4">
+        <div className="fixed inset-0 bg-transparent bg-opacity-80 flex items-center justify-center z-[9999] px-4">
           <div className="relative w-full max-w-4xl mx-auto bg-black rounded-lg overflow-hidden p-4">
-            <YouTube videoId="lrPoGx5GWuo" opts={videoOptions} />
+            <YouTube videoId="lrPoGx5GWuo" opts={videoOptions}/>
             <button
               onClick={() => setShowVideo(false)}
               className="absolute top-2 right-2 text-white bg-black/50 rounded-full p-2 hover:bg-red-600 transition">
@@ -54,20 +54,17 @@ const Section4 = () => {
           borderImage: 'linear-gradient(to bottom, transparent, rgba(16, 155, 61, 1))',
           borderImageSlice: 1,
         }} >
-          
+
         <div className="absolute inset-0 flex w-full flex-col justify-center items-center text-center">
           <div className="relative flex items-center justify-center w-16 h-16 mb-4 group">
             {/* Ping animation */}
-            <button
-              className="absolute w-16 h-16 rounded-full bg-green-500 opacity-50 animate-ping group-hover:bg-white"
-              onClick={() => setShowVideo(true)}
-            ></button>
+            <button className="absolute w-16 h-16 rounded-full bg-green-500 opacity-50 animate-ping group-hover:bg-white"
+              onClick={() => setShowVideo(true)}></button>
 
             {/* Play button */}
-            <button
-              className="relative z-10 bg-green-500 group-hover:bg-white w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-300"
-              onClick={() => setShowVideo(true)}
-            >
+            <button className="relative z-10 bg-green-500 group-hover:bg-white w-16 h-16 rounded-full flex items-center 
+            justify-center transition-colors duration-300" onClick={() => setShowVideo(true)} >
+
               <span className="text-white group-hover:text-green-900 text-2xl transition-colors duration-300">
                 <FaPlay />
               </span>
