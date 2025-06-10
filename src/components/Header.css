@@ -1,0 +1,18 @@
+:root {
+  --theme-color: #00A651;
+}
+
+.call-helpline-container {
+  display: flex;
+  align-items: center;
+  background-color: #109c3d;
+  border-radius: 0px 60px 60px 0px;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+
+
+
+
+

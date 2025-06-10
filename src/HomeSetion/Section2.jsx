@@ -66,8 +66,8 @@ const cardData = [
 
         return (
         <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
-
-
+          <img src={mapshap} className="top-10 lg:flex hidden left-0 absolute" alt="" />
+          <img src={aboutshape} className="top-0 right-0 absolute" alt="" />
           {/* upper section */}
           <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out 
           ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>

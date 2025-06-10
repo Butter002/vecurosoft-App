@@ -7,7 +7,7 @@ import "keen-slider/keen-slider.min.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
-import Section2 from "../HomeSetion/Section4";
+import Section2 from "../HomeSetion/Section2";
 import ServiceBannner from '../assets/images/cleaning_banner.png';
 import map from '../assets/images/mapimage.png';
 import cleaningsofa from "../assets/images/cleaningsofa.png";

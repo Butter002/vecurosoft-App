@@ -33,7 +33,7 @@ const Section4 = () => {
 
       {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0 bg-transparent bg-opacity-80 flex items-center justify-center z-[9999] px-4">
+        <div className="fixed inset-0  bg-transparent bg-opacity-80 flex items-center justify-center z-[9999] px-4">
           <div className="relative w-full max-w-4xl mx-auto bg-black rounded-lg overflow-hidden p-4">
             <YouTube videoId="lrPoGx5GWuo" opts={videoOptions}/>
             <button
@@ -47,7 +47,7 @@ const Section4 = () => {
 
       {/* Video Area */}
       <div
-        className="relative z-50 -mt-[190px] bg-center bg-cover pd-100 overflow-hidden h-[490px] md:h-[400px] lg:h-[550px]"
+        className="relative z-1 -mt-[190px] bg-center bg-cover pd-100 overflow-hidden h-[490px] md:h-[400px] lg:h-[550px]"
         style={{
           backgroundImage: `url(${cleaningsofa})`,
           border: '8px solid transparent',
