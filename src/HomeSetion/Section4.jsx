@@ -22,8 +22,7 @@ import img6 from "../assets/instagram/6.jpg";
 import img7 from "../assets/instagram/window_cleainng.png";
 import img8 from "../assets/instagram/3.jpg";
 
-import aboutshape from '../assets/images/about-shape-1-2.png'
-import mapshap from '../assets/vector/map-shape-3.png'
+
 
 const cardData = [
   { title: "BED & MATTRES", image: img1, icon: <IoBedSharp /> },
@@ -76,7 +75,7 @@ const cardData = [
             <div className="font-semibold text-gray-700 text-lg tracking-wider">
               CLEANING SERVICE
             </div>
-            <div className="bg-green-600 h-1 w-[90px]" />
+            <div className="bg-green-600 h-1 w-[90px]"/>
           </div>
           <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#062F33]">
             Our Excellent Service
