@@ -144,12 +144,14 @@ function Home() {
 
                 {/* CTA and Author */}
                 <div className="flex items-center flex-wrap gap-4">
-                  <button className="bg-green-600 hover:bg-[#062F33] text-white py-1 px-2 rounded-full text-lg font-semibold flex items-center gap-6">
-                    Read More
-                    <div className="bg-black hover:bg-green-600 text-3xl h-10 w-10 flex justify-center items-center rounded-full">
-                      <GoArrowRight />
+                    <div className="group">
+                      <button className="bg-green-600 group-hover:bg-[#062F33] text-white py-1 px-2 rounded-full text-lg font-semibold flex items-center gap-6 transition-all duration-300">
+                        Read More
+                        <span className="bg-black group-hover:bg-green-600 text-white text-3xl h-10 w-10 flex justify-center items-center rounded-full transition-all duration-300">
+                          <GoArrowRight />
+                        </span>
+                      </button>
                     </div>
-                  </button>
 
                   <div className="flex items-center gap-3">
                     <div className="border-2 border-dashed p-1 border-green-500 object-cover rounded-full ">

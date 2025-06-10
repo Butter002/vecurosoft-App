@@ -2,36 +2,21 @@ import React, { useState } from "react";
 import {FaFacebookF,FaLinkedinIn,FaInstagram,FaPhoneAlt,FaEnvelope,FaClock,FaBars,FaTimes,FaChevronRight,FaPlus,FaSearch,} from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/vector/logo-white.svg";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuList=[
-    {
-      name:"HOME",
-      link:"/Home"
-    },
-    {
-      name:"About US",
-      link:"/AboutUs"
-      
-    },
-    {
-      name:"SERVICE",
-      link:"/Service"
-    },
-    {
-      name:"BOLG",
-      link:"/blog"
-    },
-    {
-      name:"PAGES",
-      link:"/pages"
-    },
-    {
-      name:"CONTACT",
-      link:"/contact"
-    },
+    { name:"HOME", link:"/Home"},
+
+    {name:"About US", link:"/AboutUs"},
+
+    { name:"SERVICE", link:"/Service"},
+
+    { name:"BOLG",link:"/blog"},
+    
+    { name:"PAGES",link:"/pages"},
+
+    { name:"CONTACT",link:"/contact"},
   ]
   return (
     <header>
@@ -95,7 +80,7 @@ const Header = () => {
           </div>
         </div>
         {/* header */}
-        <div className="flex justify-between items-center md:gpa-2  px-5 py-8 xl:pr-30 ">
+        <div className="flex justify-between items-center md:gap-2    xl:pr-30 ">
           <div className="hidden lg:flex flex-row gap-4 justify-center items-center">
             {/* Desktop Nav */}
             <nav className="flex gap-3 items-center space-x-8 md:space-x-1 text-[17px] font-bold text-[#04363d]">
@@ -113,20 +98,16 @@ const Header = () => {
               <span className="w-[2px] h-6 pr-[-1px] bg-black/20"></span>
             </div>
             {/* Call info */}
-            <div className="hidden lg:flex items-center space-x-3">
-              <div className="bg-green-600 p-6 rotate-280 rounded-full hover:bg-[#05444d] text-white text-lg">
-                <FaPhoneAlt />
-              </div>
-
-              <div>
-                <p className="text-green-500 text-1xl font-bold">
-                  Call Helpline
-                </p>
-                <p className="text-[#04363d] font-bold text-2xl">
-                  +88(0) 1237 6421
-                </p>
-              </div>
+            <div className="hidden lg:flex items-center space-x-3 bg-[#04363d] rounded-l-[40px] px-4 py-2">
+            <div className="bg-green-600 p-6 rounded-full hover:bg-[#05444d] text-white text-lg">
+              <FaPhoneAlt />
             </div>
+
+            <div>
+              <p className="text-green-500 text-[1rem] font-bold">Call Helpline</p>
+              <p className="text-white font-bold text-2xl">+88(0) 1237 6421</p>
+            </div>
+          </div>
           </div>
 
           {/* Hamburger Icon */}
@@ -144,7 +125,7 @@ const Header = () => {
             menuOpen ? "translate-x-0" : "-translate-x-full"}`} >
 
           <div className="flex items-center justify-between p-4 border-b">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2" >
               <img src={logo} alt="Logo" className="h-10" />
               <h2 className="text-green-700 text-xl font-bold">Poolito</h2>
             </div>
@@ -154,7 +135,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="p-4 space-y-4 text-lg font-semibold text-[#04363d]">
+          <div className="p-4 space-y-4 text-lg font-semibold text-[#109C3D]">
             {menuList.map(
               (item, i) => (
                 <div

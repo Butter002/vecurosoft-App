@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { GiBroom } from "react-icons/gi";
 import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
 import { IoBedSharp } from "react-icons/io5";
 import { BiSolidBuildingHouse } from "react-icons/bi";
 import { FaBath, FaKitchenSet } from "react-icons/fa6";
@@ -11,6 +9,7 @@ import { GiFloorPolisher, GiVacuumCleaner } from "react-icons/gi";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useInView } from "react-intersection-observer";
 
+import "keen-slider/keen-slider.min.css";
 import "./Section4.scss";
 import "./SliderButtons.css"
 

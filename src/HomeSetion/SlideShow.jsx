@@ -50,13 +50,16 @@ const Slideshow = () => {
         SERVICES <a className='text-green-700'>FOR</a><br/>YOUR CITY
         </div>
 
-        <div className='slide-up-fade'><button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white hover:text-[#042D33] py-1 px-4 rounded-full text-lg font-semibold flex items-center gap-6">
-        GET PRICING
-        <div className="bg-[#042D33] text-white  hover:bg-white text-2xl hover:text-[#042D33] h-12 w-12 flex justify-center items-center rounded-full">
-        <GoArrowRight />
-        </div>
-        </button>
-        </div>
+        <div className="slide-up-fade group">
+  <button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white group-hover:text-[#042D33] py-1 px-1 rounded-full text-lg font-semibold flex items-center gap-6">
+    GET PRICING
+    <span className="bg-[#042D33] text-white group-hover:bg-white group-hover:text-[#042D33] text-3xl h-12 w-12 flex justify-center items-center rounded-full transition-all">
+      <GoArrowRight />
+    </span>
+  </button>
+</div>
+
+
         </div>
       </div>
 
