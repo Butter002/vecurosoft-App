@@ -107,9 +107,11 @@ function Home() {
                 <div className="absolute -left-0 top-6">
                   <img src={vector1} alt="" />
                 </div>
+
                 <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
                   <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
                 </div>
+                
                 </div>
 
               {/* Right Side Content */}

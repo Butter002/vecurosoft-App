@@ -22,6 +22,9 @@ import img6 from "../assets/instagram/6.jpg";
 import img7 from "../assets/instagram/window_cleainng.png";
 import img8 from "../assets/instagram/3.jpg";
 
+import mapshap from '../assets/vector/service-shape-1.png'
+import vectorleft from '../assets/vector/service-shape-2.png'
+import aboutshape from '../assets/vector/service-shape-3.png'
 
 
 const cardData = [
@@ -64,14 +67,18 @@ const cardData = [
         return () => clearInterval(timerRef.current); }, [instanceRef]);
 
         return (
-        <div ref={inViewRef} className=" relative py-24 mb-10  lg:px-40 section4">
+        <div ref={inViewRef} className=" relative py-45   lg:px-40 section4">
 
-
+          <img src={mapshap} className="top-0 md:flex hidden right-0 absolute"/> 
+          <img src={aboutshape} className="left-0 bottom-0 absolute" />
+          <img src={vectorleft} className="right-0 bottom-0 absolute" />
+          
+          
           {/* upper section */}
           <div ref={titleRef} className={`text-center mb-10 transform transition-all duration-700 ease-out 
           ${titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="flex items-center justify-center gap-4 mb-2">
-            <div className="bg-green-600 h-1 w-[90px]" />
+            <div className="bg-green-600 h-1 w-[90px]"/>
             <div className="font-semibold text-gray-700 text-lg tracking-wider">
               CLEANING SERVICE
             </div>
@@ -99,11 +106,8 @@ const cardData = [
                   transition-all duration-700 ease-out ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                   style={inView ? { animationDelay: `${index * 0.2}s` } : {}} >
                   <div className="overflow-hidden flex flex-col justify-center items-center text-center rounded-t-xl">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full h-50 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    />
+                    <img src={card.image} 
+                    alt={card.title} className="w-full h-50 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
                   </div>
 
                   <div className="px-6 py-5 flex flex-col gap-5 items-start">

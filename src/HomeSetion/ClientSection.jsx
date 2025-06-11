@@ -28,7 +28,7 @@ const Section4 = () => {
   };
 
   return (
-    <div className="relative gap-100 bg-[#052429] text-white mt-40 mb-10 py-18 px-3 md:h-234 md:px-68">
+    <div className="relative gap-100 bg-[#052429] text-white  mb-10 py-18 px-3 md:h-234 md:px-68">
       <div className='absolute top-15 left-0 z-20'><img src={map} alt="" /></div>
 
       {/* Video Modal */}
