@@ -14,6 +14,7 @@ import Section1 from "../HomeSetion/SlideShow";
 import ClientSection from "../HomeSetion/ClientSection";
 import TeamArea from "../HomeSetion/TeamArea";
 import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
+import './Section2.css'
 
 import cleaningsofa from "../assets/images/cleaningsofa.png";
 import section2image from "../assets/images/section2image.png";
@@ -37,6 +38,7 @@ function Home() {
 
           {/* Section 2 */}
           <div className="flex flex-col bg-[#109c3d] lg:flex-row">
+            
             {/* Left Green Panel */}
             <div className="flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
               <div className="flex items-center gap-5">
@@ -92,35 +94,37 @@ function Home() {
           </div>
 
           {/* section 3 */}
-          <div className="bg-white py-12 lg:m-1 px-4 md:px-16 xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-5 lg:px-20 items-center">
+          <div className="bg-white py-12 lg:m-1 px-4 px-lg">
+            <div className="flex flex-col  flexd gap-20 py-5 lg:px-20 items-center">
               {/* Left Side Images */}
-              
-              <div ref={ref2} 
-                className={`relative h-full flex flex-row pl-6 pt-6 gap-5 items-start w-full
+              <div className=" width-lg backcolor  ">
+                <div ref={ref2} 
+                className={`relative h-full flex  flex-row pl-6 pt-6 gap-5 items-start w-full
                 transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} > 
 
                 <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-[100%] max-w-[450px] border-transparent" />
 
-                <div className="bg-[#109c3d] w-full mt-8 h-2" />
+                <div className="bg-[#109c3d] w-full mt-8 h-2"/>
 
                 <div className="absolute -left-0 top-6">
-                  <img src={vector1} alt="" />
+                  <img src={vector1}/>
                 </div>
 
-                <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
+                <div className="absolute image-box-position bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
                   <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
                 </div>
-                
+
                 </div>
+              </div>
 
               {/* Right Side Content */}
               <div ref={ref2}
-                className={`gap-3 flex flex-col transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>                  
+                className={`gap-3 flex width-lg flex-col transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>                  
     
-                <p className="text-green-600 font-semibold flex flex-row items-center text-lg "><div className="h-1 w-10 bg-green-600" /> ABOUT CLEANING</p>
+                <p className="text-green-600 font-semibold flex flex-row items-center text-lg "><div className="h-1 w-10 bg-green-600" />ABOUT CLEANING</p>
 
-                <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-15 mb-6">Our Cleaning <span className="text-green-600">Agency</span>
+                <h2 className="lg:text-5xl text-4xl text-[#063a41] font-bold leading-10mb-6">
+                  Our Cleaning <span className="text-green-600">Agency</span>
                 <br/> For Your City</h2>
                 <p className="text-gray-500 font-bold mb-6">
                   When You Work Angeles House Cleaners Referral Agency Cleaning
@@ -147,7 +151,7 @@ function Home() {
                 {/* CTA and Author */}
                 <div className="flex items-center flex-wrap gap-4">
                     <div className="group">
-                      <button className="bg-green-600 group-hover:bg-[#062F33] text-white py-1 px-2 rounded-full text-lg font-semibold flex items-center gap-6 transition-all duration-300">
+                      <button className="bg-green-600 group-hover:bg-[#062F33] text-white py-2.5 px-4 rounded-full text-lg font-semibold flex items-center gap-6 transition-all duration-300">
                         Read More
                         <span className="bg-black group-hover:bg-green-600 text-white text-3xl h-10 w-10 flex justify-center items-center rounded-full transition-all duration-300">
                           <GoArrowRight />
@@ -177,6 +181,9 @@ function Home() {
               </div>
             </div>
           </div>
+
+          {/* section 3 for responsive */}
+
 
           {/* section 4 */}
           <Section4/>

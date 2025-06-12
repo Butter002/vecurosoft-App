@@ -1,0 +1,48 @@
+.image-box-position {
+  position: absolute;
+}
+@media (min-width: 1025px) {
+  .width-lg{
+    width: 50%;
+  }
+}
+/* Large screens (lg only) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .flexd{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .image-box-position {
+    bottom: -40px;
+    right: -10px;
+    width: 300px;
+    height: 500px;
+  }
+
+  .vector-icon-position {
+    top: 24px;
+    left: 0px;
+  }
+}
+
+/* Medium screens (md only) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .flexd{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-box-position {
+    bottom: -40px;
+    right: -10px;
+    width: 290px;
+    height: 500px;
+  }
+
+  .vector-icon-position {
+    top: 24px;
+    left: 0px;
+  }
+}
+
