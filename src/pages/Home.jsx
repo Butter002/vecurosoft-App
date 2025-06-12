@@ -37,10 +37,10 @@ function Home() {
           <Section1/>
 
           {/* Section 2 */}
-          <div className="flex flex-col bg-[#109c3d] lg:flex-row">
+          <div className="flex flex-col  bg-[#109c3d] md:flex-row">
             
             {/* Left Green Panel */}
-            <div className="flex items-center justify-start px-7 py-14 w-full border-dashed border-black lg:w-[35%]">
+            <div className="flex items-center justify-start px-6 py-14 w-full border-dashed border-black lg:w-[35%]">
               <div className="flex items-center gap-5">
                 <div className="border-2 border-white border-dashed hover:border-black rounded-full">
                   <div className="bg-[#042a2f] p-7 rounded-full text-white hover:text-green-600 text-3xl">
@@ -67,7 +67,7 @@ function Home() {
 
             {/* Right Dark Panel */}
             <div ref={ref}
-              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2 gap-6 sm:gap-8 lg:flex lg:items-center lg:justify-between" >
+              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2  gap-6 sm:gap-8  lg:flex lg:items-center lg:justify-between" >
               {[
                 { icon: <ImUsers />, count: 950, label: "Happy Client" },
                 { icon: <FaTrophy />, count: 45, label: "Award Winner" },
@@ -95,7 +95,7 @@ function Home() {
 
           {/* section 3 */}
           <div className="bg-white py-12 lg:m-1 px-4 px-lg">
-            <div className="flex flex-col  flexd gap-20 py-5 lg:px-20 items-center">
+            <div className="flex flex-col xl:flex-row directionn gap-20 py-5 lg:px-20 items-center">
               {/* Left Side Images */}
               <div className=" width-lg backcolor  ">
                 <div ref={ref2} 
