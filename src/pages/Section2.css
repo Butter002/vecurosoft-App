@@ -1,65 +1,76 @@
-.image-box-position {
-  position: absolute;
-}
-@media (min-width: 1025px) {
-  .width-lg{
-    width: 50%;
-  }
-}
-
-
-@media (min-width: 1441px){
-  .px{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* Large screens (lg only) */
-@media (min-width: 1024px) and (max-width: 1440px) {
   .image-box-position {
-    bottom: -40px;
-    right: -10px;
-    width: 300px; 
-    height: 500px;
+    position: absolute;
+  }
+  @media (min-width: 1025px) {
+    .width-lg{
+      width: 50%;
+    }
   }
 
-  .vector-icon-position {
-    top: 24px;
-    left: 0px;
-  }
-}
 
-/* Medium screens (md only) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .flexd{
-    display: flex;
+  @media (min-width: 1441px){
+    .px{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (min-width: 1442px) {
+    .image-box-position {
+      bottom: -55px;
+    }
+  }
+
+  /* Large screens (lg only) */
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .image-box-position {
+      bottom: -40px;
+      right: -10px;
+      width: 300px; 
+      height: 500px;
+    }
+
+    .vector-icon-position {
+      top: 24px;
+      left: 0px;
+    }
   }
   
-  .image-box-position {
-    bottom: -40px;
-    right: -10px;
-    width: 290px;
-    height: 500px;
-  }
 
-  .vector-icon-position {
-    top: 24px;
-    left: 0px;
-  }
-}
-
-
-@media (min-width:1441){
-  .directionn{
+  /* Medium screens (md only) */
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .flexd{
     display: flex;
-    flex-direction: row;
-  }
-}
+    }
+    
+    .leftimage-w{
+    width: 640px;
+    }
 
-@media  (max-width: 1340px)  and (min-width:990px) {
-  .wraping {
-    display: flex;
-    flex-wrap: wrap;
+    .image-box-position {
+      bottom: -40px;
+      right: -0px;
+      width: 320px;
+      height: 520px;
+    }
+
+    .vector-icon-position {
+      top: 24px;
+      left: 0px;
+    }
   }
-}
+
+
+    @media (min-width:1441){
+      .directionn{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    @media  (max-width: 1340px)  and (min-width:990px) {
+      .wraping {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }

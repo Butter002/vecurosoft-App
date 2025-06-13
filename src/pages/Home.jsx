@@ -22,6 +22,7 @@ import profile from "../assets/images/Co-founder.png";
 import Blog from "../HomeSetion/BlogSection";
 import vector1 from "../assets/vector/Vector 1.png";
 import mapicon from '../assets/vector/about-icon4.svg'
+import rightcorner from '../assets/images/about-shape-1-2.png'
 
 function Home() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -67,15 +68,11 @@ function Home() {
 
             {/* Right Dark Panel */}
             <div ref={ref}
-              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2  gap-6 sm:gap-8  lg:flex lg:items-center lg:justify-between" >
+              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2  gap-6 sm:gap-8 wraping lg:flex lg:items-center lg:justify-between" >
               {[
                 { icon: <ImUsers />, count: 950, label: "Happy Client" },
                 { icon: <FaTrophy />, count: 45, label: "Award Winner" },
-                {
-                  icon: <MdMapsHomeWork />,
-                  count: 400,
-                  label: "Completed Project",
-                },
+                { icon: <MdMapsHomeWork />,count: 400,label: "Completed Project",},
                 { icon: <FaUsers />, count: 100, label: "Team Member" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center">
@@ -94,10 +91,12 @@ function Home() {
           </div>
 
           {/* section 3 */}
-          <div className="bg-white py-12 lg:m-1 px-4 px-lg">
-            <div className="flex flex-col xl:flex-row directionn gap-20 py-5 lg:px-20 items-center">
+          <div className="bg-white relative  py-12 l px-4">
+            <img src={rightcorner} className="right-0 top-0 absolute"/>
+            <div className="flex flex-col xl:flex-row directionn gap-15 py-5 2xl:px-50 px-20 items-center">
+              
               {/* Left Side Images */}
-              <div className=" width-lg backcolor  ">
+              <div className="width-lg leftimage-w backcolor">
                 <div ref={ref2} 
                 className={`relative h-full flex  flex-row pl-6 pt-6 gap-5 items-start w-full
                 transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} > 

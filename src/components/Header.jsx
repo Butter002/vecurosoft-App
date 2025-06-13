@@ -97,7 +97,7 @@ const Header = () => {
             <div className="flex justify-between xl:pr-30">
               <div className="hidden relative lg:flex flex-row gap-4 items-center">
 
-                <div className="absolute call-helpline-container !bg-white flex items-center h-30 right-55">
+                <div className="absolute call-helpline-container !bg-white  flex items-center h-30 right-55">
                   <div className="bg-green-600 h-17 w-17 flex items-center justify-center rounded-full hover:bg-[#05444d] text-white text-lg">
                     <FaPhoneAlt />
                   </div>
@@ -110,12 +110,13 @@ const Header = () => {
                     </a>
                   ))}
                 </nav>
-                <FaSearch className="hidden lg:flex" />
-                <div className="hidden md:flex items-center gap-[1.5px]">
+                <FaSearch className="hidden xl:flex"/>
+                <div className="hidden xl:flex items-center gap-[1.5px]">
                   <span className="w-[2.5px] h-10 bg-black/20"></span>
                   <span className="w-[2px] h-6 bg-black/20"></span>
                 </div>
-                <div className="hidden pl-30  lg:flex items-center h-[100%] space-x-3 bg-[#109C3D]  px-4 py-2">
+
+                <div className="hidden pl-30  xl:flex items-center h-[100%] space-x-3 bg-[#109C3D]  px-4 py-2">
                   <div>
                     <p className="text-white text-[1rem] font-bold">Call Helpline</p>
                     <p className="text-white font-bold text-2xl">+88(0) 1237 6421</p>
@@ -141,7 +142,7 @@ const Header = () => {
             <img src={logo} alt="Logo" className="h-10" />
             <h2 className="text-green-700 text-xl font-bold">Poolito</h2>
           </div>
-          <button onClick={() => setMenuOpen(false)} className="text-green-600 text-2xl"><FaTimes /></button>
+          <button onClick={() => setMenuOpen(false)} className="text-green-600 text-2xl"><FaTimes/></button>
         </div>
         <div className="p-4 space-y-4 text-lg font-semibold text-[#109C3D]">
           {menuList.map((item, i) => (
