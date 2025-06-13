@@ -41,15 +41,14 @@ function Home() {
           <div className="flex flex-col  bg-[#109c3d] md:flex-row">
             
             {/* Left Green Panel */}
-            <div className="flex items-center justify-start px-6 py-14 w-full border-dashed border-black lg:w-[35%]">
+            <div className="flex items-center justify-start px-6 py-14 w-full border-dashed border-black xl:w-[35%] md:w-[60%]">
               <div className="flex items-center gap-5">
                 <div className="border-2 border-white border-dashed hover:border-black rounded-full">
                   <div className="bg-[#042a2f] p-7 rounded-full text-white hover:text-green-600 text-3xl">
                     <FaPlay />
                   </div>
                 </div>
-                <div
-                  ref={ref}
+                <div ref={ref}
                   className={`transition-opacity duration-700 ${
                     inView ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >               
 
@@ -180,9 +179,6 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* section 3 for responsive */}
-
 
           {/* section 4 */}
           <Section4/>

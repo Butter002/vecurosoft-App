@@ -94,11 +94,11 @@ const Header = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="flex justify-between xl:pr-30">
+            <div className="flex homepr justify-between  2xl:pr-30">
               <div className="hidden relative lg:flex flex-row gap-4 items-center">
 
-                <div className="absolute call-helpline-container !bg-white  flex items-center h-30 right-55">
-                  <div className="bg-green-600 h-17 w-17 flex items-center justify-center rounded-full hover:bg-[#05444d] text-white text-lg">
+                <div className="absolute  call-helpline-container !bg-white  flex items-center h-30 right-55">
+                  <div className="bg-green-600 h-17 rotate-250 w-17 flex items-center justify-center rounded-full hover:bg-[#05444d] text-white text-lg">
                     <FaPhoneAlt />
                   </div>
                 </div>
@@ -114,12 +114,12 @@ const Header = () => {
                 <div className="hidden xl:flex items-center gap-[1.5px]">
                   <span className="w-[2.5px] h-10 bg-black/20"></span>
                   <span className="w-[2px] h-6 bg-black/20"></span>
-                </div>
+                </div>  
 
-                <div className="hidden pl-30  xl:flex items-center h-[100%] space-x-3 bg-[#109C3D]  px-4 py-2">
+                <div className="hidden pl-30  xl:flex items-center h-[100%] space-x-3 2xl:bg-[#109C3D]  px-4 py-2">
                   <div>
-                    <p className="text-white text-[1rem] font-bold">Call Helpline</p>
-                    <p className="text-white font-bold text-2xl">+88(0) 1237 6421</p>
+                    <p className="text-green-500 2xl:text-white text-[1rem] font-bold">Call Helpline</p>
+                    <p className="text-black 2xl:text-white font-bold text-2xl">+88(0) 1237 6421</p>
                   </div>
                 </div>
               </div>
