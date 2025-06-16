@@ -50,10 +50,10 @@ const Header = () => {
       {/* Topbar */}
       {showTopbar && (
         <div className="bg-[#05444d] text-white font-thi text-base transition-all z-100 duration-300">
-          <div className="mx-auto xl:px-30 px-15 py-2 flex lg:justify-between justify-center items-center flex-wrap">
+          <div className="mx-auto xl:px-30 px-15 topbar py-2 flex lg:justify-between justify-center items-center flex-wrap">
             <div className="hidden lg:flex items-center space-x-6 text-md">
               <div className="flex items-center font-bold text-xl space-x-2">
-                <FaEnvelope className="text-green-600" />
+                <FaEnvelope className="text-green-600"/>
                 <span>info@example.com</span>
               </div>
               <div className="hidden sm:flex items-center gap-[1.5px]">
@@ -61,7 +61,7 @@ const Header = () => {
                 <span className="w-[2.5px] h-3 bg-white/30"></span>
               </div>
               <div className="flex font-bold text-xl items-center space-x-4">
-                <FaClock className="text-green-600" />
+                <FaClock className="text-green-600" />  
                 <span>Tuesday – Saturday 8:00 Am – 5:00 Pm</span>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Header = () => {
           <div className="flex flex-row justify-between gap-[6rem]">
             {/* Logo */}
             <div className="relative w-[35%] xl:w-[26%] rounded-tr-[1000px] bg-[#109c3d]">
-              <div className="absolute top-0 left-3 h-full w-full bg-[#54ce7b] transform skew-x-32 z-0" />
+              <div className="absolute top-0 left-3 h-full w-full bg-[#54ce7b] transform skew-x-32 z-0"/>
               <div className="relative bg-[#109c3d] h-full px-6 text-white flex items-center gap-3 skew-x-[25deg] z-10">
                 <div className="flex items-end gap-2 skew-x-[-25deg]">
                   <img src={logo} alt="icon" className="w-90 lg:h-30 h-15 lg:pl-30" />

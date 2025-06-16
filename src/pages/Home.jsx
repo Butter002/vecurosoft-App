@@ -65,9 +65,10 @@ function Home() {
               </div>
             </div>
 
-            {/* Right Dark Panel */}
+            {/* Right Dark Panel */}  
             <div ref={ref}
-              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2  gap-6 sm:gap-8 wraping lg:flex lg:items-center lg:justify-between" >
+              className="bg-[#042a2f] w-full lg:w-[75%] lg:mb-2 px-11 py-6 lg:py-0 grid grid-cols-2  
+              gap-6 sm:gap-8 wraping lg:flex lg:items-center lg:justify-between">
               {[
                 { icon: <ImUsers />, count: 950, label: "Happy Client" },
                 { icon: <FaTrophy />, count: 45, label: "Award Winner" },

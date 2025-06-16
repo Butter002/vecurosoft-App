@@ -46,19 +46,18 @@ const Slideshow = () => {
         <div className='absolute -top-10 md:hidden left-2'><img src={vector} alt=""/></div>  
 
         <div className='text-green-600 flex gap-3 font-extrabold text-2xl slide-up-fade inline-100'> <FaSoap />100% Satisfaction</div>
-        <div className='lg:text-7xl font-extrabold text-5xl text-white slide-up-fade'>CLEANING <br/>
+        <div className='lg:text-7xl font-extrabold text-5xl text-white maintext slide-up-fade'>CLEANING <br/>
         SERVICES <a className='text-green-700'>FOR</a><br/>YOUR CITY
         </div>
 
         <div className="slide-up-fade group">
-  <button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white group-hover:text-[#042D33] py-1 px-1 rounded-full text-lg font-semibold flex items-center gap-6">
-    GET PRICING
-    <span className="bg-[#042D33] text-white group-hover:bg-white group-hover:text-[#042D33] text-3xl h-12 w-12 flex justify-center items-center rounded-full transition-all">
-      <GoArrowRight />
-    </span>
-  </button>
-</div>
-
+          <button className="bg-gradient-to-r from-[#1da8b5] to-[#67b846] text-white group-hover:text-[#042D33] py-1 px-2 rounded-full text-lg font-semibold flex items-center gap-6">
+            GET PRICING2
+            <span className="bg-[#042D33] text-white group-hover:bg-white group-hover:text-[#042D33] text-3xl h-12 w-12 flex justify-center items-center rounded-full transition-all">
+              <GoArrowRight />
+            </span>
+          </button>
+        </div>
 
         </div>
       </div>

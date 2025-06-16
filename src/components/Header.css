@@ -11,15 +11,20 @@
   color: white;
 } 
 
- @media (min-width: 768px) and (max-width: 1025px) {
+ @media (min-width: 778px) and (max-width: 1025px) {
 
-  .call-helpline-container  {
-    right: -0px;
+  .call-helpline-container{
+    right: -44px;
     background-color: transparent;
-     }
+    }
      
-  .homepr {
-    padding-right: 0px;
-  }
+  .topbar{
+    padding-right: 10px;
+    padding-left: 10px;
+  }  
 
-  }
+  .homepr {
+    padding-right: 44px;
+    }
+
+  } 

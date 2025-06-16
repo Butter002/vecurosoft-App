@@ -92,7 +92,7 @@ const cardData = [
           {/* card sectio  */}
           <div className="slider-wrapper flex items-center gap-2 flex-row">
           {/* Left Arrow */}
-          <button onClick={() => instanceRef.current?.prev()} className="slider-arrow hidden lg:flex h-16 w-16 
+          <button onClick={() => instanceRef.current?.prev()} className="slider-arrow hidden 2xl:flex h-16 w-16 
           rounded-full border-4 border-dashed border-gray-300 items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-white">
           <FaArrowLeft className="arrow-icon text-xl text-gray-500 transition-colors duration-300" />
           </button>
@@ -133,7 +133,7 @@ const cardData = [
           </div>
 
           {/* Right Arrow */}
-          <button onClick={() => instanceRef.current?.next()} className="slider-arrow hidden lg:flex h-16 w-16 rounded-full
+          <button onClick={() => instanceRef.current?.next()} className="slider-arrow hidden 2xl:flex h-16 w-16 rounded-full
           border-4 border-dashed border-gray-300 items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-white" >
           <FaArrowRight className="arrow-icon text-xl text-gray-400 transition-colors duration-300" />
           </button>

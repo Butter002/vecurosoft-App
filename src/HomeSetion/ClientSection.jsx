@@ -65,16 +65,16 @@ const Section4 = () => {
             <button className="relative z-10 bg-green-500 group-hover:bg-white w-16 h-16 rounded-full flex items-center 
             justify-center transition-colors duration-300" onClick={() => setShowVideo(true)} >
 
-              <span className="text-white group-hover:text-green-900 text-2xl transition-colors duration-300">
-                <FaPlay />
-              </span>
+            <span className="text-white group-hover:text-green-900 text-2xl transition-colors duration-300">
+              <FaPlay />
+            </span>
             </button>
           </div>
 
           {/* video section text */}
           <div
             ref={videoTextRef}
-            className={`flex justify-center items-center flex-col transition-all duration-700 ease-in-out ${videoTextInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            className={`flex justify-center items-center flex-col transition-all  duration-700 ease-in-out ${videoTextInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <h2 className="text-2xl md:text-4xl font-bold">Most Trusted service</h2>
             <button className="mt-4 bg-green-600 text-white py-2 px-3 font-bold rounded-full flex items-center gap-5 hover:bg-green-600">
               Discover More

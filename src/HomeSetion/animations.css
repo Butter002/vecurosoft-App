@@ -43,3 +43,9 @@
 .slide-left-fade {
   animation: slideLeftFade 0.9s ease-out forwards;
 }
+
+ @media (min-width: 768px) and (max-width: 1025px) { 
+  .maintext {
+      font-size: 51px ; 
+    }
+ }

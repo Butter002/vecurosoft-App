@@ -68,7 +68,7 @@
       }
     }
 
-    @media  (max-width: 1340px)  and (min-width:990px) {
+    @media  (max-width: 1340px) and (min-width:990px) {
       .wraping {
         display: flex;
         flex-wrap: wrap;
