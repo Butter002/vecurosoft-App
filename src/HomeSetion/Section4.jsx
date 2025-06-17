@@ -41,18 +41,23 @@ const cardData = [
       const Section4 = () => {
         const timerRef = useRef(null);
         const [sliderRef, instanceRef] = useKeenSlider({
-          loop: true,
-          mode: "free",
-          slides: { perView: 4, spacing: 15 },
-          breakpoints: {
-            "(max-width: 768px)": {
-              slides: {
-                perView: 1,
-                spacing: 10,
-              },
-            },  
-          },
-        });
+  loop: true,
+  mode: "free",
+  slides: { perView: 1, spacing: 15 }, // mobile default
+
+  breakpoints: {
+    '(min-width: 640px)': {
+      slides: { perView: 2, spacing: 16 },
+    },
+    '(min-width: 1024px) and (max-width: 1279px)': {
+      slides: { perView: 3, spacing: 24 },
+    },
+    '(min-width: 1280px)': {
+      slides: { perView: 4, spacing: 24 },
+    },
+  },
+});
+
 
         const { ref: inViewRef, inView } = useInView({ triggerOnce: true,threshold: 0.2,});
 
@@ -67,11 +72,11 @@ const cardData = [
         return () => clearInterval(timerRef.current); }, [instanceRef]);
 
         return (
-        <div ref={inViewRef} className=" relative py-45   lg:px-40 section4">
+        <div ref={inViewRef} className=" relative py-45 lg:px-20 xl:px-30 2xl:px-40 section4">
 
           <img src={mapshap} className="top-0 md:flex hidden right-0 absolute"/> 
-          <img src={aboutshape} className="left-0 bottom-0 absolute" />
-          <img src={vectorleft} className="right-0 bottom-0 absolute" />
+          <img src={aboutshape} className="left-0 bottom-0 absolute"/>
+          <img src={vectorleft} className="right-0 bottom-0 absolute"/>
           
           
           {/* upper section */}
@@ -91,6 +96,7 @@ const cardData = [
 
           {/* card sectio  */}
           <div className="slider-wrapper flex items-center gap-2 flex-row">
+            
           {/* Left Arrow */}
           <button onClick={() => instanceRef.current?.prev()} className="slider-arrow hidden 2xl:flex h-16 w-16 
           rounded-full border-4 border-dashed border-gray-300 items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-white">
@@ -102,15 +108,16 @@ const cardData = [
             {cardData.map((card, index) => (
               <div className="keen-slider__slide pb-5" key={index}>
                 <div
-                  className={`relative h-full group rounded-xl m-4 mt-0 pb-5 shadow-md bg-white lg:m-0 xl:mx-8 
+                  className={`relative h-full group rounded-xl m-4 mt-0 pb-5 shadow-md bg-white lg:m-0 xl:mx-5 
                   transition-all duration-700 ease-out ${inView ? "card-animate opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                   style={inView ? { animationDelay: `${index * 0.2}s` } : {}} >
                   <div className="overflow-hidden flex flex-col justify-center items-center text-center rounded-t-xl">
+                    
                     <img src={card.image} 
                     alt={card.title} className="w-full h-50 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
                   </div>
 
-                  <div className="px-6 py-5 flex flex-col gap-5 items-start">
+                  <div className="px-5 py-6 flex flex-col gap-5 items-start">
                     <div className="flex flex-row border-gray-400 border-b-2 group-hover:border-green-600 border-dashed pb-5 items-end w-full justify-between">
                       <div>
                         <div className="text-[#109c3d] font-bold text-xl">
@@ -137,7 +144,7 @@ const cardData = [
           border-4 border-dashed border-gray-300 items-center justify-center transition-all duration-300 hover:bg-green-600 hover:border-white" >
           <FaArrowRight className="arrow-icon text-xl text-gray-400 transition-colors duration-300" />
           </button>
-          </div>
+          </div>  
 
     </div>
   );

@@ -93,9 +93,9 @@ function Home() {
           {/* section 3 */}
           <div className="bg-white relative  py-12 l px-4">
             <img src={rightcorner} className="right-0 top-0 absolute"/>
-            <div className="flex flex-col xl:flex-row directionn gap-15 py-5 2xl:px-50 px-20 items-center">
+            <div className="flex flex-col xl:flex-row directionn gap-10 py-5 2xl:px-50 md:px-4 md:gap-25 items-center">
               
-              {/* Left Side Images */}
+              {/* Left Side Images */}  
               <div className="width-lg leftimage-w backcolor">
                 <div ref={ref2} 
                 className={`relative h-full flex  flex-row pl-6 pt-6 gap-5 items-start w-full
@@ -109,7 +109,7 @@ function Home() {
                   <img src={vector1}/>
                 </div>
 
-                <div className="absolute image-box-position bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
+                <div className="absolute image-box-position bottom-[-40px] right-[0px] hidden md:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
                   <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
                 </div>
 

@@ -61,13 +61,14 @@ const Blog = () => {
         </div>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
 
           {/* Large Blog Card */}
           <div
             ref={ref2}
-            className={`bg-white rounded-3xl p-5 flex gap-10 shadow-lg overflow-hidden flex-col group transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-          >
+            className={`bg-white rounded-3xl p-5 flex gap-10 shadow-lg overflow-hidden 
+            flex-col group transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+
             <div className="relative w-7/7 h-90% rounded-2xl overflow-hidden">
               <img src={blogData[0].image} alt="Blog" className="w-full h-100 object-cover transition-transform duration-400 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-[rgba(16,156,61,0.3)] to-[rgba(255,255,255,0)] pointer-events-none z-1"></div>
@@ -104,8 +105,8 @@ const Blog = () => {
           {/* Small Blog Cards */}
           <div
             ref={ref3}
-            className={`flex flex-col gap-8 transition-all duration-700 ease-in-out ${inView3 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-          >
+            className={`flex flex-col gap-8 transition-all duration-700 ease-in-out ${inView3 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+              
             {blogData.slice(1).map((blog) => (
               <div key={blog.id} className="bg-white rounded-3xl p-5 flex-col md:flex-row shadow-lg overflow-hidden flex group">
                 <div className="relative md:w-4/7 rounded-2xl overflow-hidden">
@@ -115,12 +116,12 @@ const Blog = () => {
                     {blog.tag}
                   </div>
                 </div>
-                <div className="p-12 gap-3 flex flex-col justify-center">
+                <div className="p-10 gap-3 flex flex-col justify-center">
                   <div className="flex items-center text-sm text-gray-500 space-x-4 mb-1">
-                    <span className="flex items-center gap-1 text-xl font-bold">
+                    <span className="flex items-center gap-1 text-lg font-bold">
                       <FaCalendarAlt className="text-green-600" /> {blog.date}
                     </span>
-                    <span className="flex items-center gap-1 text-xl font-bold">
+                    <span className="flex items-center gap-1 text-lg font-bold">
                       <FaRegComments className="text-green-600" /> {blog.comments}
                     </span>
                   </div>

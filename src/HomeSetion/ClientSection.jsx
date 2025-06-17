@@ -28,12 +28,12 @@ const Section4 = () => {
   };
 
   return (
-    <div className="relative gap-100 bg-[#052429] text-white  mb-10 py-18 px-3 md:h-234 md:px-68">
-      <div className='absolute top-15 left-0 z-20'><img src={map} alt="" /></div>
+    <div className="relative gap-100 bg-[#052429] text-white  mb-10 py-18 md:px-20 px-5 xl:h-234 2xl:px-68">
+      <div className='absolute top-15 left-0 '><img src={map} alt="" /></div>
 
       {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0  bg-transparent bg-opacity-80 flex items-center justify-center z-[9999] px-4">
+        <div className="fixed inset-0  bg-transparent bg-opacity-80 flex items-center justify-center z-9 px-4">
           <div className="relative w-full max-w-4xl mx-auto bg-black rounded-lg overflow-hidden p-4">
             <YouTube videoId="lrPoGx5GWuo" opts={videoOptions}/>
             <button
@@ -44,10 +44,9 @@ const Section4 = () => {
           </div>
         </div>
       )}
-
+  
       {/* Video Area */}
-      <div
-        className="relative z-1 -mt-[190px] bg-center bg-cover pd-100 overflow-hidden h-[490px] md:h-[400px] lg:h-[550px]"
+      <div className="relative  z-1 -mt-[190px] bg-center bg-cover pd-100 overflow-hidden h-[490px] md:h-[400px] lg:h-[550px]"
         style={{
           backgroundImage: `url(${cleaningsofa})`,
           border: '8px solid transparent',
@@ -87,7 +86,7 @@ const Section4 = () => {
       </div>
 
       {/* Info + Logos */}
-      <div className="mt-30 grid md:grid-cols-2 gap-8 items-center">
+      <div className="mt-30 flex justify-between xl:flex-row flex-col gap-8 items-center">
         {/* Left Side Text */}
         <div>
           <div className='flex flex-row items-center gap-2'>
@@ -110,24 +109,24 @@ const Section4 = () => {
         {/* Brand Logos */}
         <div
           ref={brandRef}
-          className={`grid grid-cols-2 md:grid-cols-3 gap-3 transition-all duration-700 ease-in-out ${brandInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-        >
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          className={`grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6  transition-all duration-700 ease-in-out ${brandInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`} >
+
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             Walmart <div><GiAbstract029 /></div>
           </div>
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             inVision <div><CiLinkedin /></div>
           </div>
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             <div><SiNorwegian /></div>Logitech
           </div>
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             Yahoo
           </div>
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             Monday <div><FiSlack /></div>
           </div>
-          <div className="bg-[#063a41] hover:bg-green-600 py-15 px-4 flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
+          <div className="bg-[#063a41] hover:bg-green-600 p-14 md:px-22  flex items-center justify-center h-30 text-white font-bold text-3xl text-center">
             Walmart <div><GiAbstract029 /></div>
           </div>
         </div>

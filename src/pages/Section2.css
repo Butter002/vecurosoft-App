@@ -24,7 +24,7 @@
   /* Large screens (lg only) */
   @media (min-width: 1024px) and (max-width: 1440px) {
     .image-box-position {
-      bottom: -40px;
+      bottom: -40px ;
       right: -10px;
       width: 300px; 
       height: 500px;
@@ -40,7 +40,7 @@
   /* Medium screens (md only) */
   @media (min-width: 768px) and (max-width: 1025px) {
     .flexd{
-    display: flex;
+    display: flex ;
     }
     
     .leftimage-w{

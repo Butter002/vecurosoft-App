@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import 'keen-slider/keen-slider.min.css';
 import './animations.css';
+import buble from './BubbleBackground'
 
 import { useKeenSlider } from 'keen-slider/react';
 import { GoArrowRight } from "react-icons/go";
@@ -11,6 +12,7 @@ import roomcleaning from  '../assets/images/roomcleaning.png'
 import map from '../assets/images/mapimage.png'
 import vector from '../assets/vector/Vector 2160.png'
 import { FaSoap } from "react-icons/fa";
+import BubbleBackground from './BubbleBackground';
 
 
 const images = [cleaningsofa, swimingpool_cleaning , roomcleaning];
@@ -30,10 +32,12 @@ const Slideshow = () => {
     return () => clearInterval(interval);}, [slider]);
 
   return (
-    <div className="w-full md:h-[820px] h-[990px] bg-[#042d33] flex flex-col md  md:flex-row  overflow-hidden">
+    <div className="w-full relative md:h-[820px] h-[990px] bg-[#042d33] flex flex-col md  md:flex-row  overflow-hidden">
+      
+      
       {/* Left Skewed Overlay */}
       <div className="md:w-1/2 w-full md:h-full h-400 relative flex lg:pl-30 md:justify-center justify-start items-center">
-      
+        
         {/* design layout */}
         <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10"/>
         <div className='absolute top-0 left-0 z-20 slide-left-fade'><img src={map} alt="" /></div>
@@ -41,6 +45,7 @@ const Slideshow = () => {
         
 
         {/* text section */}
+        
         <div className='relative flex flex-col gap-6 pl-9 lg:pt-10 textsection lg:pl-10 md:items-start z-30 '>
         <div className='absolute -top-10 md:block hidden  left-0'><img src={vector} alt=""/></div> 
         <div className='absolute -top-10 md:hidden left-2'><img src={vector} alt=""/></div>  
@@ -59,7 +64,9 @@ const Slideshow = () => {
           </button>
         </div>
 
+
         </div>
+      <BubbleBackground />
       </div>
 
       {/* Right Slideshow */}

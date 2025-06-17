@@ -13,26 +13,26 @@ import { FaSearchPlus } from "react-icons/fa";
 import '../HomeSetion/team.css'
 const Footer = () => {
   return (
-    <footer className="bg-[#062f33] text-white overflow-clip relative">
+    <footer className="bg-[#062f33] text-white overflow-hidden relative">
       <img src={lineshep} alt=""  />
       <img src={map} className="absolute -right-115 -top-15" alt="" />
       {/* Main Footer Section */}
-      <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 lg:px-40 py-16">
+      <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 xl:px-40 py-16">
         
         {/* Logo & Info */}
         <div>
           <div className="flex items-center mb-1 gap-1">
-            <img src={FooterLogo} alt="Logo" className="h-30 w-fit" />
+            <img src={FooterLogo} alt="Logo" className="h-30 w-fit"/>
           </div>
           <p className="text-gray-300 font-bold mt-4 leading-relaxed">
             Provide Detailed House Cleaning Sanitizing<br/> Services For Valued Clients.
           </p>
 
           <div className="flex items-center gap-3 mb-3 mt-6">
-            <TbPhoneCall   className="text-green-500 text-5xl" />
+            <TbPhoneCall   className="text-green-500 text-5xl"/>
             <div className="bg-[#0b6538] w-[1px] h-12"/>
             <div>
-              <p className="font-bold hover:text-green-600 text-lg">+1 999 888 666</p>
+              <p className="font-bold hover:text-green-600 text-lg">+1 999 888 222</p>
               <p className="text-green-500 text-sm">Call 24/7</p>
             </div>
           </div>
@@ -46,13 +46,13 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="bg-[#115960] p-2 rounded-full">
-                <FaFacebookF className="text-white text-lg" />
+                <FaFacebookF className="text-white text-lg"/>
               </div>
               <div className="bg-[#115960] p-2 rounded-full">
-                <FaLinkedinIn className="text-white text-lg" />
+                <FaLinkedinIn className="text-white text-lg"/>
               </div>
               <div className="bg-[#115960] p-2 rounded-full">
-                <FaInstagram className="text-white text-lg" />
+                <FaInstagram className="text-white text-lg"/>
               </div>
             </div>
           </div>
@@ -115,13 +115,13 @@ const Footer = () => {
 
       {/* Sub Footer Section */}
       <div className="bg-[#063a41] flex gap-5 flex-col md:flex-row py-8  md:py-0  items-center z-10 justify-between text-lg text-white">
-         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 md:pl-40 md:pr-30 md:px-8 blog  md:text-md text-md font-bold  ">
+         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 xl:pl-40 md:pr-30 md:px-8 blog  md:text-md text-md font-bold  ">
           © Copyright 2025 - <span className="md:text-[#042a2f] text-green-500">Poolito</span> All rights reserved.
           <span className="md:text-[#042a2f] text-green-500 "> Vecuro</span>
         </div>
         <div className="flex items-center gap-4 md:pr-20">
           {["visa.png", "paypal.png", "mastercard.png", "amex.png", "discover.png"].map((img, i) => (
-            <img key={i} src={`src/assets/cards/${img}`} alt="card" className="ld:h-8 h-6" />
+            <img key={i} src={`src/assets/cards/${img}`} alt="card" className="lg:h-8 h-6" />
           ))}
         </div>
       </div>

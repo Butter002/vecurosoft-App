@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { FaQuoteLeft } from "react-icons/fa";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import officeCleaningImg from '../assets/images/officecleaning.png';
-import coFounderImg from '../assets/images/Co-founder.png';
-import client2 from '../assets/images/Co-founder.png';
+import client1 from '../assets/images/student1.jfif';
+import client2 from '../assets/images/student2.png';
+import client3 from '../assets/images/studen3.png';
 import map from '../assets/images/mapimage2.png';
 import lineshep from '../assets/images/line-shep.png';
 import { useInView } from "react-intersection-observer";
@@ -12,7 +13,7 @@ import './team.css';
 const testimonials = [
   {
     name: 'Rodja Hartmann',
-    image: coFounderImg,
+    image: client1,
     rating: 4,
     message: 'When you work with Los Angeles House Cleaners Refal Agen cleaning room breathe easy because your home will soon When yowork with Angeles House Cleaners Referal Agency cleaning breathe',
   },
@@ -23,8 +24,8 @@ const testimonials = [
     message: ' When you work with Los Angeles House Cleaners Refal Agen cleaning room breathe easy because your home will soon When yowork with Angeles House Cleaners Referal Agency cleaning breathe ',
   },
   {
-    name: 'ridhi soni',
-    image: client2,
+    name: 'ridh soni',
+    image: client3,
     rating: 4.5,
     message: ' When you work with Los Angeles House Cleaners Refal Agen cleaning room breathe easy because your home will soon When yowork with Angeles House Cleaners Referal Agency cleaning breathe ',
   }
@@ -48,18 +49,18 @@ const ReviewAndBooking = () => {
   const [ref3, inView3] = useInView({ triggerOnce: true, threshold: 0.2 }); // Button div
 
   return (
-    <div className="relative bg-[#052429] lg:p-30 !md:pt-25 object-cover overflow-hidden py-16">
+    <div className="relative bg-[#052429] xl:p-30 !md:pt-25 object-cover overflow-hidden py-16">
 
-      <div className='absolute left-0 top-0 z-100 w-full'><img src={lineshep}className=''/></div>
+      <div className='absolute left-0 top-0  w-full'><img src={lineshep}className=''/></div>
       <div className='absolute top-15 hidden lg:block -right-60'><img src={map}/></div>
-      <div className='absolute hidden lg:block top-0 object-cover w-[32%] h-[100%] -left-32'><img src={officeCleaningImg}className='object-cover h-[100%]' /></div>
+      <div className='absolute hidden xl:block top-0 object-cover w-[32%] h-[100%] -left-32'><img src={officeCleaningImg}className='object-cover h-[100%]' /></div>
 
-      <div className="container mx-auto px-4 md:px-12">
-        <div className="flex flex-col lg:flex-row gap-10 md:gap-0 items-start">
+      <div className="container mx-auto px-4 md:px-10">
+        <div className="flex flex-col xl:flex-row gap-10 md:gap-0 items-start">
 
           {/* Booking Form */}
           <div ref={ref2}
-            className={`w-full lg:w-4/11 bg-green-600 bg-opaci  ty-90 gap-5 z-10 py-20 md:px-20 px-5 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
+            className={`w-full xl:w-4/12 bg-green-600 bg-opaci  ty-90 gap-5 z-10 py-20 2xl:px-15 md:px-4 px-5 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
             style={{ border: '8px solid transparent',borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',borderImageSlice: 1,}}>
           
             <div className='flex flex-row gap-2 items-center'>
@@ -77,7 +78,7 @@ const ReviewAndBooking = () => {
                   <option value="" disabled hidden>Type of service</option>
                   <option className='text-black'>Deep Cleaning</option>
                   <option className='text-black'>Carpet Cleaning</option>
-                  <option className='text-black'>Window Cleaning</option>
+                  <option className='text-black'>Window Cleaning</option> 
                   <option className='text-black'>Exterior Cleaning</option>
                   <option className='text-black'>Mopping</option>
                 </select>
@@ -90,7 +91,7 @@ const ReviewAndBooking = () => {
           </div>
 
           {/* Testimonial Section */}
-          <div className="w-full lg:w-6/11 flex flex-col overflow-hidden z-10 justify-center items-center gap-5 text-white">
+          <div className="w-full xl:w-7/12 flex flex-col overflow-hidden z-10 justify-center items-center gap-5 text-white">
 
             {/* Heading text */}
             <div
@@ -129,8 +130,9 @@ const ReviewAndBooking = () => {
             {/* Button div */}
             <div
               ref={ref3}
-              className={`md:flex hidden mt-10 mb-10 ml-52 w-full h-0.5 bg-green-600 flex-row items-center justify-start gap-5 transition-all duration-700 ease-in-out ${inView3 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-            >
+              className={`md:flex hidden mt-10 mb-10 ml-80 w-full h-0.5 bg-green-600 flex-row items-center
+              justify-start gap-5 transition-all duration-700 ease-in-out ${inView3 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+
               <div className='ml-20 flex gap-5 p-5 bg-[#052429] flex-row'>
                 <div className='border-2 border-dashed border-[#146673] rounded-full'>
                   <button onClick={handlePrev} className="bg-[#0b3c43] hover:bg-green-700 text-white text-3xl flex justify-center items-center h-15 w-15 rounded-full">

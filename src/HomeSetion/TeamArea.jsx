@@ -35,7 +35,7 @@ const TeamArea = () => {
         slides: { perView: 4, spacing: 24 },
       },
     },
-    slides: { perView: 1, spacing: 1 },
+    
     created(s) {
       timer.current = setInterval(() => {
         s.next();
