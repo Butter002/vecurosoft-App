@@ -60,7 +60,7 @@ const ReviewAndBooking = () => {
 
           {/* Booking Form */}
           <div ref={ref2}
-            className={`w-full xl:w-4/12 bg-green-600 bg-opaci  ty-90 gap-5 z-10 py-20 2xl:px-15 md:px-4 px-5 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
+            className={`w-full xl:w-5/12 bg-green-600 bg-opaci  ty-90 gap-5 z-10 py-20 2xl:px-15 md:px-4 px-5 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
             style={{ border: '8px solid transparent',borderImage: 'linear-gradient(to bottom, #04272980, rgba(16, 155, 61, 1))',borderImageSlice: 1,}}>
           
             <div className='flex flex-row gap-2 items-center'>
@@ -91,7 +91,7 @@ const ReviewAndBooking = () => {
           </div>
 
           {/* right Section */}
-          <div className="w-full xl:w-7/12 flex flex-col overflow-hidden z-10 justify-center items-center xl:items-center gap-5 text-white">
+          <div className="w-full xl:w-7/11  flex flex-col overflow-hidden z-10 justify-center xl:items-center items-start gap-5 text-white">
 
             {/* Heading text */}
             <div

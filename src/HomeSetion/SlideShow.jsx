@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 
 import 'keen-slider/keen-slider.min.css';
 import './animations.css';
-import buble from './BubbleBackground'
 
 import { useKeenSlider } from 'keen-slider/react';
 import { GoArrowRight } from "react-icons/go";
@@ -40,14 +39,14 @@ const Slideshow = () => {
       <div className="md:w-1/2 w-full md:h-full h-400 relative flex lg:pl-30 md:justify-center justify-start items-center">
         
         {/* design layout */}
-        <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-10"/>
-        <div className='absolute top-0 left-0 z-20 slide-left-fade'><img src={map} alt="" /></div>
+        <div className="absolute top-0 hidden lg:flex left-38 w-full h-full bg-[#042d33] -skew-x-[18deg] origin-left z-1"/>
+        <div className='absolute top-0 left-0 z-2 slide-left-fade'><img src={map} alt="map" /></div>
 
         
 
         {/* text section */}
         
-        <div className='relative flex flex-col gap-6 pl-9 lg:pt-10 textsection lg:pl-10 md:items-start z-30 '>
+        <div className='relative flex flex-col gap-6 pl-9 lg:pt-10 textsection lg:pl-10 md:items-start z-3 '>
         <div className='absolute -top-10 md:block hidden  left-0'><img src={vector} alt=""/></div> 
         <div className='absolute -top-10 md:hidden left-2'><img src={vector} alt=""/></div>  
 
@@ -72,7 +71,7 @@ const Slideshow = () => {
 
       {/* Right Slideshow */}
       <div className="w-full object-fill lg:w-1/2  h-full relative">
-      <img src={vector1} className='absolute top-10 spin-smooth left-10 z-99' alt="" />
+      <img src={vector1} className='absolute hidden lg:block top-10 spin-smooth left-10 z-9' alt="" />
         <div ref={sliderRef} className="keen-slider h-full w-full">
           {images.map((img, i) => (
             <div key={i} className="keen-slider__slide relative">

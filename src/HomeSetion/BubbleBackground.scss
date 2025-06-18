@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%; 
-  z-index: 99;
+  z-index: 9;
 }
 
 
@@ -44,52 +44,52 @@
   .x#{$i} {
     @if $i == 1 {
       @include bubbleAnimation(15s, 2s);
-      left: -5%;
+      right: -5%;
       top: 5%;
       @include bubbleScale(0.6);
     } @else if $i == 2 {
       @include bubbleAnimation(10s, 4s);
-      left: 5%;
+      right: 5%;
       top: 80%;
       @include bubbleScale(0.4);
     } @else if $i == 3 {
       @include bubbleAnimation(18s, 2s);
-      left: 10%;
+      right: 10%;
       top: 40%;
       @include bubbleScale(0.7);
     } @else if $i == 4 {
       @include bubbleAnimation(22s, 3s);
-      left: 20%;
+      right: 20%;
       top: 0;
       @include bubbleScale(0.3);
     } @else if $i == 5 {
       @include bubbleAnimation(29s, 4s);
-      left: 30%;
+      right: 30%;
       top: 50%;
       @include bubbleScale(0.5);
     } @else if $i == 6 {
       @include bubbleAnimation(21s, 2s);
-      left: 50%;
+      right: 50%;
       top: 0;
       @include bubbleScale(0.8);
     } @else if $i == 7 {
       @include bubbleAnimation(20s, 2s);
-      left: 65%;
+      right: 65%;
       top: 70%;
       @include bubbleScale(0.4);
     } @else if $i == 8 {
       @include bubbleAnimation(15s, 3s);
-      left: 80%;
+      right: 80%;
       top: 10%;
       @include bubbleScale(0.3);
     } @else if $i == 9 {
       @include bubbleAnimation(29s, 4s);
-      left: 90%;
+      right: 90%;
       top: 50%;
       @include bubbleScale(0.6);
     } @else if $i == 10 {
       @include bubbleAnimation(16s, 2s);
-      left: 80%;
+      right: 80%;
       top: 80%;
       @include bubbleScale(0.3);
     }
@@ -99,9 +99,9 @@
 /* ========== Bubble Styles ========== */
 .bubble {
   border-radius: 50%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0 10px 30px 5px rgba(255, 255, 255, 1);
-  height: 200px;
-  width: 200px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0 10px 30px 5px rgba(255, 255, 255, 0);
+  height: 100px;
+  width: 100px;
   position: absolute;
 
   &::after {

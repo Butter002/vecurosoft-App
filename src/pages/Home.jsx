@@ -42,7 +42,7 @@ function Home() {
           <div className="flex flex-col relative  bg-[#109c3d] md:flex-row">
             <img src={counterbg} alt="counterbg" className="absolute left-0 " />
             {/* Left Green Panel */}
-            <div className="flex items-center justify-start px-6 py-14 w-full border-dashed border-black xl:w-[35%] z-99 md:w-[60%]">
+            <div className="flex items-center justify-start px-6 py-14 w-full border-dashed border-black xl:w-[35%] z-9 md:w-[60%]">
               <div className="flex items-center gap-5">
                 <div className="border-2 border-white border-dashed hover:border-black rounded-full">
                   <div className="bg-[#042a2f] p-7 rounded-full text-white hover:text-green-600 text-3xl">
@@ -92,8 +92,10 @@ function Home() {
           </div>
 
           {/* section 3 */}
-          <div className="bg-white relative  py-12 l px-4">
+          <div className="bg-white relative  py-12 px-4">
+
             <img src={rightcorner} className="right-0 top-0 absolute"/>
+            
             <div className="flex flex-col xl:flex-row directionn gap-10 py-5 2xl:px-50 md:px-4 md:gap-25 items-center">
               
               {/* Left Side Images */}  
@@ -117,7 +119,7 @@ function Home() {
                 </div>
               </div>
 
-              {/* Right Side Content */}
+              {/* Right Side Content */}  
               <div ref={ref2}
                 className={`gap-3 flex width-lg flex-col transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>                  
     

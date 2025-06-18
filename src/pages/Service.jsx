@@ -3,6 +3,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import "keen-slider/keen-slider.min.css";
+import './Section2.css'
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -103,91 +104,97 @@ import brand9 from "../assets/cards/brand-2-9.png";
       <Section2 />
       <ReviewAndBooking />
 
-
       {/* forth section  */}
-        <div className="bg-gradient-to-b relative from-white to-green-600/10 overflow-hidden py-50 pt-10 lg:py-30 lg:m-1 px-4 md:px-16 xl:px-40">
+        <div className="bg-gradient-to-b  from-white to-green-600/10 relative pb-20 py-12 px-4">
+
         <img src={mapshape} className="bottom-0 absolute right-0"/>
         <img src={aboutshape} className="top-0 right-0 absolute"/>
         <img src={mapshap} className="top-10 md:flex hidden left-0 absolute"/>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-5 lg:px-20">
-        {/* Left Side Images */}
-        <div ref={ref2}
-        className={`relative h-auto flex flex-row pl-6 gap-5 items-start w-full transition-opacity duration-700 
-        ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}>
+            
+            <div className="flex flex-col xl:flex-row directionn gap-10 py-5 2xl:px-50 md:px-10  items-center">
               
-        <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-full max-w-[450px] border-transparent"/>
+              {/* Left Side Images */}  
+              <div className="width-lg leftimage-w ">
+              <div ref={ref2} 
+              className={`relative h-full flex  flex-row pl-6 pt-6 gap-5 items-start w-full
+              transition-opacity duration-700 ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} > 
 
-        <div className="bg-[#109c3d] w-full mt-8 h-2" />
+                <img src={cleaningsofa} alt="Cleaning" className="h-[570px] object-cover w-[100%] max-w-[450px] border-transparent" />
 
-        <div className="absolute -left-0">
-          <img src={vector1} />
-        </div>
+                <div className="bg-[#109c3d] w-full mt-8 h-2"/>
 
-        <div className="absolute bottom-[-40px] right-[0px] hidden lg:flex items-center justify-center w-[326px] h-[530px] border-[15px] border-green-600">
-          <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
-        </div>
-        </div>
+                <div className="absolute -left-0 top-6">
+                  <img src={vector1}/>
+                </div>
 
-        {/* Right Side Content */}
-        <div ref={ref2} 
-        className={`gap-3 relative flex mt-5 flex-col transition-opacity duration-700 
-            ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+                <div className="absolute image-box-position bottom-[-40px] right-[0px] hidden md:flex items-center justify-center w-[326px] h-[530px] border-15 border-green-600">
+                  <img src={section2image} alt="Worker" className="h-full object-cover w-full" />
+                </div>
 
-          
-        
-        {/* title area  */}
-        <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
-          <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS </p>
-        <h2 className="lg:text-5xl text-3xl text-[#063a41] font-bold leading-15 mb-6">General Frequently<span className="text-green-600">Asked</span>
-          <br /> Questions
-        </h2>
-
-        {/* card area */}
-        <div className="max-h-[300px] overflow-y-visible pr-1">
-        {[
-          {
-            title: "1. Deep House Cleaning Service",
-            content:
-              "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-          },
-          {
-            title: "2. NYC home cleaning company",
-            content:
-              "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-          },
-          {
-            title: "3. 100% secure online payments",
-            content:
-              "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
-          },
-          {
-            title: "4. Fast, same day booking confirmation",
-            content:
-              "Yes, despite the removal of Government Feed-in Tariff, installs have been forecast to continue at the current rate and even increase in 2025.",
-          },
-        ].map((item, index) => (
-          <div key={index} className="border border-gray-200 rounded-xl mb-4 shadow-sm">
-
-          <button
-          onClick={() => toggle(index)}
-          className={`w-full text-left px-10 py-3 text-xl font-bold  focus:outline-none flex justify-between items-center transition-all duration-300
-            ${openIndex === index 
-              ? "bg-green-600 text-white rounded-t-xl border-b-0" 
-              : "bg-white text-gray-800 rounded-xl border-b border-gray-200"}`} >
-          {item.title}
-          <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
-          </button>
-              <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
-              ${openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0" }`} >
-              <p className="text-lg px-5">{item.content}</p>
+                </div>
               </div>
+
+              {/* Right Side Content */}  
+              <div className="width-lg">
+                <div ref={ref2} 
+              className={`gap-3  relative flex mt-5 flex-col transition-opacity duration-700 
+              ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+                
+              {/* title area  */}
+              <p className="text-green-600 font-semibold flex flex-row items-center gap-5 text-lg">
+                <div className="h-1 w-10 bg-green-600" /> ASKED QUESTIONS </p>
+              <h2 className="lg:text-5xl text-3xl text-[#063a41] font-bold leading-15 mb-6">General Frequently<span className="text-green-600">Asked</span>
+                <br /> Questions
+              </h2>
+
+              {/* card area */}
+              <div className="max-h-[300px] overflow-y-visible pr-1">
+              {[
+                {
+                  title: "1. Deep House Cleaning Service",
+                  content:
+                    "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
+                },
+                {
+                  title: "2. NYC home cleaning company",
+                  content:
+                    "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
+                },
+                {
+                  title: "3. 100% secure online payments",
+                  content:
+                    "Give your home a fresh new look and feel especially after a long day of work. Our deep clean will help bring your property back up to scratch.",
+                },
+                {
+                  title: "4. Fast, same day booking confirmation",
+                  content:
+                    "Yes, despite the removal of Government Feed-in Tariff, installs have been forecast to continue at the current rate and even increase in 2025.",
+                },
+              ].map((item, index) => (
+                <div key={index} className="border border-gray-200 rounded-xl mb-4 shadow-sm">
+
+                <button
+                onClick={() => toggle(index)}
+                className={`w-full text-left px-10 py-3 text-xl font-bold  focus:outline-none flex justify-between items-center transition-all duration-300
+                  ${openIndex === index 
+                    ? "bg-green-600 text-white rounded-t-xl border-b-0" 
+                    : "bg-white text-gray-800 rounded-xl border-b border-gray-200"}`} >
+                {item.title}
+                <span className={openIndex === index ? "text-white" : "text-green-600"}>{openIndex === index ? "-" : "+"}</span>
+                </button>
+                    <div className={`px-6 overflow-hidden transition-all duration-300 bg-gray-50 rounded-b-xl text-gray-800 
+                    ${openIndex === index ? "max-h-[200px] py-4" : "max-h-0 py-0" }`} >
+                    <p className="text-lg px-5">{item.content}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              </div>
+              </div>
+
+
             </div>
-          ))}
-        </div>
           </div>
-        </div>
-        </div>
 
       {/* Brand slider */}
       <div className="w-full bg-white py-20">
