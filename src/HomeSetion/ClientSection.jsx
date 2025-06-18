@@ -75,9 +75,9 @@ const Section4 = () => {
             ref={videoTextRef}
             className={`flex justify-center items-center flex-col transition-all  duration-700 ease-in-out ${videoTextInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <h2 className="text-2xl md:text-4xl font-bold">Most Trusted service</h2>
-            <button className="mt-4 bg-green-600 text-white py-2 px-3 font-bold rounded-full flex items-center gap-5 hover:bg-green-600">
+            <button className="mt-4 bg-green-600 group hover:bg-[#063A41] text-white py-2 px-4 font-bold text-xl rounded-full flex items-center gap-5 ">
               Discover More
-              <div className="bg-black hover:bg-green-600 text-3xl h-10 w-10 flex justify-center items-center rounded-full">
+              <div className="bg-[#063A41]  group-hover:bg-green-600 text-3xl h-12 w-12 flex justify-center items-center rounded-full">
                 <GoArrowRight />
               </div>
             </button>

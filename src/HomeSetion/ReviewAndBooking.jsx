@@ -84,22 +84,22 @@ const ReviewAndBooking = () => {
                 </select>
               </div>
               <textarea name="message" rows="4" placeholder="Your message" className="w-full border border-gray-300 px-5 py-7 rounded-md focus:outline-none font-bold text-gray-500 focus:ring-2 bg-white focus:ring-green-500"></textarea>
-              <button type="submit" className="w-full bg-[#0b424a] text-xl hover:bg-green-700 text-white py-2 rounded-md font-bold transition duration-300">
+              <button type="submit" className="w-full bg-[#0b424a] text-xl hover:bg-transparent border-2 border-transparent hover:border-white text-white py-2 rounded-md font-bold transition duration-300">
                 SEE MY INSTANT QUOTE
               </button>
             </form>
           </div>
 
-          {/* Testimonial Section */}
-          <div className="w-full xl:w-7/12 flex flex-col overflow-hidden z-10 justify-center items-center gap-5 text-white">
+          {/* right Section */}
+          <div className="w-full xl:w-7/12 flex flex-col overflow-hidden z-10 justify-center items-center xl:items-center gap-5 text-white">
 
             {/* Heading text */}
             <div
               ref={ref1}
-              className={`mb-6 flex flex-col gap-1 transition-all duration-700 ease-in-out ${inView1 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-            >
+              className={`mb-6 flex flex-col gap-1 transition-all duration-700 ease-in-out ${inView1 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+
               <div className='flex-row flex items-center gap-3'>
-                <div className='w-10 h-0.5 bg-white rounded-2xl '></div>
+                <div className='w-10 h-0.5 bg-white rounded-2xl'></div>
                 <span className="text-lg font-semibold uppercase text-green-600">Testimonial</span>
               </div>
               <h2 className="text-3xl font-extrabold mt-2">Our Clients Are Saying</h2>
@@ -108,8 +108,8 @@ const ReviewAndBooking = () => {
 
             {/* Testimonial Card */}
             <div
-              className={`relative bg-[#0b3c43] py-12 pt-15 px-15 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`}
-            >
+              className={`relative bg-[#0b3c43] py-12 pt-15 px-15 transition-all duration-700 ease-in-out ${inView2 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
+
               <span className="absolute top-15 right-15 text-4xl font-extrabold text-green-600 mb-4 block"><FaQuoteLeft /></span>
               <div className="flex items-center gap-4 mb-4">
                 <div className='border-2 border-dashed rounded-full border-green-600'>
@@ -130,7 +130,7 @@ const ReviewAndBooking = () => {
             {/* Button div */}
             <div
               ref={ref3}
-              className={`md:flex hidden mt-10 mb-10 ml-80 w-full h-0.5 bg-green-600 flex-row items-center
+              className={`xl:flex hidden mt-10 mb-10 2xl:ml-75 xl:ml-25 w-full h-0.5 bg-green-600 flex-row items-center
               justify-start gap-5 transition-all duration-700 ease-in-out ${inView3 ? "slide-up-fade" : "opacity-0 translate-y-8"}`} >
 
               <div className='ml-20 flex gap-5 p-5 bg-[#052429] flex-row'>

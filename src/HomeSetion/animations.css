@@ -49,3 +49,17 @@
       font-size: 51px ; 
     }
  }
+
+
+ @keyframes spinSmooth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-smooth {
+  animation: spinSmooth 8s linear infinite;
+}

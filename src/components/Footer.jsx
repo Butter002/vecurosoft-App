@@ -45,13 +45,13 @@ const Footer = () => {
             <span className="w-[1.5px] h-4 pr-[-1px] bg-white/30"></span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#115960] p-2 rounded-full">
+              <div className="bg-[#115960] hover:bg-green-700 p-2 rounded-full">
                 <FaFacebookF className="text-white text-lg"/>
               </div>
-              <div className="bg-[#115960] p-2 rounded-full">
+              <div className="bg-[#115960] p-2 hover:bg-green-700 rounded-full">
                 <FaLinkedinIn className="text-white text-lg"/>
               </div>
-              <div className="bg-[#115960] p-2 rounded-full">
+              <div className="bg-[#115960] p-2 hover:bg-green-700 rounded-full">
                 <FaInstagram className="text-white text-lg"/>
               </div>
             </div>

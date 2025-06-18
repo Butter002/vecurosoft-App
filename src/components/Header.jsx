@@ -49,10 +49,10 @@ const Header = () => {
     <>
       {/* Topbar */}
       {showTopbar && (
-        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-99999 duration-300">
+        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-99999999 duration-300">
           <div className="mx-auto xl:px-30 px-15 topbar py-2 flex lg:justify-between justify-center items-center flex-wrap">
             <div className="hidden lg:flex items-center space-x-6 text-md">
-              <div className="flex items-center font-bold text-xl space-x-2">
+              <div className="flex items-center font-bold text-lg space-x-2">
                 <FaEnvelope className="text-green-600"/>
                 <span>info@example.com</span>
               </div>
@@ -60,12 +60,12 @@ const Header = () => {
                 <span className="w-[3.5px] h-5 bg-white/30"></span>
                 <span className="w-[2.5px] h-3 bg-white/30"></span>
               </div>
-              <div className="flex font-bold text-xl items-center space-x-4">
+              <div className="flex font-bold text-lg items-center space-x-4">
                 <FaClock className="text-green-600" />  
                 <span>Tuesday – Saturday 8:00 Am – 5:00 Pm</span>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-3 py-2 text-white text-xl font-semibold">
+            <div className="flex items-center justify-center gap-3 py-2 text-white text-lg font-semibold">
               <span className="font-bold">Follow Us On :</span>
               <div className="flex items-center gap-[1.5px]">
                 <span className="w-[2px] h-6 bg-white/30"></span>
@@ -105,7 +105,7 @@ const Header = () => {
 
                 <nav className="flex gap-3 items-center text-[17px] font-bold text-[#04363d]">
                   {menuList.map((item, i) => (
-                    <a href={item.link} key={i} className={`hover:text-green-600 ${item.name === "HOME" ? "text-green-600" : ""}`}>
+                    <a href={item.link} key={i} className={`hover:text-green-600`}>
                       {item.name}
                     </a>
                   ))}

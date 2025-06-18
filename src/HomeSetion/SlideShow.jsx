@@ -11,6 +11,7 @@ import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
 import roomcleaning from  '../assets/images/roomcleaning.png'
 import map from '../assets/images/mapimage.png'
 import vector from '../assets/vector/Vector 2160.png'
+import vector1 from '../assets/vector/circle.png'
 import { FaSoap } from "react-icons/fa";
 import BubbleBackground from './BubbleBackground';
 
@@ -71,6 +72,7 @@ const Slideshow = () => {
 
       {/* Right Slideshow */}
       <div className="w-full object-fill lg:w-1/2  h-full relative">
+      <img src={vector1} className='absolute top-10 spin-smooth left-10 z-99' alt="" />
         <div ref={sliderRef} className="keen-slider h-full w-full">
           {images.map((img, i) => (
             <div key={i} className="keen-slider__slide relative">
