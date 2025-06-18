@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#062f33] text-white overflow-hidden relative">
       <img src={lineshep} alt=""  />
-      <img src={map} className="absolute -right-115 -top-15" alt="" />
+      <img src={map} className="absolute -right-115 -top-20"/>
       {/* Main Footer Section */}
       <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 xl:px-40 py-16">
         
@@ -103,9 +103,9 @@ const Footer = () => {
         <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
         <div className="absolute hidden group-hover:flex justify-center items-center  bg-[rgba(27,235,93,0.5)] h-full w-full roup z-10">  <div className="text-3xl hover:text-green-600 
         rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><FaSearchPlus /></div> </div>
-          <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
-          className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
-          </div>
+        <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
+        className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
+        </div>
 
             ))}
           </div>
@@ -114,12 +114,14 @@ const Footer = () => {
       </div>
 
       {/* Sub Footer Section */}
-      <div className="bg-[#063a41] flex gap-5 flex-col md:flex-row py-8  md:py-0  items-center z-10 justify-between text-lg text-white">
-         <div className=" bottom-0 left-0 md:bg-green-600  text-white  md:py-8 xl:pl-40 md:pr-30 md:px-8 blog  md:text-md text-md font-bold  ">
-          © Copyright 2025 - <span className="md:text-[#042a2f] text-green-500">Poolito</span> All rights reserved.
-          <span className="md:text-[#042a2f] text-green-500 "> Vecuro</span>
-        </div>
-        <div className="flex items-center gap-4 md:pr-20">
+      <div className="bg-[#063a41] flex gap-5 flex-col lg:flex-row py-8  md:py-0  items-center justify-center z-10 xl:justify-between text-lg text-white">
+
+      <div className=" bottom-0 left-0 xl:bg-green-600  text-white  md:py-8 2xl:pl-40 xl:pr-30 lg:px-8 subfooter  md:text-md text-md font-bold  ">
+      © Copyright 2025 - <span className="xl:text-[#042a2f] text-green-500">Poolito</span> All rights reserved.
+      <span className="xl:text-[#042a2f] text-green-500 "> Vecuro</span>
+      </div>
+
+        <div className="flex items-center gap-4 lg:mb-0 mb-4 xl:pr-20">
           {["visa.png", "paypal.png", "mastercard.png", "amex.png", "discover.png"].map((img, i) => (
             <img key={i} src={`src/assets/cards/${img}`} alt="card" className="lg:h-8 h-6" />
           ))}

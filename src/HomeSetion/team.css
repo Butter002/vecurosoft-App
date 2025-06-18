@@ -5,15 +5,20 @@
   .blog {
       clip-path: polygon(0 0, 85%  0%, 100% 100%, 0 100%);  
   }
-  @media (max-width: 768px) {
-    .blog {
+ 
+
+  .subfooter {
+      clip-path: polygon(0 0, 85%  0%, 100% 100%, 0 100%);  
+  }
+  @media (max-width: 1024px) {
+    .subfooter {
       clip-path: none;
     }
   }
 
   .custom-link {
   display: flex;
-  align-items: center;
+  align-items: center;  
   gap: 0.5rem;              
   font-weight: 700;        
   cursor: pointer;

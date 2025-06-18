@@ -49,7 +49,7 @@ const Header = () => {
     <>
       {/* Topbar */}
       {showTopbar && (
-        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-100 duration-300">
+        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-99999 duration-300">
           <div className="mx-auto xl:px-30 px-15 topbar py-2 flex lg:justify-between justify-center items-center flex-wrap">
             <div className="hidden lg:flex items-center space-x-6 text-md">
               <div className="flex items-center font-bold text-xl space-x-2">
