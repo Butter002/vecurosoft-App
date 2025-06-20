@@ -23,6 +23,7 @@ import Blog from "../HomeSetion/BlogSection";
 import vector1 from "../assets/vector/Vector 1.png";
 import mapicon from '../assets/vector/about-icon4.svg'
 import rightcorner from '../assets/images/about-shape-1-2.png'
+
 import counterbg from '../assets/vector/counter-bg-shep1.png'
 
 function Home() {
