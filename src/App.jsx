@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Servicepage from './pages/service'
 import Page404 from './pages/404Page'
 import Contact from './pages/Contact';
+import Blog from './pages/blog';
 const App = () => {
   return (
     <Router>
@@ -15,7 +16,9 @@ const App = () => {
         <Route path='AboutUs' element={<AboutUs/>} />
         <Route path='Service' element={< Servicepage/>}/>
         <Route path='contact' element={<Contact/>}/>
+        <Route path='Blog' element={<Blog/>}/>
         <Route path='*' element={<Page404 />}/>
+
         
       </Routes>
     </Router>

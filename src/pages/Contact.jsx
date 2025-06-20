@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 import ServiceBannner from '../assets/images/Frame 1618873669.png';
 import map123 from '../assets/images/mapimage.png';
+
+
 import { LuLinkedin } from "react-icons/lu";
-
-
 import { LuPhoneCall, LuMail } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
@@ -51,7 +51,7 @@ function Contact (){
                     roda wQ 966 munich Express <br /> 70Germany, park lan, TX 7859
                     </p>
 
-                    <div className="flex mb-5 gap-6 flex-row">  
+                    <div className="flex mb-5 gap-6 flex-row">
                         <div className="bg-[#109C3D] hover:bg-[#063A41] flex justify-center items-center rounded-full h-15 w-15 border-4 border-[#ffffff59] text-3xl text-white ">
                             <LuPhoneCall className="rotate-40" />
                         </div>
