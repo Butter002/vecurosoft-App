@@ -102,12 +102,12 @@ const Footer = () => {
         {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
         <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
         <div className="absolute hidden group-hover:flex justify-center items-center  bg-[rgba(27,235,93,0.5)] h-full w-full roup z-10">  <div className="text-3xl hover:text-green-600 
-        rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><FaSearchPlus /></div> </div>
+        rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center"><FaSearchPlus /></div> </div>
         <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
         className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
         </div>
 
-            ))}
+        ))}
           </div>
         </div>  
 
