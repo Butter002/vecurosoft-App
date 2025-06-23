@@ -3,3 +3,7 @@
     border-radius: 0 100px 0 0;
     width: 100%;
 }
+
+.div-bottom-border {
+  border-bottom: 2.5px solid #CDD5D6;
+}
