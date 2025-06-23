@@ -91,7 +91,7 @@ const Header = () => {
       )}
 
       {/* Sticky Navbar */}
-      <div className={`sticky top-0 z-50 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
+      <div className={`sticky top-0 z-40 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
         <div className="bg-white shadow-md">
           <div className="flex flex-row justify-between gap-[6rem]">
             {/* Logo */}
