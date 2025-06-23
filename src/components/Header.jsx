@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt, FaEnvelope,
-  FaClock, FaSearch, FaChevronRight, FaPlus, FaTimes
-} from "react-icons/fa";
+  FaClock, FaSearch, FaChevronRight, FaPlus, FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/vector/logo-white.svg";
 import './Header.css'
@@ -21,6 +20,18 @@ const Header = () => {
     { name: "PAGES", link: "/pages" },
     { name: "CONTACT", link: "/contact" },
   ];
+
+  useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth >= 1024) {
+      setMenuOpen(false);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +60,7 @@ const Header = () => {
     <>
       {/* Topbar */}
       {showTopbar && (
-        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-9999 duration-300">
+        <div className="bg-[#05444d] text-white font-thi text-base transition-all z-999 duration-300">
           <div className="mx-auto xl:px-30 px-15 topbar py-2 flex lg:justify-between justify-center items-center flex-wrap">
             <div className="hidden lg:flex items-center space-x-6 text-md">
               <div className="flex items-center font-bold text-lg space-x-2">
