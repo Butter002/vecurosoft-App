@@ -271,25 +271,25 @@ return (
                         <div>
                             <div className="flex flex-row gap-2 text-3xl mb-5 font-bold text-[#063A41]"><span className="font-extrabold text-green-700">//</span>Tags</div>
                             <div className="flex flex-wrap gap-3 mt-6">
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 cleaning
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 keeping
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 service
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 Window
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 Move-In
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 Water Pool
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
                                 home clean
                             </a>
                             </div>
