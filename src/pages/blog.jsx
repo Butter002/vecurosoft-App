@@ -41,7 +41,7 @@ return (
                     </div>
 
                 <div>
-                    <div className="flex 2xl:px-50 px-8 py-30 flex-col lg:flex-row">
+                    <div className="flex 2xl:px-50 md:px-8 py-30 flex-col lg:flex-row">
                         {/* left section */}
                         <div className="lg:w-7/10  w-full flex flex-col px-5 ">
 
@@ -49,10 +49,10 @@ return (
                         <div className="w-full "> <img src={firstimage} className="w-full rounded-2xl"/></div>
                         <div className="mt-5 relative div-bottom-border py-8">
                         <div className="absolute bottom-0.5 left-0 w-full h-[2.5px] bg-[#CDD5D6]"></div>
-                        <div className="flex flex-row text-green-600 font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
+                        <div className="flex flex-row text-green-600 hover:text-[#063A41] font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
                         FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 font-bold">Dining & Living Room Cleaning</span>
+                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Dining & Living Room Cleaning</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -93,7 +93,7 @@ return (
                         <div className="flex flex-row text-green-600 font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
                         FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 font-bold">Keeping the Hive Clean home</span>
+                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Keeping the Hive Clean home</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -134,7 +134,7 @@ return (
                         <div className="flex flex-row text-green-600 font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
                         FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 font-bold">Most Caring Cleaning Service?</span>
+                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Most Caring Cleaning Service?</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -267,29 +267,29 @@ return (
                         </div>
                         </div>
 
-
+                        {/* tags */}
                         <div>
                             <div className="flex flex-row gap-2 text-3xl mb-5 font-bold text-[#063A41]"><span className="font-extrabold text-green-700">//</span>Tags</div>
                             <div className="flex flex-wrap gap-3 mt-6">
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 cleaning
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 keeping
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 service
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 Window
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 Move-In
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 Water Pool
                             </a>
-                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition">
+                            <a href="blog-details.html" className="bg-[#E6EAEB] text-[#5E5C78] px-7 py-3 rounded-md text-md  font-semibold hover:bg-green-600 hover:text-white transition">
                                 home clean
                             </a>
                             </div>
@@ -301,7 +301,7 @@ return (
                          <div>
                             <div className="grid grid-cols-3 md:w-[90%]  w-full  gap-3">
                             {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
-                            <div key={index} className="group overflow-hidden rounded-md border-2 border-green-400 relative">
+                            <div key={index} className="group overflow-hidden rounded-md  relative">
                             <div className="absolute hidden group-hover:flex justify-center items-center  bg-[rgba(27,235,93,0.5)] h-full w-full roup z-10">  <div className="text-3xl hover:text-green-600 
                             rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><FaSearchPlus /></div> </div>
                             <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
@@ -311,6 +311,19 @@ return (
                                 ))}
                             </div>
                             </div>
+                        </div>
+
+                            <div className="widget_search mt-5 animate-fadeInUp">
+                        <form className="flex items-center border-b-2 border-gray-300  overflow-hidden ">
+                            <input
+                            type="text"
+                            placeholder="type here..."
+                            className="w-full px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-green-600"
+                            />
+                            <button type="submit" className="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 transition">
+                            <i className="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
                         </div>
 
 
