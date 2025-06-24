@@ -14,7 +14,7 @@ import '../HomeSetion/team.css'
 const Footer = () => {
   return (
     <footer className="bg-[#062f33] text-white overflow-hidden relative">
-      <img src={lineshep} alt=""  />
+      <img src={lineshep} className=""  />
       <img src={map} className="absolute -right-115 -top-20"/>
       {/* Main Footer Section */}
       <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 xl:px-40 py-16">
