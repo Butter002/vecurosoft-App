@@ -7,6 +7,7 @@ import Servicepage from './pages/service'
 import Page404 from './pages/404Page'
 import Contact from './pages/Contact';
 import Blog from './pages/blog';
+import Blog_details from './pages/Blog-details'
 const App = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='Service' element={< Servicepage/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='Blog' element={<Blog/>}/>
+        <Route path='Blog-details' element={<Blog_details/>}/>
         <Route path='*' element={<Page404 />}/>
 
         
