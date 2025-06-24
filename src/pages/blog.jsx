@@ -19,7 +19,8 @@ import recent3 from '../assets/Blog/recent-post-1-3.jpg';
 
 import { FaRegCalendarAlt ,FaChevronRight} from "react-icons/fa";
 import { IoShareSocialSharp } from "react-icons/io5";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaSearchPlus } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import { CiCirclePlus } from "react-icons/ci";
 
 
 function Blog (){
@@ -49,10 +50,16 @@ return (
                         <div className="w-full "> <img src={firstimage} className="w-full rounded-2xl"/></div>
                         <div className="mt-5 relative div-bottom-border py-8">
                         <div className="absolute bottom-0.5 left-0 w-full h-[2.5px] bg-[#CDD5D6]"></div>
-                        <div className="flex flex-row text-green-600 hover:text-[#063A41] font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
-                        FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
+                        <div className="flex flex-row font-bold text-xl items-center gap-2.5">
+                        <span className="text-[#063A41]">WRITTEN BY:</span>
+                        <span className="text-green-600">FRENK</span>
+                        <span className="flex items-center gap-2 text-green-600 hover:text-[#063A41] cursor-pointer">
+                            <FaRegCalendarAlt /> APRIL 27, 2025
+                        </span>
+                        </div>
+
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Dining & Living Room Cleaning</span>
+                        <span className="text-[#063A41] text-4xl py-5 hover:text-green-600 font-bold">Dining & Living Room Cleaning</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -60,7 +67,7 @@ return (
                         </div>
 
                         <div className="flex flex-row text-[#063A41]! text-2xl mt-5 items-start h-14 font-bold justify-between">
-                        <a className="flex flex-row gap-1.5 items-center hover:text-green-700 justify-center">Read More <i className="fa-solid fa-angles-right text-green-600"></i></a>
+                        <a className="flex flex-row gap-1.5 items-center hover:text-green-600 justify-center"><a href="Blog-details">Read More</a> <i className="fa-solid fa-angles-right text-green-600"></i></a>
                       
 
                         <div className="relative group">
@@ -93,7 +100,7 @@ return (
                         <div className="flex flex-row text-green-600 font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
                         FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Keeping the Hive Clean home</span>
+                        <span className="text-[#063A41] text-4xl py-5 hover:text-green-600 font-bold">Keeping the Hive Clean home</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -101,7 +108,7 @@ return (
                         </div>
 
                         <div className="flex flex-row text-[#063A41]! text-2xl mt-5 items-start h-14 font-bold justify-between">
-                        <a className="flex flex-row gap-1.5 items-center hover:text-green-700 justify-center">Read More <i className="fa-solid fa-angles-right text-green-600"></i></a>
+                        <a className="flex flex-row gap-1.5 items-center hover:text-green-600 justify-center">Read More <i className="fa-solid fa-angles-right text-green-600"></i></a>
                       
 
                         <div className="relative group">
@@ -134,7 +141,7 @@ return (
                         <div className="flex flex-row text-green-600 font-bold text-xl items-center gap-2.5"><span className="text-[#063A41]">WRITTEN BY:</span>
                         FRENK <FaRegCalendarAlt /> APRIL 27,2025</div>
                         <div className="flex flex-col justify-start">
-                        <span className="text-[#063A41] text-5xl py-5 hover:text-green-600 font-bold">Most Caring Cleaning Service?</span>
+                        <span className="text-[#063A41] text-4xl py-5 hover:text-green-600 font-bold">Most Caring Cleaning Service?</span>
                         <p className="font-semibold text-[#5E5C78]  text-lg">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot mites and bed bugs can 
                         cause harmfully diseases because of dirters .This also includes changing home bes linens share providd reovinsg that specialized deep unseen 
                         unseen dust echngy mites client.</p>
@@ -142,7 +149,7 @@ return (
                         </div>
 
                         <div className="flex flex-row text-[#063A41]! text-2xl mt-5 items-start h-14 font-bold justify-between">
-                        <a className="flex flex-row gap-1.5 items-center hover:text-green-700 justify-center">Read More <i className="fa-solid fa-angles-right text-green-600"></i></a>
+                        <a className="flex flex-row gap-1.5 items-center hover:text-green-600 justify-center">Read More <i className="fa-solid fa-angles-right text-green-600"></i></a>
                       
 
                         <div className="relative group">
@@ -246,7 +253,7 @@ return (
                              <div className="flex flex-row">
                                 <div className="mr-8 w-2/5"> <img src={recent1} className="w-full rounded-xl" /></div>
                                 <div className="flex flex-col w-3/5 flex-wrap "><span className="flex  flex-row font-bold gap-2.5 text-xl text-green-600 items-center"><FaRegCalendarAlt />dec 12,2024</span>
-                                <span className="text-[#063A41] font-semibold text-2xl">Dining & Leaving Room Cleaning</span></div>
+                                <span className="text-[#063A41] font-semibold text-2xl hover:text-green-600">Dining & Leaving Room Cleaning</span></div>
                              </div>   
                         </div>
 
@@ -254,7 +261,7 @@ return (
                              <div className="flex flex-row">
                                 <div className="mr-8 w-2/5"> <img src={recent2} className="w-full rounded-xl" /></div>
                                 <div className="flex flex-col w-3/5 flex-wrap "><span className="flex  flex-row font-bold gap-2.5 text-xl text-green-600 items-center"><FaRegCalendarAlt />dec 12,2024</span>
-                                <span className="text-[#063A41] font-semibold text-2xl">Dining & Leaving Room Cleaning</span></div>
+                                <span className="text-[#063A41] font-semibold text-2xl hover:text-green-600">Keeping the Hive Deep Clean plan</span></div>
                              </div>   
                         </div>
 
@@ -262,7 +269,7 @@ return (
                              <div className="flex flex-row">
                                 <div className="mr-8 w-2/5"> <img src={recent3} className="w-full rounded-xl" /></div>
                                 <div className="flex flex-col w-3/5 flex-wrap "><span className="flex  flex-row font-bold gap-2.5 text-xl text-green-600 items-center"><FaRegCalendarAlt />dec 12,2024</span>
-                                <span className="text-[#063A41] font-semibold text-2xl">Dining & Leaving Room Cleaning</span></div>
+                                <span className="text-[#063A41] font-semibold text-2xl hover:text-green-600"> Most Caring Cleaning Service?</span></div>
                              </div>   
                         </div>
                         </div>
@@ -303,7 +310,7 @@ return (
                             {["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((img, index) => (
                             <div key={index} className="group overflow-hidden rounded-md  relative">
                             <div className="absolute hidden group-hover:flex justify-center items-center  bg-[rgba(27,235,93,0.5)] h-full w-full roup z-10">  <div className="text-3xl hover:text-green-600 
-                            rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><FaSearchPlus /></div> </div>
+                            rounded-full h-15 w-15  hover:bg-white group flex items-center justify-center" ><CiCirclePlus /></div> </div>
                             <img src={`src/assets/team/${img}`} alt={`Insta ${index}`} 
                             className="transition-transform md:w-100% w-full duration-500 group-hover:scale-110"/>
                             </div>
@@ -313,12 +320,12 @@ return (
                             </div>
                         </div>
 
-                            <div className="widget_search mt-5 animate-fadeInUp">
+                        <div className="widget_search mt-5 animate-fadeInUp">
                         <form className="flex items-center border-b-2 border-gray-300  overflow-hidden ">
                             <input
                             type="text"
                             placeholder="type here..."
-                            className="w-full px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-green-600"
+                            className="w-full px-4 py-2 text-md outline-none "
                             />
                             <button type="submit" className="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 transition">
                             <i className="fa-solid fa-magnifying-glass"></i>
