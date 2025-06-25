@@ -1,21 +1,21 @@
 import React from "react";
-import lineshep from '../assets/images/line-shep.png';
-import map from '../assets/images/mapimage2.png';
+const lineshep = '/assets/images/line-shep.png';
+const footerbg = '/assets/images/footer-bg-1-1.jpg';
+const FooterLogo = '/assets/vector/logo.svg'
 
 
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { TbPhoneCall } from "react-icons/tb";
 import { FaAnglesRight } from "react-icons/fa6";
-import FooterLogo from '../assets/vector/logo.svg'
 import { FaSearchPlus } from "react-icons/fa";
 
 
 import '../HomeSetion/team.css'
 const Footer = () => {
   return (
-    <footer className="bg-[#062f33] text-white overflow-hidden relative">
-      <img src={lineshep} className=""  />
-      <img src={map} className="absolute -right-115 -top-20"/>
+    <footer className=" text-white overflow-hidden relative"  style={{ backgroundImage: `url(${footerbg})` }}>
+      <img src={lineshep} />
+      
       {/* Main Footer Section */}
       <div className="md:grid grid-cols-1 flex flex-col  gap-10 md:grid-cols-2 lg:grid-cols-3  px-6 xl:px-40 py-16">
         

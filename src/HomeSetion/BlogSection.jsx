@@ -3,9 +3,9 @@ import { FaCalendarAlt, FaRegComments, FaArrowRight } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import './team.css';
 
-import blogImg1 from "../assets/images/blog-s-2-1.jpg";
-import blogImg2 from "../assets/images/blog-s-2-1.png";
-import blogImg3 from "../assets/images/blog-s-2-3.jpg";
+const blogImg1 = "/assets/images/blog-s-2-1.jpg";
+const blogImg2 = "/assets/images/blog-s-2-1.png";
+const blogImg3 = "/assets/images/blog-s-2-3.jpg";
 
 const blogData = [
   {

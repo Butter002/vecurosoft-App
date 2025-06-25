@@ -1,26 +1,25 @@
-
 import React from "react";
-import { DiVim } from "react-icons/di";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import './comancss.css'
-
-import ServiceBannner from '../assets/images/Frame 1618873669.png';
-import map123 from '../assets/images/mapimage.png';
-
-import firstimage from '../assets/Blog/blog-first-image.jpg'
-import widgetprofile from '../assets/Blog/widget-profile-img-1-1.jpg'
-import girlwithitems from '../assets/images/blog-s-1-2.jpg'
-import buket from '../assets/Blog/blog-s-1-1.png'
-
-import recent1 from '../assets/Blog/recent-post-1-1.jpg';
-import recent2 from '../assets/Blog/recent-post-1-2.jpg';
-import recent3 from '../assets/Blog/recent-post-1-3.jpg';
 
 import { FaRegCalendarAlt ,FaChevronRight} from "react-icons/fa";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import { CiCirclePlus } from "react-icons/ci";
+
+
+const ServiceBannner = '/assets/images/Frame1618873669.png';
+const map123 = '/assets/images/mapimage.png';
+
+const firstimage = '/assets/Blog/blog-first-image.jpg'
+const widgetprofile = '/assets/Blog/widget-profile-img-1-1.jpg'
+const girlwithitems = '/assets/images/blog-s-1-2.jpg'
+const buket = '/assets/Blog/blog-s-1-1.png'
+
+const recent1 = '/assets/Blog/recent-post-1-1.jpg';
+const recent2 = '/assets/Blog/recent-post-1-2.jpg';
+const recent3 = '/assets/Blog/recent-post-1-3.jpg';
 
 
 function Blog (){

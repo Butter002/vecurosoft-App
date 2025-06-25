@@ -4,11 +4,11 @@ import { useInView } from 'react-intersection-observer';
 import 'keen-slider/keen-slider.min.css';
 import './team.css';
 
-import map from '../assets/images/mapimage.png';
-import team1 from '../assets/instagram/2.jpg';
-import team2 from '../assets/instagram/3.jpg';
-import team3 from '../assets/instagram/7.jpg';
-import team4 from '../assets/instagram/5.jpg';
+
+const team1 = '/assets/instagram/2.jpg';
+const team2 = '/assets/instagram/3.jpg';
+const team3 = '/assets/instagram/7.jpg';
+const team4 = '/assets/instagram/5.jpg';
 
 const teamMembers = [
   { name: 'Erica Hanson', role: 'Supervisor', image: team1 },

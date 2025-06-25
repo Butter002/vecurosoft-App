@@ -13,19 +13,20 @@ import "keen-slider/keen-slider.min.css";
 import "./Section4.scss";
 import "./SliderButtons.css"
 
-import img1 from "../assets/instagram/1.jpg";
-import img2 from "../assets/instagram/2.jpg";
-import img3 from "../assets/instagram/3.jpg";
-import img4 from "../assets/instagram/4.jpg";
-import img5 from "../assets/instagram/5.jpg";
-import img6 from "../assets/instagram/6.jpg";
-import img7 from "../assets/instagram/window_cleainng.png";
-import img8 from "../assets/instagram/3.jpg";
+
+const img1 = "/assets/instagram/1.jpg";
+const img2 = "/assets/instagram/2.jpg";
+const img3 = "/assets/instagram/3.jpg";
+const img4 = "/assets/instagram/4.jpg";
+const img5 = "/assets/instagram/5.jpg";
+const img6 = "/assets/instagram/6.jpg";
+const img7 = "/assets/instagram/window_cleainng.png";
+const img8 = "/assets/instagram/3.jpg";
 
 
-import vectorleft from '../assets/vector/service-shape-2.png'
-import aboutshape from '../assets/images/about-shape-1-2.png'
-import mapshap from '../assets/vector/map-shape-3.png'
+const vectorleft = '/assets/vector/service-shape-2.png'
+const aboutshape = '/assets/images/about-shape-1-2.png'
+const mapshap = '/assets/vector/map-shape-3.png'
 
 
 

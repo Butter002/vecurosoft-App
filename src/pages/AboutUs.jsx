@@ -7,17 +7,17 @@ import Footer from "../components/Footer";
 import Section2 from "../HomeSetion/ClientSection"
 import Section3 from "../HomeSetion/TeamArea"
 
-import rightcorner from '../assets/images/about-shape-1-2.png'
-import cleaningsofa from "../assets/images/cleaningsofa.png";
-import vector1 from "../assets/vector/Vector 1.png";
-import section2image from "../assets/images/section2image.png";
-import mapicon from '../assets/vector/about-icon4.svg'
-import profile from "../assets/images/Co-founder.png";
 import { GiBroom, GiVacuumCleaner } from "react-icons/gi";
 import { GoArrowRight } from "react-icons/go";
-import ServiceBannner from '../assets/images/Frame 1618873669.png';
-import map123 from '../assets/images/mapimage.png';
 
+const rightcorner= "/assets/images/about-shape-1-2.png"
+const cleaningsofa= "/assets/images/cleaningsofa.png"
+const vector1= "/assets/vector/Vector 1.png"
+const section2image= "/assets/images/section2image.png"
+const mapicon= "/assets/vector/about-icon4.svg"
+const profile= "/assets/images/Co-founder.png"
+const ServiceBannner= "/assets/images/Frame1618873669.png"
+const map123= "/assets/images/mapimage.png"
 
 
 

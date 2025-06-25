@@ -1,10 +1,13 @@
+
 import React, { useEffect, useState } from "react";
-import {
-  FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt, FaEnvelope,
+import { Link } from "react-router-dom";
+import './Header.css'
+import {  FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt, FaEnvelope,
   FaClock, FaSearch, FaChevronRight, FaPlus, FaTimes } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from "../assets/vector/logo-white.svg";
-import './Header.css'
+
+const logo = "/assets/vector/logo-white.svg";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,12 +118,12 @@ const Header = () => {
                 </div>
 
                 <nav className="flex gap-3 items-center text-[17px] font-bold text-[#04363d]">
-                  {menuList.map((item, i) => (
-                    <a href={item.link} key={i} className={`hover:text-green-600`}>
-                      {item.name}
-                    </a>
-                  ))}
-                </nav>
+  {menuList.map((item, i) => (
+    <Link to={item.link} key={i} className="hover:text-green-600">
+      {item.name}
+    </Link>
+  ))}
+</nav>
                 <FaSearch className="hidden xl:flex"/>
                 <div className="hidden xl:flex items-center gap-[1.5px]">
                   <span className="w-[2.5px] h-10 bg-black/20"></span>
@@ -158,12 +161,13 @@ const Header = () => {
         <div className="p-4 space-y-4 text-lg font-semibold text-[#109C3D]">
           {menuList.map((item, i) => (
             <div key={i} className="flex justify-between items-center border-b pb-2">
-              <a href={item.link}>
+             <Link to={item.link} onClick={() => setMenuOpen(false)}>
                 <div className="flex items-center space-x-2">
                   <FaChevronRight />
                   <span>{item.name}</span>
                 </div>
-              </a>
+              </Link>
+
               <FaPlus className="text-gray-400" />
             </div>
           ))}

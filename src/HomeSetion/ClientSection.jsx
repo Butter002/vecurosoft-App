@@ -10,8 +10,8 @@ import { GoArrowRight } from "react-icons/go";
 import { IoMdClose } from "react-icons/io";
 import YouTube from 'react-youtube';
 
-import cleaningsofa from '../assets/images/video-preview-image.png';
-import map from '../assets/images/mapimage.png';
+const cleaningsofa = '../assets/images/video-preview-image.png';
+const map = '../assets/images/mapimage.png';
 
 const Section4 = () => {
   const { ref: brandRef, inView: brandInView } = useInView({ triggerOnce: true, threshold: 0.2 });

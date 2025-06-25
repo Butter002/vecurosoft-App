@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
+import './team.css';
 import { FaQuoteLeft } from "react-icons/fa";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import officeCleaningImg from '../assets/images/officecleaning.png';
-import client1 from '../assets/images/student1.jfif';
-import client2 from '../assets/images/student2.png';
-import client3 from '../assets/images/studen3.png';
-import map from '../assets/images/mapimage2.png';
-import lineshep from '../assets/images/line-shep.png';
 import { useInView } from "react-intersection-observer";
-import './team.css';
+
+
+const officeCleaningImg = '../assets/images/officecleaning.png';
+const client1 = '../assets/images/student1.jfif';
+const client2 = '../assets/images/student2.png';
+const client3 = '../assets/images/studen3.png';
+const map = '../assets/images/mapimage2.png';
+const lineshep = '../assets/images/line-shep.png';
+
 
 const testimonials = [
   {

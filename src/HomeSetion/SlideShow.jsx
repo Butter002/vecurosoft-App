@@ -5,14 +5,17 @@ import './animations.css';
 
 import { useKeenSlider } from 'keen-slider/react';
 import { GoArrowRight } from "react-icons/go";
-import cleaningsofa from '../assets/images/cleaningsofa.png';
-import swimingpool_cleaning from '../assets/images/swimingpool_cleaning.png';
-import roomcleaning from  '../assets/images/roomcleaning.png'
-import map from '../assets/images/mapimage.png'
-import vector from '../assets/vector/Vector 2160.png'
-import vector1 from '../assets/vector/circle.png'
 import { FaSoap } from "react-icons/fa";
-import BubbleBackground from './BubbleBackground';
+
+
+const cleaningsofa = '/assets/images/cleaningsofa.png';
+const swimingpool_cleaning = '/assets/images/swimingpool_cleaning.png';
+const roomcleaning =  '/assets/images/roomcleaning.png'
+const map = '/assets/images/mapimage.png'
+const vector = '/assets/vector/Vector 2160.png'
+const vector1 = '/assets/vector/circle.png'
+
+import BubbleBackground from './BubbleBackground'
 
 
 const images = [cleaningsofa, swimingpool_cleaning , roomcleaning];

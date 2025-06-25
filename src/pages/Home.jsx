@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+
 import { useInView } from "react-intersection-observer";
 import { FaPlay, FaSmile, FaTrophy, FaUsers, FaTasks } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
@@ -14,17 +15,18 @@ import Section1 from "../HomeSetion/SlideShow";
 import ClientSection from "../HomeSetion/ClientSection";
 import TeamArea from "../HomeSetion/TeamArea";
 import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
+import Blog from "../HomeSetion/BlogSection";
+// import B
 import './Section2.css'
 
-import cleaningsofa from "../assets/images/cleaningsofa.png";
-import section2image from "../assets/images/section2image.png";
-import profile from "../assets/images/Co-founder.png";
-import Blog from "../HomeSetion/BlogSection";
-import vector1 from "../assets/vector/Vector 1.png";
-import mapicon from '../assets/vector/about-icon4.svg'
-import rightcorner from '../assets/images/about-shape-1-2.png'
 
-import counterbg from '../assets/vector/counter-bg-shep1.png'
+const cleaningsofa ="/assets/images/cleaningsofa.png"
+const section2image = "/assets/images/section2image.png"
+const profile ="/assets/images/Co-founder.png"
+const vector1 ="/assets/vector/Vector 1.png"
+const mapicon ="/assets/vector/about-icon4.svg"
+const rightcorner ="/assets/images/about-shape-1-2.png"
+const counterbg ="/assets/vector/counter-bg-shep1.png"
 
 function Home() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });

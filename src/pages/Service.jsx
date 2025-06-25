@@ -7,26 +7,28 @@ import './Section2.css'
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
 import Section2 from "../HomeSetion/Section2";
-import ServiceBannner from '../assets/images/cleaning_banner.png';
-import map from '../assets/images/mapimage.png';
-import cleaningsofa from "../assets/images/cleaningsofa.png";
-import section2image from "../assets/images/section2image.png";
-import mapshape from '../assets/images/map-shape-1.png'
-import aboutshape from '../assets/images/about-shape-1-2.png'
-import vector1 from "../assets/vector/Vector 1.png";
-import mapshap from '../assets/vector/map-shape-3.png'
+import ReviewAndBooking from "../HomeSetion/ReviewAndBooking";
 
-import brand1 from "../assets/cards/brand-2-1.png";
-import brand2 from "../assets/cards/brand-2-2.png";
-import brand3 from "../assets/cards/brand-2-3.png";
-import brand4 from "../assets/cards/brand-2-4.png";
-import brand5 from "../assets/cards/brand-2-5.png";
-import brand6 from "../assets/cards/brand-2-6.png";
-import brand7 from "../assets/cards/brand-2-7.png";
-import brand8 from "../assets/cards/brand-2-8.png";
-import brand9 from "../assets/cards/brand-2-9.png";
+
+const ServiceBannner = '/assets/images/cleaningbanner.png';
+const map = '/assets/images/mapimage.png';
+const cleaningsofa = "/assets/images/cleaningsofa.png";
+const section2image = "/assets/images/section2image.png";
+const mapshape = '/assets/images/map-shape-1.png'
+const aboutshape = '/assets/images/about-shape-1-2.png'
+const vector1 = "/assets/vector/Vector 1.png";
+const mapshap = '/assets/vector/map-shape-3.png'
+
+const brand1 = "/assets/cards/brand-2-1.png";
+const brand2 = "/assets/cards/brand-2-2.png";
+const brand3 = "/assets/cards/brand-2-3.png";
+const brand4 = "/assets/cards/brand-2-4.png";
+const brand5 = "/assets/cards/brand-2-5.png";
+const brand6 = "/assets/cards/brand-2-6.png";
+const brand7 = "/assets/cards/brand-2-7.png";
+const brand8 = "/assets/cards/brand-2-8.png";
+const brand9 = "/assets/cards/brand-2-9.png";
 
 
     const brandImages = [brand1, brand2, brand3, brand4, brand5, brand6, brand7, brand8, brand9];

@@ -13,18 +13,18 @@ import "keen-slider/keen-slider.min.css";
 import "./Section4.scss";
 import "./SliderButtons.css"
 
-import img1 from "../assets/instagram/1.jpg";
-import img2 from "../assets/instagram/2.jpg";
-import img3 from "../assets/instagram/3.jpg";
-import img4 from "../assets/instagram/4.jpg";
-import img5 from "../assets/instagram/5.jpg";
-import img6 from "../assets/instagram/6.jpg";
-import img7 from "../assets/instagram/window_cleainng.png";
-import img8 from "../assets/instagram/3.jpg";
+const img1 = "/assets/instagram/1.jpg";
+const img2 = "/assets/instagram/2.jpg";
+const img3 = "/assets/instagram/3.jpg";
+const img4 = "/assets/instagram/4.jpg";
+const img5 = "/assets/instagram/5.jpg";
+const img6 = "/assets/instagram/6.jpg";
+const img7 = "/assets/instagram/window_cleainng.png";
+const img8 = "/assets/instagram/3.jpg";
 
-import mapshap from '../assets/vector/service-shape-1.png'
-import vectorleft from '../assets/vector/service-shape-2.png'
-import aboutshape from '../assets/vector/service-shape-3.png'
+const mapshap = '/assets/vector/service-shape-1.png'
+const vectorleft = '/assets/vector/service-shape-2.png'
+const aboutshape = '/assets/vector/service-shape-3.png'
 
 
 const cardData = [
@@ -38,25 +38,25 @@ const cardData = [
   { title: "OFFICE CLEAN", image: img8, icon: <ImOffice /> },
 ];
 
-      const Section4 = () => {
-        const timerRef = useRef(null);
-        const [sliderRef, instanceRef] = useKeenSlider({
-  loop: true,
-  mode: "free",
-  slides: { perView: 1, spacing: 15 }, // mobile default
+  const Section4 = () => {
+    const timerRef = useRef(null);
+    const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    mode: "free",
+    slides: { perView: 1, spacing: 15 }, 
 
-  breakpoints: {
-    '(min-width: 640px)': {
-      slides: { perView: 2, spacing: 16 },
+    breakpoints: {
+      '(min-width: 640px)': {
+        slides: { perView: 2, spacing: 16 },
+      },
+      '(min-width: 1024px) and (max-width: 1279px)': {
+        slides: { perView: 3, spacing: 24 },
+      },
+      '(min-width: 1280px)': {
+        slides: { perView: 4, spacing: 24 },
+      },
     },
-    '(min-width: 1024px) and (max-width: 1279px)': {
-      slides: { perView: 3, spacing: 24 },
-    },
-    '(min-width: 1280px)': {
-      slides: { perView: 4, spacing: 24 },
-    },
-  },
-});
+  });
 
 
         const { ref: inViewRef, inView } = useInView({ triggerOnce: true,threshold: 0.2,});

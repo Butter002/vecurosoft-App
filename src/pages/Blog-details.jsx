@@ -7,24 +7,26 @@ import './comancss.css'
 import { IoShareSocialSharp } from "react-icons/io5";
 
 
-import ServiceBannner from '../assets/images/Frame 1618873669.png';
-import map123 from '../assets/images/mapimage.png';
+const ServiceBannner =  '/assets/images/Frame 1618873669.png';
+const map123 =  '/assets/images/mapimage.png';
 
-import firstimage from '../assets/Blog/blog-first-image.jpg'
-import widgetprofile from '../assets/Blog/widget-profile-img-1-1.jpg'
+const firstimage =  '/assets/Blog/blog-first-image.jpg'
+const widgetprofile =  '/assets/Blog/widget-profile-img-1-1.jpg'
 
 
-import recent1 from '../assets/Blog/recent-post-1-1.jpg';
-import recent2 from '../assets/Blog/recent-post-1-2.jpg';
-import recent3 from '../assets/Blog/recent-post-1-3.jpg';
-import blogd2 from '../assets/Blog/blog-d-2.jpg'
-import blogd3 from '../assets/Blog/blog-d-3.jpg'
-import blogpostadmin from '../assets/Blog/blog-post-admin-1.jpg'
-
+const recent1 = '/assets/Blog/recent-post-1-1.jpg';
+const recent2 = '/assets/Blog/recent-post-1-2.jpg';
+const recent3 = '/assets/Blog/recent-post-1-3.jpg';
+const blogd2 = '/assets/Blog/blog-d-2.jpg'
+const blogd3 = '/assets/Blog/blog-d-3.jpg'
+const blogpost1 =  '/assets/Blog/blog-post-user-1.jpg'
+const blogpost2 = '/assets/Blog/blog-post-user-2.jpg'
+const blogpost3 = '/assets/Blog/blog-post-user-3.jpg' 
+const blogpostadmin = '/assets/Blog/blog-post-admin-1.jpg'
 
 
 import { FaRegCalendarAlt ,FaChevronRight, FaArrowLeft} from "react-icons/fa";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaArrowRight} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaArrowRight ,FaReply} from "react-icons/fa";
 import { CiCirclePlus } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 
@@ -137,7 +139,7 @@ return (
                                     <span className="text-xl text-white ">Rainbow’s high techngy system with the help of nanleees reoving unseen dusot
                                     mites and bed bugs can causeharmfully diseases because of dirters. This also includes changing home bes linens.</span>
                                     
-                                    <div className=" flex flex-row gap-3 text-xl text-white"> <FaFacebookF/><span className="text-green-500"><BsTwitterX/></span><FaInstagram/><FaYoutube/></div>
+                                    <div className="flex flex-row gap-3 text-xl text-white"> <FaFacebookF/><span className="text-green-500"><BsTwitterX/></span><FaInstagram/><FaYoutube/></div>
                                 </div>  
                             </div>
                             <div className="flex flex-row justify-between items-center">
@@ -146,6 +148,48 @@ return (
                             </div>
                         </div>
 
+                        <div className="mt-15 mb-10">
+                            <span className="font-bold  text-4xl text-[#063A41]">3 Comments</span>
+                            <div>
+                                <div className="flex flex-col lg:p-10 p-15 lg:flex-row justify-center items-center lg:gap-4"> 
+                                <div className="w-3/10" ><img src={blogpost1} className="rounded-full  border-4 border-green-600"/></div>
+                                <div className="flex flex-col border-2 border-dashed border-gray-400 w-12/10 gap-4 relative rounded-xl">
+                                    <div className="flex flex-row gap-2 p-5 flex-wrap items-end">
+                                        <span className="text-[#063A41] font-bold text-3xl">Alex Aster</span>
+                                        <p className="text-green-600 font-semibold text-lg">April 27, 2025</p>
+                                        <span className="text-xl text-gray-600 ">concept gaming tournament is essntially the same as any other sport everyone there is competing.</span>
+                                    </div>
+                                    <button className="text-green-600 absolute flex flex-row items-center gap-3 font-bold -bottom-10 left-2 text-xl"> REPLAY <FaReply className="text-lg"/></button>
+                                </div>  
+                                </div>
+
+                                 <div className="flex ml-25 flex-col  lg:p-10 p-15 lg:flex-row justify-center  items-center lg:gap-4"> 
+                                <div className="w-3/10" ><img src={blogpost3}  className="rounded-full  border-4 border-green-600"/></div>
+                                <div className="flex flex-col border-2 border-dashed border-gray-400 w-12/10 gap-4 relative rounded-xl">
+                                    <div className="flex flex-row gap-2 p-5 flex-wrap items-end">
+                                        <span className="text-[#063A41] font-bold text-3xl">Emily Blunt</span>
+                                        <p className="text-green-600 font-semibold text-lg">April 27, 2025</p>
+                                        <span className="text-xl text-gray-600 ">concept gaming tournament is essntially the same as any other sport everyone there is competing.</span>
+                                    </div>
+                                    <button className="text-green-600 absolute flex flex-row items-center gap-3 font-bold -bottom-10 left-2 text-xl"> REPLAY <FaReply className="text-lg"/></button>
+                                </div>  
+                            </div>
+
+                             <div className="flex flex-col  lg:p-10 p-15 lg:flex-row justify-center  items-center lg:gap-4  "> 
+                                <div className="w-3/10" ><img src={blogpost2} className="rounded-full  border-4 border-green-600"/></div>
+                                <div className="flex flex-col border-2 border-dashed border-gray-400 w-12/10 gap-4 relative rounded-xl">
+                                    <div className="flex flex-row gap-2 p-5 flex-wrap items-end">
+                                        <span className="text-[#063A41] font-bold text-3xl">Thomas Shelby</span>
+                                        <p className="text-green-600 font-semibold text-lg">April 27, 2025</p>
+                                        <span className="text-xl text-gray-600 ">concept gaming tournament is essntially the same as any other sport everyone there is competing.</span>
+                                    </div>
+                                    <button className="text-green-600 absolute flex flex-row items-center gap-3 font-bold -bottom-10 left-2 text-xl"> REPLAY <FaReply className="text-lg"/></button>
+                                </div>  
+                            </div>
+                            </div>
+                        </div>
+
+                        {/* comment form */}
                         <div class="bg-green-600/4 p-6 rounded-lg shadow-sm">
                         <div>
                             <h2 class="text-4xl font-bold text-gray-800 mb-2">Leave a Reply</h2>

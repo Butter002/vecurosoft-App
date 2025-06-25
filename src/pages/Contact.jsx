@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import ServiceBannner from '../assets/images/Frame 1618873669.png';
-import map123 from '../assets/images/mapimage.png';
+const ServiceBannner = '/assets/images/Frame 1618873669.png';
+const map123 = '/assets/images/mapimage.png';
 
 
 import { LuLinkedin } from "react-icons/lu";
