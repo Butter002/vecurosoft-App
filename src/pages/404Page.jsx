@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
-  const navigate = useNavigate(); // 👈 Hook for navigation
+  const navigate = useNavigate(); 
 
   return (
     <div className="h-screen w-screen bg-gray-100 flex items-center justify-center">
