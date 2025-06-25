@@ -41,25 +41,25 @@ const cardData = [
   { title: "OFFICE CLEAN", image: img8, icon: <ImOffice /> },
 ];
 
-      const Section4 = () => {
+      const Section2 = () => {
         const timerRef = useRef(null);
         const [sliderRef, instanceRef] = useKeenSlider({
-  loop: true,
-  mode: "free",
-  slides: { perView: 1, spacing: 15 }, // mobile default
+        loop: true,
+        mode: "free",
+        slides: { perView: 1, spacing: 15 }, // mobile default
 
-  breakpoints: {
-    '(min-width: 640px)': {
-      slides: { perView: 2, spacing: 16 },
-    },
-    '(min-width: 1024px) and (max-width: 1279px)': {
-      slides: { perView: 3, spacing: 24 },
-    },
-    '(min-width: 1280px)': {
-      slides: { perView: 4, spacing: 24 },
-    },
-  },
-});
+        breakpoints: {
+          '(min-width: 640px)': {
+            slides: { perView: 2, spacing: 16 },
+          },
+          '(min-width: 1024px) and (max-width: 1279px)': {
+            slides: { perView: 3, spacing: 24 },
+          },
+          '(min-width: 1280px)': {
+            slides: { perView: 4, spacing: 24 },
+          },
+        },
+      });
 
 
         const { ref: inViewRef, inView } = useInView({ triggerOnce: true,threshold: 0.2,});
@@ -152,4 +152,4 @@ const cardData = [
   );
 };
 
-export default Section4;
+export default Section2;

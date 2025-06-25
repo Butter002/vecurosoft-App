@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
+  const navigate = useNavigate(); // 👈 Hook for navigation
+
   return (
     <div className="h-screen w-screen bg-gray-100 flex items-center justify-center">
       <div className="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700">
@@ -12,7 +15,7 @@ const NotFound = () => {
             But don't worry, you can find plenty of other things on our homepage.
           </p>
           <button
-            onClick={() => window.location.href = '/'}
+            onClick={() => navigate('/')} // 👈 Client-side redirect
             className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition">
             Back to homepage
           </button>
@@ -29,6 +32,6 @@ const NotFound = () => {
       </div>
     </div>
   );
-};  
+};
 
 export default NotFound;

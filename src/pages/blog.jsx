@@ -46,7 +46,7 @@ return (
                         <div className="lg:w-7/10  w-full flex flex-col px-5 ">
 
                         <div>
-                        <div className="w-full "> <img src={firstimage} className="w-full rounded-2xl"/></div>
+                        <div className="w-full"> <img src={firstimage} className="w-full rounded-2xl"/></div>
                         <div className="mt-5 relative div-bottom-border py-8">
                         <div className="absolute bottom-0.5 left-0 w-full h-[2.5px] bg-[#CDD5D6]"></div>
                         <div className="flex flex-row font-bold text-xl items-center gap-2.5">

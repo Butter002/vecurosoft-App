@@ -7,7 +7,7 @@ import './comancss.css'
 import { IoShareSocialSharp } from "react-icons/io5";
 
 
-const ServiceBannner =  '/assets/images/Frame 1618873669.png';
+const ServiceBannner =  '/assets/images/Frame1618873669.png';
 const map123 =  '/assets/images/mapimage.png';
 
 const firstimage =  '/assets/Blog/blog-first-image.jpg'

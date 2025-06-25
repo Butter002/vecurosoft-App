@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const ServiceBannner = '/assets/images/Frame 1618873669.png';
+const ServiceBannner = '/assets/images/Frame1618873669.png';
 const map123 = '/assets/images/mapimage.png';
 
 
